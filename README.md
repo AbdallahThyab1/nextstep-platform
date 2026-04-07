@@ -21,7 +21,7 @@ NextStep is an intelligent learning platform that provides personalized programm
 
 ## 🎬 Demo
 
-> 🌐 [Try the live demo](https://nextstep-platform.onrender.com)  
+> 🌐 [Try the live demo](https://next-step-2026.netlify.app/)  
 > *Take the assessment and get your personalized learning path*
 
 ---
