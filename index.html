@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="NextStep | الخطوة القادمة - تعلم البرمجة بسهولة وبدون تشتت. مسارات تعليمية واضحة خطوة بخطوة للمبرمجين العرب.">
+    <title>NextStep | الخطوة القادمة — تعلم البرمجة بسهولة</title>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ============================================
+           Global Styles
+           ============================================ */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg-dark);
+            color: var(--text-white);
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* ============================================
+           Navbar
+           ============================================ */
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 12, 16, 0.95);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #FFFFFF, #818CF8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo i {
+            background: none;
+            color: var(--primary);
+        }
+
+        .logo-arabic {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: 0.2s;
+            font-weight: 500;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--text-white);
+        }
+
+        .nav-link.active {
+            position: relative;
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--primary);
+            border-radius: 9999px;
+        }
+
+        /* ============================================
+           Hero Section
+           ============================================ */
+
+        .hero {
+            padding: 5rem 0 4rem;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #6366F1, #818CF8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            color: var(--text-gray);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            border-radius: 9999px;
+            transition: all 0.2s;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #6366F1, #4F46E5);
+            color: white;
+            box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px rgba(99, 102, 241, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 1px solid #2A3042;
+        }
+
+        .btn-secondary:hover {
+            border-color: #6366F1;
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        .hero-preview {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: var(--bg-surface);
+            border-radius: 1.5rem;
+            border: 1px solid var(--border);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .preview-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .preview-step {
+            background: var(--bg-elevated);
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            border: 1px solid var(--border);
+        }
+
+        .preview-arrow {
+            color: var(--text-muted);
+        }
+
+        /* ============================================
+           Cards (Problem + Solution)
+           ============================================ */
+
+        .problem-solution {
+            padding: 3rem 0;
+        }
+
+        .two-columns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .info-card {
+            background: var(--bg-surface);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            transition: all 0.2s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .info-card__icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .info-card__icon i {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .info-card__title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-card__list {
+            list-style: none;
+        }
+
+        .info-card__list li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 0;
+            color: var(--text-gray);
+        }
+
+        .info-card__list li i {
+            color: #EF4444;
+        }
+
+        .info-card__text {
+            color: var(--text-gray);
+            margin-bottom: 1rem;
+        }
+
+        .info-card__text strong {
+            color: var(--primary);
+        }
+
+        /* ============================================
+           Features Section
+           ============================================ */
+
+        .features {
+            padding: 4rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            color: var(--text-gray);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            background: var(--bg-surface);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--primary);
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+
+        .feature-icon i {
+            font-size: 1.75rem;
+            color: var(--primary);
+        }
+
+        .feature-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-desc {
+            color: var(--text-gray);
+            font-size: 0.875rem;
+        }
+
+        /* ============================================
+           How It Works
+           ============================================ */
+
+        .how-it-works {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, transparent, rgba(99, 102, 241, 0.03));
+        }
+
+        .steps-timeline {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .timeline-step {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-step__marker {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .step-number {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #6366F1, #4F46E5);
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: 700;
+            box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+        }
+
+        .timeline-line {
+            width: 2px;
+            height: 60px;
+            background: linear-gradient(180deg, #6366F1, transparent);
+            margin-top: 0.5rem;
+        }
+
+        .timeline-step:last-child .timeline-line {
+            display: none;
+        }
+
+        .timeline-step__content {
+            flex: 1;
+            background: var(--bg-surface);
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border);
+        }
+
+        .step-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .step-icon i {
+            font-size: 1.25rem;
+            color: var(--primary);
+        }
+
+        .step-title {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .step-desc {
+            color: var(--text-gray);
+            font-size: 0.875rem;
+        }
+
+        /* ============================================
+           Content Creators Section
+           ============================================ */
+
+        .creators-section {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, transparent, rgba(99, 102, 241, 0.03));
+        }
+
+        .creators-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .creators-title {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .creators-subtitle {
+            color: var(--text-gray);
+        }
+
+        .creators-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        .creator-card {
+            background: var(--bg-surface);
+            border-radius: 1rem;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.2s;
+            border: 1px solid var(--border);
+        }
+
+        .creator-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+        }
+
+        .creator-avatar {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 0.75rem;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .creator-name {
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .creator-channel {
+            font-size: 0.7rem;
+            color: var(--primary-light);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.25rem;
+        }
+
+        .creator-specialty {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .creator-stats {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.65rem;
+            color: var(--text-muted);
+        }
+
+        .creator-stats span {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .creator-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.25rem 0.75rem;
+            background: var(--bg-elevated);
+            border-radius: 9999px;
+            color: var(--text-gray);
+            font-size: 0.7rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .creator-link:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* ============================================
+           CTA Section
+           ============================================ */
+
+        .cta {
+            padding: 4rem 0;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--bg-surface), var(--bg-elevated));
+            border-radius: 2rem;
+            padding: 4rem 2rem;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .cta-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .cta-subtitle {
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-large {
+            padding: 0.875rem 2.5rem;
+            font-size: 1rem;
+        }
+
+        /* ============================================
+           Footer
+           ============================================ */
+
+        .footer {
+            background: var(--bg-surface);
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+            padding: 2rem 0 1rem;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .footer-logo {
+            font-size: 1.1rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #FFFFFF, #818CF8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .footer-logo i {
+            background: none;
+            color: var(--primary);
+        }
+
+        .footer-logo-arabic {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .footer-tagline {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.25rem;
+        }
+
+        .footer-link {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: 0.2s;
+        }
+
+        .footer-link:hover {
+            color: white;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .social-link {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-elevated);
+            border-radius: 9999px;
+            color: var(--text-gray);
+            font-size: 1rem;
+            transition: all 0.2s;
+            text-decoration: none;
+            border: 1px solid var(--border-light);
+        }
+
+        .social-link:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            padding-top: 1rem;
+        }
+
+        .footer-copyright {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+        }
+
+        .footer-email {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            direction: ltr;
+        }
+
+        .footer-email i {
+            font-size: 0.6rem;
+            color: var(--primary);
+        }
+
+        .footer-email:hover {
+            color: white;
+        }
+
+        /* ============================================
+           Responsive
+           ============================================ */
+
+        @media (max-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .creators-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .creators-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .creators-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 250px;
+                justify-content: center;
+            }
+
+            .cta-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* ============================================
+           Variables
+           ============================================ */
+
+        :root {
+            --bg-dark: #0A0C10;
+            --bg-surface: #13161F;
+            --bg-elevated: #1A1E2A;
+            --border: #1F2433;
+            --border-light: #2A3042;
+            --primary: #6366F1;
+            --primary-dark: #4F46E5;
+            --primary-light: #818CF8;
+            --text-white: #FFFFFF;
+            --text-gray: #A1A9C1;
+            --text-muted: #6B7280;
+        }
+    </style>
+</head>
+
+<body data-page="home">
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="site-header">
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    NextStep <span class="logo-arabic">| الخطوة القادمة</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="roadmaps.html" class="nav-link">المسارات</a></li>
+                    <li>
+                        <a href="assessment/assessment.html" style="
+            background: linear-gradient(135deg, #6366F1, #8B5CF6);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            text-decoration: none;
+        " onmouseover="this.style.transform='translateY(-1px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <i class="fas fa-robot" style="font-size: 0.65rem;"></i>
+                            AI
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        تعلم البرمجة<br>
+                        <span class="gradient-text">بدون تشتت</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        مسار تعليمي واضح خطوة بخطوة يوصلك من المبتدئ إلى الاحتراف.
+                        لا مزيد من الفوضى، لا مزيد من التخمين.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="roadmaps.html" class="btn btn-primary"><i class="fas fa-rocket"></i> ابدأ الآن</a>
+                        <a href="roadmaps.html" class="btn btn-secondary"><i class="fas fa-map"></i> استكشف المسارات</a>
+                    </div>
+                    <div class="hero-preview">
+                        <div class="preview-steps">
+                            <span class="preview-step">HTML</span>
+                            <i class="fas fa-arrow-left preview-arrow"></i>
+                            <span class="preview-step">CSS</span>
+                            <i class="fas fa-arrow-left preview-arrow"></i>
+                            <span class="preview-step">JavaScript</span>
+                            <i class="fas fa-arrow-left preview-arrow"></i>
+                            <span class="preview-step">React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM + SOLUTION -->
+        <section class="problem-solution">
+            <div class="container">
+                <div class="two-columns">
+                    <div class="info-card info-card--problem">
+                        <div class="info-card__icon"><i class="fas fa-circle-exclamation"></i></div>
+                        <h2 class="info-card__title">أزمة التعلم</h2>
+                        <ul class="info-card__list">
+                            <li><i class="fas fa-times"></i> مصادر كثيرة بدون توجيه واضح</li>
+                            <li><i class="fas fa-times"></i> محتوى مبعثر يسبب تشتت</li>
+                            <li><i class="fas fa-times"></i> لا يوجد مسار منظم من البداية إلى الاحتراف</li>
+                            <li><i class="fas fa-times"></i> تشعر بالضياع دون معرفة الخطوة التالية</li>
+                        </ul>
+                    </div>
+                    <div class="info-card info-card--solution">
+                        <div class="info-card__icon"><i class="fas fa-lightbulb"></i></div>
+                        <h2 class="info-card__title">NextStep يحل المشكلة</h2>
+                        <p class="info-card__text">نقدم لك <strong>مسارات تعليمية مرئية ومنظمة</strong> ترشدك خطوة
+                            بخطوة. كل مفهوم مُبسط، وموارد مُنتقاة، وتتبع تقدمك يوضح لك أين أنت بالضبط.</p>
+                        <p class="info-card__text">لا مزيد من التخمين. فقط اتبع المسار، ضع علامة "تم"، وتقدم بثقة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">مصمم من أجل <span class="gradient-text">الوضوح</span></h2>
+                    <p class="section-subtitle">كل ما تحتاجه في مكان واحد</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-sitemap"></i></div>
+                        <h3 class="feature-title">مسارات تعليمية منظمة</h3>
+                        <p class="feature-desc">تسلسلات احترافية من الأساسيات إلى المواضيع المتقدمة</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-list-check"></i></div>
+                        <h3 class="feature-title">نظام خطوة بخطوة</h3>
+                        <p class="feature-desc">كل مفهوم مقسم إلى خطوات صغيرة مع شرح وموارد واضحة</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-hand-pointer"></i></div>
+                        <h3 class="feature-title">مسارات تفاعلية</h3>
+                        <p class="feature-desc">اضغط على أي خطوة لتظهر لك الشروحات والموارد فوراً</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="feature-title">تتبع التقدم</h3>
+                        <p class="feature-desc">ضع علامة "تم" على الخطوات، وشاهد نسبة إنجازك</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">كيف <span class="gradient-text">يعمل</span>؟</h2>
+                    <p class="section-subtitle">أربع خطوات بسيطة لبداية قوية</p>
+                </div>
+                <div class="steps-timeline">
+                    <div class="timeline-step">
+                        <div class="timeline-step__marker">
+                            <div class="step-number">1</div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-step__content">
+                            <div class="step-icon"><i class="fas fa-compass"></i></div>
+                            <h3 class="step-title">اختر مسارك التعليمي</h3>
+                            <p class="step-desc">اختر من بين مسارات الأساسيات، Frontend، Backend، أو المسارات المتقدمة
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-step__marker">
+                            <div class="step-number">2</div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-step__content">
+                            <div class="step-icon"><i class="fas fa-eye"></i></div>
+                            <h3 class="step-title">اتبع الخطوات المرئية</h3>
+                            <p class="step-desc">كل خطوة تمثل مفهوم أساسي، مرتبة بترتيب منطقي وسهل</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-step__marker">
+                            <div class="step-number">3</div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-step__content">
+                            <div class="step-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3 class="step-title">تعلم مع الموارد</h3>
+                            <p class="step-desc">اضغط على أي خطوة لتحصل على شرح وأهمية وموارد مختارة</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-step__marker">
+                            <div class="step-number">4</div>
+                        </div>
+                        <div class="timeline-step__content">
+                            <div class="step-icon"><i class="fas fa-chart-simple"></i></div>
+                            <h3 class="step-title">تتبع تقدمك</h3>
+                            <p class="step-desc">ضع علامة "تم"، شاهد نسبة إنجازك، واعرف خطوتك القادمة دائماً</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTENT CREATORS SECTION ==================== -->
+        <section class="creators-section">
+            <div class="container">
+                <div class="creators-header">
+                    <h2 class="creators-title"><i class="fas fa-users"></i> استكشف <span class="gradient-text">صناع
+                            المحتوى العرب</span></h2>
+                    <p class="creators-subtitle">أبرز المبدعين في مجال البرمجة والتقنية على اليوتيوب</p>
+                </div>
+                <div class="creators-grid">
+
+                    <!-- 1 - يحيى تقني -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">يحيى تقني</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Yehiatech</div>
+                        <div class="creator-specialty">Topics in Software Engineering</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 100+</span><span><i
+                                    class="fas fa-users"></i> 50K+</span></div>
+                        <a href="https://youtube.com/@yehiatech" class="creator-link" target="_blank">زيارة القناة <i
+                                class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 2 - طارق العوزة -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">طارق العوزة</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Tariq Elouzeh</div>
+                        <div class="creator-specialty">AI Agents | Programming Topics</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 200+</span><span><i
+                                    class="fas fa-users"></i> 80K+</span></div>
+                        <a href="https://youtube.com/@tariqelouzeh" class="creator-link" target="_blank">زيارة القناة <i
+                                class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 3 - طويق أكاديمي -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">طويق أكاديمي</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Tuwaiq Academy</div>
+                        <div class="creator-specialty">تعليم البرمجة | مسارات متكاملة</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 500+</span><span><i
+                                    class="fas fa-users"></i> 200K+</span></div>
+                        <a href="https://youtube.com/@tuwaiqacademy_" class="creator-link" target="_blank">زيارة القناة
+                            <i class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 4 - المعلم المبرمج -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">Abdelrahaman Mohamed</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> The Programming Teacher</div>
+                        <div class="creator-specialty">.NET Core | Data structures & Algorithms</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 150+</span><span><i
+                                    class="fas fa-users"></i> 60K+</span></div>
+                        <a href="https://youtube.com/@the_programming-teacher" class="creator-link"
+                            target="_blank">زيارة القناة <i class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 5 - كريم نبيل -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">كريم نبيل</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Kariim Nabil</div>
+                        <div class="creator-specialty">AI | Automation | n8n</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 180+</span><span><i
+                                    class="fas fa-users"></i> 70K+</span></div>
+                        <a href="https://youtube.com/@kariimnabiil" class="creator-link" target="_blank">زيارة القناة <i
+                                class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 6 - أسامة الزيرو -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">أسامة الزيرو</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Elzero Web School</div>
+                        <div class="creator-specialty">Web Development | Fundamentals Of Programming</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 1000+</span><span><i
+                                    class="fas fa-users"></i> 800K+</span></div>
+                        <a href="https://youtube.com/@elzerowebschool" class="creator-link" target="_blank">زيارة القناة
+                            <i class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 7 - هندسة المنتجات البرمجية -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">Software Engineering</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Software Product Development</div>
+                        <div class="creator-specialty">هندسة البرمجيات | System Design | Data structures</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 120+</span><span><i
+                                    class="fas fa-users"></i> 40K+</span></div>
+                        <a href="https://youtube.com/@software-product-develoment" class="creator-link"
+                            target="_blank">زيارة القناة <i class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 8 - عبدالرحمن جمال -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">عبدالرحمن جمال</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Abdelrahman Gamal</div>
+                        <div class="creator-specialty">Web Development | Python</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 130+</span><span><i
+                                    class="fas fa-users"></i> 55K+</span></div>
+                        <a href="https://youtube.com/@abdelrahmangamal" class="creator-link" target="_blank">زيارة
+                            القناة <i class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 9 - عادل نسيم -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">عادل نسيم</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Adel Nasim</div>
+                        <div class="creator-specialty">Fundamentals Of Programming | Object-Oriented Programmin | DS
+                        </div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 250+</span><span><i
+                                    class="fas fa-users"></i> 90K+</span></div>
+                        <a href="https://youtube.com/@adelnasim" class="creator-link" target="_blank">زيارة القناة <i
+                                class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 10 - Metigator -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">عصام عبدالنبي</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Metigator</div>
+                        <div class="creator-specialty">.NET | Backend | SQL Server</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 160+</span><span><i
+                                    class="fas fa-users"></i> 65K+</span></div>
+                        <a href="https://youtube.com/@metigator" class="creator-link" target="_blank">زيارة القناة <i
+                                class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 11 - حمزة سالم -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">حمزة سالم</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Hamza Salem</div>
+                        <div class="creator-specialty">Software Engineering</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 140+</span><span><i
+                                    class="fas fa-users"></i> 45K+</span></div>
+                        <a href="https://youtube.com/@hamzasalemtv" class="creator-link" target="_blank">زيارة القناة <i
+                                class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 12 - Tech Vault -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">Tech Vault</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Tech Vault</div>
+                        <div class="creator-specialty"> Database Topics | NoSQL Databases | Relational Database </div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 90+</span><span><i
+                                    class="fas fa-users"></i> 35K+</span></div>
+                        <a href="https://youtube.com/@techvault_" class="creator-link" target="_blank">زيارة القناة <i
+                                class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 13 - Big Data -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">Big Data</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Big Data</div>
+                        <div class="creator-specialty">Python | Data Science | Linux</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 110+</span><span><i
+                                    class="fas fa-users"></i> 40K+</span></div>
+                        <a href="https://youtube.com/@bigdata4756" class="creator-link" target="_blank">زيارة القناة <i
+                                class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 14 - Full Stack Yazan -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">Yazan AL-Halabi</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Full Stack Yazan</div>
+                        <div class="creator-specialty">TypeScript | Front-end | Back-end</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 170+</span><span><i
+                                    class="fas fa-users"></i> 60K+</span></div>
+                        <a href="https://youtube.com/@fullstackyazan" class="creator-link" target="_blank">زيارة القناة
+                            <i class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 15 - باشمهندس مازن -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">باشمهندس مازن</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Bashmohandes Mazen</div>
+                        <div class="creator-specialty">Software Engineering</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 200+</span><span><i
+                                    class="fas fa-users"></i> 75K+</span></div>
+                        <a href="https://youtube.com/@bashmohandesmazen" class="creator-link" target="_blank">زيارة
+                            القناة <i class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 16 - محمد عبدالرازق -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">محمد عبدالرازق</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> M Abrazeg</div>
+                        <div class="creator-specialty">Data structures | Pointers & Memory Management</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 100+</span><span><i
+                                    class="fas fa-users"></i> 30K+</span></div>
+                        <a href="https://youtube.com/@m_abrazeg" class="creator-link" target="_blank">زيارة القناة <i
+                                class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 17 - Metwally Labs -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">Metwally Labs</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Metwally Labs</div>
+                        <div class="creator-specialty">DevOps | Backend</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 80+</span><span><i
+                                    class="fas fa-users"></i> 25K+</span></div>
+                        <a href="https://youtube.com/@metwallylabs" class="creator-link" target="_blank">زيارة القناة <i
+                                class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 18 - Code Zone -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">Code Zone</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> Code Zone</div>
+                        <div class="creator-specialty">Front-end | Backend | JavaScript</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 190+</span><span><i
+                                    class="fas fa-users"></i> 65K+</span></div>
+                        <a href="https://youtube.com/@codezone" class="creator-link" target="_blank">زيارة القناة <i
+                                class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 19 - بغداد الجديدة -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">بغداد الجديدة</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i> The New Baghdad</div>
+                        <div class="creator-specialty">Fundamentals Of Programming | Object-Oriented Programmin | DS
+                        </div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 220+</span><span><i
+                                    class="fas fa-users"></i> 80K+</span></div>
+                        <a href="https://youtube.com/@thenewbaghdad" class="creator-link" target="_blank">زيارة القناة
+                            <i class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                    <!-- 20 - ديسوكي مصر -->
+                    <div class="creator-card">
+                        <div class="creator-avatar"><i class="fab fa-youtube"></i></div>
+                        <h3 class="creator-name">محمد الدسوقي</h3>
+                        <div class="creator-channel"><i class="fab fa-youtube"></i>Mohamed El Desouki</div>
+                        <div class="creator-specialty">Java | C++ | Databases | Python</div>
+                        <div class="creator-stats"><span><i class="fas fa-video"></i> 300+</span><span><i
+                                    class="fas fa-users"></i> 100K+</span></div>
+                        <a href="https://youtube.com/@desoukiegypt" class="creator-link" target="_blank">زيارة القناة <i
+                                class="fas fa-arrow-left"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-box">
+                    <i class="fas fa-graduation-cap cta-icon"></i>
+                    <h2 class="cta-title">جاهز للتخلص من التشتت؟</h2>
+                    <p class="cta-subtitle">انضم إلى آلاف المتعلمين الذين وجدوا طريقهم الواضح إلى البرمجة</p>
+                    <div class="cta-buttons">
+                        <a href="roadmaps.html" class="btn btn-primary btn-large"><i class="fas fa-play"></i> ابدأ رحلتك
+                            الآن</a>
+                        <a href="assessment/assessment.html" class="btn btn-secondary btn-large"><i
+                                class="fas fa-clipboard-list"></i> تقييم سريع</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        NextStep <span class="footer-logo-arabic">| الخطوة القادمة</span>
+                    </a>
+                    <p class="footer-tagline">مسارات واضحة، بدون تشتت</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">الرئيسية</a>
+                    <a href="roadmaps.html" class="footer-link">المسارات</a>
+                    <a href="assessment/assessment.html" class="footer-link">تقييم سريع</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/AbdallahThyab1" target="_blank" class="social-link"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abdallah-thyab-dev/" target="_blank" class="social-link"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VbC6iamH5JLyrAxeK61t" target="_blank"
+                        class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:1abdallahthyab@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 NextStep | الخطوة القادمة</p>
+                <a href="mailto:1abdallahthyab@gmail.com" class="footer-email"><i class="fas fa-envelope"></i>
+                    1abdallahthyab@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="مسار أساسيات البرمجة بلغة C++ - تعلم لغة C++ من الصفر إلى الاحتراف. مفاهيم البرمجة الأساسية، المتغيرات، الحلقات، الدوال، المؤشرات، والمشاريع العملية.">
+    <title>NextStep | أساسيات البرمجة بلغة C++ — من الصفر إلى الاحتراف</title>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="roadmap" data-roadmap-id="fundamentals">
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="site-header" aria-label="Main navigation">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html" class="logo-link" aria-label="NextStep home page">
+                    <i class="fas fa-code"></i> NextStep <span class="logo__arabic">| الخطوة القادمة</span>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="mobile-menu-toggle__icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <nav class="navbar__nav" aria-label="Primary navigation">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="index.html" class="nav-menu__link">الرئيسية</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="roadmaps.html" class="nav-menu__link nav-menu__link--active"
+                            aria-current="page">المسارات</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="drawer-overlay"></div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content" class="roadmap-page">
+
+        <!-- ==================== ROADMAP HEADER ==================== -->
+        <section class="roadmap-header">
+            <div class="container">
+                <div class="roadmap-header__content">
+                    <div class="roadmap-header__info">
+                        <span class="roadmap-badge"><i class="fas fa-code"></i> مسار المبتدئين</span>
+                        <h1 class="roadmap-header__title">أساسيات البرمجة <span class="gradient-text">بلغة C++</span>
+                        </h1>
+                        <p class="roadmap-header__description">
+                            تعلم لغة C++ من الصفر إلى الاحتراف. هذا المسار يغطي جميع المفاهيم الأساسية والمتقدمة
+                            خطوة بخطوة، مع مشاريع عملية لتطبيق ما تعلمته.
+                        </p>
+                    </div>
+                    <div class="progress-section">
+                        <div class="progress-header">
+                            <span class="progress-label"><i class="fas fa-chart-line"></i> التقدم العام</span>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                        <div class="progress-bar__container">
+                            <div class="progress-bar__fill" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAIN LAYOUT: SIDEBAR + CONTENT ==================== -->
+        <div class="roadmap-layout">
+            <div class="container">
+                <div class="roadmap-layout__grid">
+
+                    <!-- ==================== LEFT SIDE: SIDEBAR ==================== -->
+                    <aside class="roadmap-sidebar">
+                        <div class="sidebar-header">
+                            <h2 class="sidebar-header__title">
+                                <span class="title-icon"><i class="fas fa-list-ul"></i></span> مسار التعلم
+                            </h2>
+                            <button class="sidebar-close-btn" aria-label="Close steps menu"><i
+                                    class="fas fa-times"></i></button>
+                        </div>
+                        <div class="steps-list" role="tablist">
+
+                            <!-- Step 1: مقدمة في البرمجة (Active) -->
+                            <button class="step-item step-item--active" role="tab" aria-selected="true"
+                                data-step-id="intro" data-step-number="1">
+                                <span class="step-item__status" aria-hidden="true"><i class="fas fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">مقدمة في البرمجة</span>
+                                    <span class="step-item__subtitle">أساسيات ومفاهيم أولية</span>
+                                </span>
+                                <span class="step-item__number">1</span>
+                            </button>
+
+                            <!-- Step 2: المتغيرات وأنواع البيانات -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="variables"
+                                data-step-number="2">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">المتغيرات وأنواع البيانات</span>
+                                    <span class="step-item__subtitle">Variables & Data Types</span>
+                                </span>
+                                <span class="step-item__number">2</span>
+                            </button>
+
+                            <!-- Step 3: الإدخال والإخراج -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="io"
+                                data-step-number="3">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">الإدخال والإخراج</span>
+                                    <span class="step-item__subtitle">Input & Output</span>
+                                </span>
+                                <span class="step-item__number">3</span>
+                            </button>
+
+                            <!-- Step 4: العمليات -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="operators"
+                                data-step-number="4">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">العمليات</span>
+                                    <span class="step-item__subtitle">Operators</span>
+                                </span>
+                                <span class="step-item__number">4</span>
+                            </button>
+
+                            <!-- Step 5: الجمل الشرطية -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="conditionals"
+                                data-step-number="5">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">الجمل الشرطية</span>
+                                    <span class="step-item__subtitle">Conditionals (if, else, switch)</span>
+                                </span>
+                                <span class="step-item__number">5</span>
+                            </button>
+
+                            <!-- Step 6: الحلقات -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="loops"
+                                data-step-number="6">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">الحلقات</span>
+                                    <span class="step-item__subtitle">Loops (for, while, do-while)</span>
+                                </span>
+                                <span class="step-item__number">6</span>
+                            </button>
+
+                            <!-- Step 7: الدوال -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="functions"
+                                data-step-number="7">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">الدوال</span>
+                                    <span class="step-item__subtitle">Functions</span>
+                                </span>
+                                <span class="step-item__number">7</span>
+                            </button>
+
+                            <!-- Step 8: المصفوفات -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="arrays"
+                                data-step-number="8">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">المصفوفات</span>
+                                    <span class="step-item__subtitle">Arrays</span>
+                                </span>
+                                <span class="step-item__number">8</span>
+                            </button>
+
+                            <!-- Step 9: النصوص -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="strings"
+                                data-step-number="9">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">النصوص</span>
+                                    <span class="step-item__subtitle">Strings</span>
+                                </span>
+                                <span class="step-item__number">9</span>
+                            </button>
+
+                            <!-- Step 10: المؤشرات -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="pointers"
+                                data-step-number="10">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">المؤشرات</span>
+                                    <span class="step-item__subtitle">Pointers</span>
+                                </span>
+                                <span class="step-item__number">10</span>
+                            </button>
+
+                            <!-- Step 11: Struct -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="struct"
+                                data-step-number="11">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Struct</span>
+                                    <span class="step-item__subtitle">الهياكل</span>
+                                </span>
+                                <span class="step-item__number">11</span>
+                            </button>
+
+                            <!-- Step 12: Debugging -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="debugging"
+                                data-step-number="12">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">تصحيح الأخطاء</span>
+                                    <span class="step-item__subtitle">Debugging</span>
+                                </span>
+                                <span class="step-item__number">12</span>
+                            </button>
+
+                            <!-- Step 13: Problem Solving -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="problem-solving"
+                                data-step-number="13">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">التفكير المنطقي وحل المشكلات</span>
+                                    <span class="step-item__subtitle">Problem Solving</span>
+                                </span>
+                                <span class="step-item__number">13</span>
+                            </button>
+
+                            <!-- Step 14: File Handling -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="file-handling"
+                                data-step-number="14">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">التعامل مع الملفات</span>
+                                    <span class="step-item__subtitle">File Handling</span>
+                                </span>
+                                <span class="step-item__number">14</span>
+                            </button>
+
+                            <!-- Step 15: Project 1 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="project1"
+                                data-step-number="15">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">مشروع 1</span>
+                                    <span class="step-item__subtitle">تطبيق عملي</span>
+                                </span>
+                                <span class="step-item__number">15</span>
+                            </button>
+
+                            <!-- Step 16: Project 2 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="project2"
+                                data-step-number="16">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">مشروع 2</span>
+                                    <span class="step-item__subtitle">تطبيق عملي متوسط</span>
+                                </span>
+                                <span class="step-item__number">16</span>
+                            </button>
+
+                            <!-- Step 17: Project 3 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="project3"
+                                data-step-number="17">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">مشروع 3</span>
+                                    <span class="step-item__subtitle">مشروع متكامل</span>
+                                </span>
+                                <span class="step-item__number">17</span>
+                            </button>
+
+                        </div>
+                    </aside>
+
+                    <!-- ==================== RIGHT SIDE: CONTENT PANEL ==================== -->
+                    <div class="roadmap-content">
+
+                        <!-- Step 1 Content: مقدمة في البرمجة -->
+                        <div class="step-content step-content--active" data-step-content="intro">
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 1 من 17</span>
+                                    <h2 class="content-block__title">مقدمة في البرمجة</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        البرمجة هي عملية كتابة تعليمات للحاسوب لتنفيذ مهام محددة. في هذه المرحلة، ستتعلم
+                                        أساسيات لغة C++، كيفية إعداد بيئة التطوير (IDE)، وكيفية كتابة أول برنامج لك
+                                        (Hello World).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        فهم أساسيات البرمجة هو حجر الزاوية لكل شيء. C++ هي لغة قوية تستخدم في تطوير
+                                        الألعاب، أنظمة التشغيل، والتطبيقات عالية الأداء.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        في بداية رحلتك التعليمية، وقبل تعلم أي شيء آخر. هذه المفاهيم تنطبق على جميع لغات
+                                        البرمجة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLvGNfY-tFUN8D7uAQzkBfMkJ7XAFWSsIv&si=kcidTQpDrnmPt9RA"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLDoPjvoNmBAx8xKvAXpb6f0Urj98Xo7zg&si=YEJF0Nmkn6E07lHx"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="intro">
+                                        <i class="fas fa-check"></i> تم الإكمال
+                                    </button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="intro">
+                                        الخطوة التالية <i class="fas fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 Content: المتغيرات وأنواع البيانات -->
+                        <div class="step-content" data-step-content="variables" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 2 من 17</span>
+                                    <h2 class="content-block__title">المتغيرات وأنواع البيانات</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المتغيرات هي حاويات لتخزين البيانات. في C++، هناك أنواع بيانات أساسية مثل:
+                                        int (أعداد صحيحة)، float (أعداد عشرية)، double (أعداد عشرية دقيقة)، char
+                                        (حروف)، و bool (صح/خطأ).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المتغيرات هي أساس أي برنامج. بدونها، لا يمكنك تخزين أو معالجة أي بيانات. كل
+                                        تطبيق يعتمد على المتغيرات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        كلما احتجت لتخزين أي نوع من البيانات مثل الأرقام، النصوص، أو القيم المنطقية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&si=5xi6LGcbD-wgiLkp"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @Elzero[01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLJzrJ6NUlRb8e5o0jGe8yHYGy2Mu17Eeg&si=eEr-VT7T2m7DYSRY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @MohamedElDesouki
+                                                [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajFAiw4s1U4QbGszcQ-rAb3&si=CcIwtNfHQw7CmUwe"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="variables"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="variables">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content: الإدخال والإخراج -->
+                        <div class="step-content" data-step-content="io" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 3 من 17</span>
+                                    <h2 class="content-block__title">الإدخال والإخراج</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        في C++، نستخدم `cin` لإدخال البيانات من المستخدم، و `cout` لعرض البيانات على
+                                        الشاشة. ستتعلم كيفية التفاعل مع المستخدم من خلال إدخال وإخراج البيانات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        بدون الإدخال والإخراج، لن يتمكن المستخدم من التفاعل مع برنامجك. هذه هي الطريقة
+                                        الأساسية للتواصل مع المستخدم.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        في أي برنامج يحتاج إلى استقبال بيانات من المستخدم أو عرض نتائج.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&si=5xi6LGcbD-wgiLkp"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @Elzero[01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLJzrJ6NUlRb8e5o0jGe8yHYGy2Mu17Eeg&si=eEr-VT7T2m7DYSRY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @MohamedElDesouki
+                                                [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajFAiw4s1U4QbGszcQ-rAb3&si=CcIwtNfHQw7CmUwe"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="io"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="io">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 Content: العمليات -->
+                        <div class="step-content" data-step-content="operators" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 4 من 17</span>
+                                    <h2 class="content-block__title">العمليات</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        العمليات (Operators) هي رموز تستخدم لإجراء عمليات حسابية أو منطقية. في C++، هناك
+                                        عمليات حسابية (+، -، *، /، %) وعمليات مقارنة (==، !=، <،>، <=،>=) وعمليات
+                                                منطقية (&&، ||، !).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        العمليات تسمح لك بمعالجة البيانات واتخاذ القرارات بناءً على شروط معينة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        في أي عملية حسابية، مقارنة قيم، أو إنشاء شروط معقدة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&si=5xi6LGcbD-wgiLkp"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @Elzero[01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLJzrJ6NUlRb8e5o0jGe8yHYGy2Mu17Eeg&si=eEr-VT7T2m7DYSRY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @MohamedElDesouki
+                                                [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajFAiw4s1U4QbGszcQ-rAb3&si=CcIwtNfHQw7CmUwe"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="operators"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="operators">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step 5 Content: الجمل الشرطية -->
+                        <div class="step-content" data-step-content="conditionals" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 5 من 17</span>
+                                    <h2 class="content-block__title">الجمل الشرطية</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الجمل الشرطية (Conditional Statements) تسمح للبرنامج باتخاذ قرارات مختلفة بناءً
+                                        على شروط معينة. في C++،
+                                        نستخدم <code>if</code>، <code>else if</code>، <code>else</code>، و
+                                        <code>switch</code> لتنفيذ أكواد
+                                        مختلفة حسب حالة معينة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الجمل الشرطية تمكن البرامج من أن تكون ذكية وقادرة على التكيف مع المدخلات
+                                        المختلفة. بدونها، ستكون
+                                        البرامج خطية وتنفذ نفس التعليمات دائماً.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        عندما تريد التحقق من صحة المدخلات، أو تنفيذ كود مختلف حسب حالة معينة، أو إنشاء
+                                        قوائم اختيار متعددة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&si=5xi6LGcbD-wgiLkp"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @Elzero[01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLJzrJ6NUlRb8e5o0jGe8yHYGy2Mu17Eeg&si=eEr-VT7T2m7DYSRY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @MohamedElDesouki
+                                                [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajFAiw4s1U4QbGszcQ-rAb3&si=CcIwtNfHQw7CmUwe"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="conditionals"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="conditionals">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 Content: الحلقات -->
+                        <div class="step-content" data-step-content="loops" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 6 من 17</span>
+                                    <h2 class="content-block__title">الحلقات (Loops)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الحلقات (Loops) تسمح بتنفيذ نفس الكود عدة مرات. في C++، هناك ثلاثة أنواع من
+                                        الحلقات: <code>for</code>،
+                                        <code>while</code>، و <code>do-while</code>. كل نوع له استخداماته الخاصة حسب
+                                        الحاجة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الحلقات توفر الوقت والجهد. بدلاً من كتابة نفس الكود 100 مرة، يمكنك كتابة حلقة
+                                        واحدة. كما أنها أساسية
+                                        لمعالجة المصفوفات والمجموعات الكبيرة من البيانات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        عندما تريد تكرار مهمة عدة مرات، معالجة قوائم من البيانات، أو إنشاء أنماط متكررة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&si=5xi6LGcbD-wgiLkp"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @Elzero[01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLJzrJ6NUlRb8e5o0jGe8yHYGy2Mu17Eeg&si=eEr-VT7T2m7DYSRY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @MohamedElDesouki
+                                                [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajFAiw4s1U4QbGszcQ-rAb3&si=CcIwtNfHQw7CmUwe"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="loops"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="loops">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 Content: الدوال -->
+                        <div class="step-content" data-step-content="functions" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 7 من 17</span>
+                                    <h2 class="content-block__title">الدوال (Functions)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الدوال (Functions) هي كتل من الكود قابلة لإعادة الاستخدام. تأخذ مدخلات
+                                        (parameters)، تنفذ عمليات محددة،
+                                        وتعيد مخرجات (return value). في C++، يمكنك إنشاء دوال خاصة بك أو استخدام دوال
+                                        جاهزة من المكتبات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الدوال هي أساس البرمجة المعيارية. بدلاً من تكرار نفس الكود عدة مرات، يمكنك كتابة
+                                        دالة واحدة واستدعائها
+                                        كلما احتجتها. هذا يقلل من الأخطاء ويسهل الصيانة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        كلما وجدت نفسك تكرر نفس الكود في عدة أماكن، أو عندما تريد تجميع مجموعة من
+                                        العمليات تحت اسم واحد.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&si=5xi6LGcbD-wgiLkp"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @Elzero[01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLJzrJ6NUlRb8e5o0jGe8yHYGy2Mu17Eeg&si=eEr-VT7T2m7DYSRY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @MohamedElDesouki
+                                                [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajFAiw4s1U4QbGszcQ-rAb3&si=CcIwtNfHQw7CmUwe"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="functions"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="functions">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 8 Content: المصفوفات -->
+                        <div class="step-content" data-step-content="arrays" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 8 من 17</span>
+                                    <h2 class="content-block__title">المصفوفات (Arrays)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المصفوفات (Arrays) هي هياكل بيانات تخزن مجموعة من العناصر من نفس النوع في موقع
+                                        متصل بالذاكرة. يمكنك
+                                        الوصول إلى أي عنصر باستخدام الفهرس (index) الخاص به.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المصفوفات هي أكثر هياكل البيانات استخداماً في البرمجة. كل تطبيق تقريباً يستخدم
+                                        المصفوفات لتخزين ومعالجة
+                                        قوائم من البيانات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        لتخزين قوائم من البيانات مثل درجات الطلاب، أرقام الموظفين، أو أي مجموعة من
+                                        العناصر المتشابهة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&si=5xi6LGcbD-wgiLkp"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @Elzero[01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLJzrJ6NUlRb8e5o0jGe8yHYGy2Mu17Eeg&si=eEr-VT7T2m7DYSRY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @MohamedElDesouki
+                                                [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajFAiw4s1U4QbGszcQ-rAb3&si=CcIwtNfHQw7CmUwe"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="arrays"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="arrays">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 Content: النصوص -->
+                        <div class="step-content" data-step-content="strings" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 9 من 17</span>
+                                    <h2 class="content-block__title">النصوص (Strings)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        النصوص (Strings) هي سلاسل من الحروف. في C++، يمكنك التعامل مع النصوص باستخدام
+                                        مصفوفات من نوع char أو
+                                        باستخدام مكتبة <code>string</code> التي توفر دوالاً قوية للتعامل مع النصوص
+                                        بسهولة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        النصوص تستخدم في كل تطبيق تقريباً: أسماء المستخدمين، الرسائل، المدخلات النصية،
+                                        معالجة الملفات النصية،
+                                        وغيرها الكثير.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        في أي تطبيق يحتاج إلى معالجة نصوص: تطبيقات المحادثة، محررات النصوص، قواعد
+                                        البيانات، وغيرها.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&si=5xi6LGcbD-wgiLkp"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @Elzero[01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLJzrJ6NUlRb8e5o0jGe8yHYGy2Mu17Eeg&si=eEr-VT7T2m7DYSRY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @MohamedElDesouki
+                                                [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajFAiw4s1U4QbGszcQ-rAb3&si=CcIwtNfHQw7CmUwe"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="strings"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="strings">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 10 Content: المؤشرات -->
+                        <div class="step-content" data-step-content="pointers" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 10 من 17</span>
+                                    <h2 class="content-block__title">المؤشرات (Pointers)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المؤشرات (Pointers) هي متغيرات تخزن عنوان ذاكرة متغير آخر. تسمح بالتعامل المباشر
+                                        مع الذاكرة، وهو ما يميز
+                                        C++ عن العديد من اللغات الأخرى.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المؤشرات تمكنك من إدارة الذاكرة بكفاءة، إنشاء هياكل بيانات ديناميكية، وتحسين
+                                        أداء البرامج. هي مفهوم أساسي
+                                        في C++.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        في تخصيص الذاكرة الديناميكي، تمرير الدوال بالمرجع، إنشاء قوائم مرتبطة، وأشجار
+                                        البحث.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL2xsPNbpw3oh72q9DN-dzDG_tgoS12kzG&si=lL35DValprQOoXRz"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @MahmoudAbdelrazek
+                                                [01]</a></li>
+                                        <li><a href="https://youtu.be/zuegQmMdy8M?si=BVYrikV5RvaMvh2k"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Video @FreeCodeCamp [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLtqeb2-_b-2DB8rsohfAB0w1Ue8Bc0Hsx&si=UYo_ChXMK3fHqHzS"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist Memory
+                                                Management[03]</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="pointers"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="pointers">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 11 Content: Struct -->
+                        <div class="step-content" data-step-content="struct" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 11 من 17</span>
+                                    <h2 class="content-block__title">Struct (الهياكل)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Struct (الهياكل) هي طريقة لتجميع متغيرات من أنواع مختلفة تحت اسم واحد. تسمح لك
+                                        بإنشاء أنواع بيانات
+                                        مخصصة لتمثيل كائنات حقيقية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الـ Struct هي أساس البرمجة الكينونية (OOP) في C++. تساعد في تنظيم البيانات وجعل
+                                        الكود أكثر قابلية
+                                        للقراءة والصيانة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        عندما تريد تمثيل كائن حقيقي مثل طالب، موظف، سيارة، أو أي كيان يحتوي على عدة
+                                        خصائص.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&si=5xi6LGcbD-wgiLkp"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @Elzero[01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLJzrJ6NUlRb8e5o0jGe8yHYGy2Mu17Eeg&si=eEr-VT7T2m7DYSRY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @MohamedElDesouki
+                                                [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajFAiw4s1U4QbGszcQ-rAb3&si=CcIwtNfHQw7CmUwe"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="struct"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="struct">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 12 Content: Debugging -->
+                        <div class="step-content" data-step-content="debugging" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 12 من 17</span>
+                                    <h2 class="content-block__title">تصحيح الأخطاء (Debugging)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        تصحيح الأخطاء (Debugging) هو عملية إيجاد وإصلاح الأخطاء (Bugs) في البرنامج.
+                                        ستتعلم استخدام أدوات
+                                        التصحيح مثل breakpoints، watch variables، وتتبع تدفق البرنامج خطوة بخطوة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        تصحيح الأخطاء هي مهارة أساسية لكل مبرمج. معظم وقت البرمجة يُقضى في تصحيح الأخطاء
+                                        وليس في كتابة كود جديد.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        عندما يحدث خطأ في برنامجك، أو عندما لا يعمل البرنامج كما هو متوقع.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtu.be/_EGk-5ozWR0?si=Ak3elXkZlscpliJW"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Video [01]</a></li>
+                                        <li><a href="https://youtu.be/zw3G8VpfUh0?si=XL-bk3vNuRo9Q9qg"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Video [02]</a></li>
+                                        <li><a href="https://youtu.be/vAzLj_MaiMc?si=Vc5FlY2mgdM0AqBA"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Video [03]</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="debugging"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="debugging">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 13 Content: التفكير المنطقي وحل المشكلات -->
+                        <div class="step-content" data-step-content="problem-solving" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 13 من 17</span>
+                                    <h2 class="content-block__title">التفكير المنطقي وحل المشكلات</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        التفكير المنطقي هو مهارة تحليل المشكلات إلى أجزاء صغيرة وإيجاد حلول خطوة بخطوة.
+                                        ستتعلم كيفية تقسيم
+                                        المشكلات الكبيرة، كتابة الخوارزميات، وتقييم الحلول المختلفة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        هذه هي المهارة الأهم في البرمجة. الشركات الكبرى تختبر مهارات حل المشكلات قبل أي
+                                        شيء آخر. بدونها، لن
+                                        تستطيع بناء أي تطبيق حقيقي.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        في كل مشكلة تواجهها أثناء البرمجة. من بناء تطبيق بسيط إلى حل مشكلة معقدة في
+                                        العمل.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLDoPjvoNmBAyX4CCOP--TR36SfD5g7gru&si=AaYpaMYGWmRXvVw3"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PL1WUzFgZVuFg59PV0tUvsm9K3WbX2jNXk&si=Y5bXMU2NMsvRiggh"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>
+                                                Playlist [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PL3X--QIIK-OEwPmZVfltqCYy6_RuwXr4A&si=5YnQjacgX-g8_n2h"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [03]</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="problem-solving"><i
+                                            class="fas fa-check"></i>
+                                        تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="problem-solving">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 14 Content: التعامل مع الملفات -->
+                        <div class="step-content" data-step-content="file-handling" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 14 من 17</span>
+                                    <h2 class="content-block__title">التعامل مع الملفات (File Handling)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        التعامل مع الملفات يسمح لبرنامجك بقراءة وكتابة البيانات على القرص الصلب. في C++،
+                                        نستخدم مكتبة
+                                        <code>fstream</code> للتعامل مع الملفات النصية والثنائية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        بدون التعامل مع الملفات، تفقد البيانات بعد إغلاق البرنامج. هذه المهارة ضرورية
+                                        لتطبيقات قواعد البيانات،
+                                        إعدادات المستخدم، وتخزين البيانات بشكل دائم.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        عندما تريد حفظ بيانات المستخدم، قراءة ملفات التكوين، أو إنشاء تقارير.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtu.be/TwtQhd3lg2A?si=pYP5u9mSQxPruq0x"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Video [01]</a></li>
+                                        <li><a href="https://youtu.be/nJSgD-iBi7c?si=bNY1Wf9pw7J_9vOz"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Video [02]</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="file-handling"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="file-handling">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 15 Content: مشروع 1 -->
+                        <div class="step-content" data-step-content="project1" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 15 من 17</span>
+                                    <h2 class="content-block__title">مشروع 1: تطبيق عملي</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>مشروع: حاسبة بسيطة (Simple Calculator)</strong><br>
+                                        قم ببناء برنامج يقوم بالعمليات الحسابية الأساسية (جمع، طرح، ضرب، قسمة) باستخدام
+                                        الدوال والجمل الشرطية.
+                                        يجب أن يتعامل البرنامج مع المدخلات من المستخدم ويعرض النتائج بشكل منظم.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المهارات المستخدمة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المتغيرات، الإدخال والإخراج، العمليات، الجمل الشرطية، الدوال.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> نصائح
+                                    </h3>
+                                    <p class="content-section__text">
+                                        - ابدأ بكتابة الخوارزمية على الورق أولاً<br>
+                                        - استخدم دوال منفصلة لكل عملية حسابية<br>
+                                        - أضف التحقق من صحة المدخلات (input validation)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        إضافية
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLnrGSSGEsAJki5rBM7PZY9W464EunKf2K&si=7RUmENXw1aIe1-Xi"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> أفكار لمشاريع إضافية
+                                            </a></li>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="project1"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="project1">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 16 Content: مشروع 2 -->
+                        <div class="step-content" data-step-content="project2" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 16 من 17</span>
+                                    <h2 class="content-block__title">مشروع 2: تطبيق عملي متوسط</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>مشروع: نظام إدارة الطلاب (Student Management System)</strong><br>
+                                        قم ببناء برنامج لإدارة بيانات الطلاب (الاسم، العمر، الدرجات). يجب أن يشمل
+                                        البرنامج إضافة طالب، عرض
+                                        الطلاب، البحث عن طالب، وحساب المتوسط.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المهارات المستخدمة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المصفوفات، Struct، الحلقات، الدوال، التعامل مع الملفات (لحفظ البيانات).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> نصائح
+                                    </h3>
+                                    <p class="content-section__text">
+                                        - استخدم Struct لتمثيل بيانات الطالب<br>
+                                        - أضف قائمة تفاعلية للمستخدم (Menu)<br>
+                                        - استخدم الملفات لحفظ البيانات بشكل دائم
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        إضافية
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLoDbJ7we7udWG8C3sf70oQisekoRkzb7F&si=cubVn4MxzEXdriZO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>أفكار لمشاريع إضافية</a></li>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="project2"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="project2">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 17 Content: مشروع 3 -->
+                        <div class="step-content" data-step-content="project3" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 17 من 17</span>
+                                    <h2 class="content-block__title">مشروع 3: مشروع متكامل</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>مشروع: نظام بسيط لإدارة المكتبة (Library Management System)</strong><br>
+                                        قم ببناء نظام متكامل لإدارة الكتب والمستخدمين. يشمل إضافة كتب، حذف كتب، البحث عن
+                                        كتب، إعارة كتاب، إرجاع
+                                        كتاب، وعرض قائمة الكتب المتاحة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المهارات المستخدمة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        جميع المفاهيم السابقة: Struct، المصفوفات، الدوال، الحلقات، المؤشرات، التعامل مع
+                                        الملفات، والجمل الشرطية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> نصائح
+                                    </h3>
+                                    <p class="content-section__text">
+                                        - خطط للمشروع قبل البدء (ER Diagram، Use Cases)<br>
+                                        - قسم المشروع إلى ملفات متعددة (header files)<br>
+                                        - استخدم المؤشرات لإدارة الذاكرة بكفاءة<br>
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        إضافية
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLm877Wx3hfJ3HMQzJJyYlS4gdj2Y31CsA&si=nbk3oxaMffYWHBZA"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> أفكار
+                                                لمشاريع إضافية</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="project3"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="project3">إكمال المسار
+                                        🎉 <i class="fas fa-trophy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <i class="fas fa-code"></i> NextStep <span class="footer__logo-arabic">| الخطوة القادمة</span>
+                    </a>
+                    <p class="footer__tagline">مسارات واضحة، بدون تشتت</p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html" class="footer__nav-link">الرئيسية</a></li>
+                        <li><a href="roadmaps.html" class="footer__nav-link">المسارات</a></li>
+                        <li><a href="assessment/assessment.html" class="footer__nav-link">تقييم سريع</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    <p>جميع الحقوق محفوظة © 2025 NextStep | الخطوة القادمة</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="visually-hidden" aria-live="polite" aria-atomic="true" id="aria-live-region"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

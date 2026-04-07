@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="مسار تصميم البرمجيات - تعلم OOP، Clean Code، SOLID Principles، Design Patterns، و System Design. من الصفر إلى نظام متكامل.">
+    <title>NextStep | تصميم البرمجيات — من OOP إلى System Design</title>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="roadmap" data-roadmap-id="software-design">
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="site-header" aria-label="Main navigation">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html" class="logo-link" aria-label="NextStep home page">
+                    <i class="fas fa-code"></i> NextStep <span class="logo__arabic">| الخطوة القادمة</span>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="mobile-menu-toggle__icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <nav class="navbar__nav" aria-label="Primary navigation">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="index.html" class="nav-menu__link">الرئيسية</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="roadmaps.html" class="nav-menu__link nav-menu__link--active"
+                            aria-current="page">المسارات</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="drawer-overlay"></div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content" class="roadmap-page">
+
+        <!-- ==================== ROADMAP HEADER ==================== -->
+        <section class="roadmap-header">
+            <div class="container">
+                <div class="roadmap-header__content">
+                    <div class="roadmap-header__info">
+                        <span class="roadmap-badge"><i class="fas fa-cubes"></i> مسار متقدم</span>
+                        <h1 class="roadmap-header__title">تصميم <span class="gradient-text">البرمجيات</span></h1>
+                        <p class="roadmap-header__description">
+                            تعلم كيفية بناء أنظمة نظيفة وقابلة للتوسّع باستخدام OOP، Clean Code، SOLID Principles،
+                            و Design Patterns. هذا المسار يجهزك لأن تكون مهندس برمجيات محترف.
+                        </p>
+                    </div>
+                    <div class="progress-section">
+                        <div class="progress-header">
+                            <span class="progress-label"><i class="fas fa-chart-line"></i> التقدم العام</span>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                        <div class="progress-bar__container">
+                            <div class="progress-bar__fill" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAIN LAYOUT: SIDEBAR + CONTENT ==================== -->
+        <div class="roadmap-layout">
+            <div class="container">
+                <div class="roadmap-layout__grid">
+
+                    <!-- ==================== LEFT SIDE: SIDEBAR ==================== -->
+                    <aside class="roadmap-sidebar">
+                        <div class="sidebar-header">
+                            <h2 class="sidebar-header__title">
+                                <span class="title-icon"><i class="fas fa-list-ul"></i></span> مسار التعلم
+                            </h2>
+                            <button class="sidebar-close-btn" aria-label="Close steps menu"><i
+                                    class="fas fa-times"></i></button>
+                        </div>
+                        <div class="steps-list" role="tablist">
+
+                            <!-- Steps 1-25 -->
+                            <button class="step-item step-item--active" role="tab" aria-selected="true"
+                                data-step-id="oop-intro" data-step-number="1">
+                                <span class="step-item__status" aria-hidden="true"><i class="fas fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">مقدمة في OOP Thinking</span>
+                                    <span class="step-item__subtitle">الكائنات، Procedural vs OOP</span>
+                                </span>
+                                <span class="step-item__number">1</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="classes"
+                                data-step-number="2">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Classes & Objects</span>
+                                    <span class="step-item__subtitle">تعريف الكلاسات وإنشاء الكائنات</span>
+                                </span>
+                                <span class="step-item__number">2</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="encapsulation"
+                                data-step-number="3">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Encapsulation</span>
+                                    <span class="step-item__subtitle">التحكم في الوصول، حماية البيانات</span>
+                                </span>
+                                <span class="step-item__number">3</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="abstraction"
+                                data-step-number="4">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Abstraction</span>
+                                    <span class="step-item__subtitle">إخفاء التعقيد، Interfaces</span>
+                                </span>
+                                <span class="step-item__number">4</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="inheritance"
+                                data-step-number="5">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Inheritance</span>
+                                    <span class="step-item__subtitle">إعادة استخدام الكود، علاقة الأب والابن</span>
+                                </span>
+                                <span class="step-item__number">5</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="polymorphism"
+                                data-step-number="6">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Polymorphism</span>
+                                    <span class="step-item__subtitle">Overloading / Overriding</span>
+                                </span>
+                                <span class="step-item__number">6</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="relationships"
+                                data-step-number="7">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Relationships Between Classes</span>
+                                    <span class="step-item__subtitle">Association, Aggregation, Composition</span>
+                                </span>
+                                <span class="step-item__number">7</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="mini-project-oop"
+                                data-step-number="8">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Mini Project (OOP Basics)</span>
+                                    <span class="step-item__subtitle">تطبيق نظام بسيط باستخدام OOP</span>
+                                </span>
+                                <span class="step-item__number">8</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="clean-code"
+                                data-step-number="9">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Clean Code Basics</span>
+                                    <span class="step-item__subtitle">تسمية المتغيرات، دوال صغيرة وواضحة</span>
+                                </span>
+                                <span class="step-item__number">9</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="code-structure"
+                                data-step-number="10">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Code Structure</span>
+                                    <span class="step-item__subtitle">فصل المسؤوليات، تقليل التعقيد</span>
+                                </span>
+                                <span class="step-item__number">10</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="refactoring"
+                                data-step-number="11">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Refactoring Basics</span>
+                                    <span class="step-item__subtitle">تحسين الكود، إزالة التكرار</span>
+                                </span>
+                                <span class="step-item__number">11</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="refactor-project"
+                                data-step-number="12">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Mini Refactor Project</span>
+                                    <span class="step-item__subtitle">تحسين مشروع OOP السابق</span>
+                                </span>
+                                <span class="step-item__number">12</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="srp"
+                                data-step-number="13">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Single Responsibility Principle (SRP)</span>
+                                    <span class="step-item__subtitle">كل كلاس مسؤول عن شيء واحد</span>
+                                </span>
+                                <span class="step-item__number">13</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="ocp"
+                                data-step-number="14">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Open/Closed Principle (OCP)</span>
+                                    <span class="step-item__subtitle">مفتوح للتوسعة مغلق للتعديل</span>
+                                </span>
+                                <span class="step-item__number">14</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="lsp"
+                                data-step-number="15">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Liskov Substitution Principle (LSP)</span>
+                                    <span class="step-item__subtitle">الاستبدال بدون كسر النظام</span>
+                                </span>
+                                <span class="step-item__number">15</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="isp"
+                                data-step-number="16">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Interface Segregation Principle (ISP)</span>
+                                    <span class="step-item__subtitle">Interfaces صغيرة ومركزة</span>
+                                </span>
+                                <span class="step-item__number">16</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="dip"
+                                data-step-number="17">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Dependency Inversion Principle (DIP)</span>
+                                    <span class="step-item__subtitle">الاعتماد على abstraction</span>
+                                </span>
+                                <span class="step-item__number">17</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="solid-project"
+                                data-step-number="18">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Apply SOLID Project</span>
+                                    <span class="step-item__subtitle">إعادة تصميم مشروع باستخدام SOLID</span>
+                                </span>
+                                <span class="step-item__number">18</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="dp-intro"
+                                data-step-number="19">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">مقدمة في Design Patterns</span>
+                                    <span class="step-item__subtitle">لماذا ومتى نستخدمها؟</span>
+                                </span>
+                                <span class="step-item__number">19</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="creational"
+                                data-step-number="20">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Creational Patterns</span>
+                                    <span class="step-item__subtitle">Singleton, Factory, Builder</span>
+                                </span>
+                                <span class="step-item__number">20</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="structural"
+                                data-step-number="21">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Structural Patterns</span>
+                                    <span class="step-item__subtitle">Adapter, Decorator, Facade</span>
+                                </span>
+                                <span class="step-item__number">21</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="behavioral"
+                                data-step-number="22">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Behavioral Patterns</span>
+                                    <span class="step-item__subtitle">Observer, Strategy, Command</span>
+                                </span>
+                                <span class="step-item__number">22</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="pattern-practice"
+                                data-step-number="23">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Pattern Practice</span>
+                                    <span class="step-item__subtitle">تطبيق كل Pattern في مثال عملي</span>
+                                </span>
+                                <span class="step-item__number">23</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="system-design"
+                                data-step-number="24">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">System Design Thinking (مقدمة)</span>
+                                    <span class="step-item__subtitle">تقسيم النظام، التفكير بالمستقبل</span>
+                                </span>
+                                <span class="step-item__number">24</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="final-project"
+                                data-step-number="25">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Final Project 🔥</span>
+                                    <span class="step-item__subtitle">نظام كامل متكامل</span>
+                                </span>
+                                <span class="step-item__number">25</span>
+                            </button>
+
+                        </div>
+                    </aside>
+
+                    <!-- ==================== RIGHT SIDE: CONTENT PANEL ==================== -->
+                    <div class="roadmap-content">
+
+                        <!-- Step 1 Content -->
+                        <div class="step-content step-content--active" data-step-content="oop-intro">
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 1 من 25</span>
+                                    <h2 class="content-block__title">مقدمة في OOP Thinking</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        البرمجة الكينونية (Object-Oriented Programming) هي نموذج برمجي يعتمد على مفهوم
+                                        "الكائنات" (Objects) التي تحتوي على بيانات (خصائص) وسلوكيات (دوال). بدلاً من
+                                        كتابة كود خطي، نقوم بتصميم النظام كمجموعة من الكائنات تتفاعل مع بعضها البعض.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        OOP تساعد في بناء أنظمة معقدة بطريقة منظمة وسهلة الصيانة. معظم لغات البرمجة
+                                        الحديثة (Java, C++, C#, Python, JavaScript) تدعم OOP. فهم OOP هو أساس لتطوير
+                                        البرمجيات الاحترافية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الفرق بين
+                                        Procedural و OOP
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Procedural : برمجة إجرائية تعتمد على دوال وإجراءات متسلسلة<br>
+                                        • OOP : برمجة كينونية تعتمد على كائنات تتفاعل مع بعضها<br>
+                                        • OOP : للأنظمة الكبيرة والمعقدة
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2Aaiq1oLvi9TlWtArJyAuCVow&si=EK6XQY_Qc4hQ1JJC"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PL1DUmTEdeA6KLEvIO0NyrkT91BVle8BOU&si=Wa5desR7vAL5rsb1"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLPt2dINI2MIbMba7tpx3qvmgOsDlpITwG&si=MVIvQQnXwEbsUku5"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [03]</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="oop-intro">
+                                        <i class="fas fa-check"></i> تم الإكمال
+                                    </button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="oop-intro">
+                                        الخطوة التالية <i class="fas fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 Content: Classes & Objects -->
+                        <div class="step-content" data-step-content="classes" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 2 من 25</span>
+                                    <h2 class="content-block__title">Classes & Objects</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الـ Class (كلاس) هو قالب أو مخطط لإنشاء الكائنات (Objects). يحدد الخصائص
+                                        (attributes) والسلوكيات
+                                        (methods) التي سيمتلكها الكائن. الـ Object هو نسخة فعلية من الـ Class.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الفرق بين Class و Object هو أساس OOP. فهم هذا المفهوم يمكنك من إنشاء كائنات
+                                        متعددة من نفس القالب، مما
+                                        يسهل إدارة الكود وإعادة استخدامه.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> مثال
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Class Car يحدد خصائص (color, model, speed) ودوال (start(), stop()). الكائنات هي
+                                        سيارات فعلية مثل
+                                        (Car1, Car2) لكل منها خصائصها الخاصة.
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2Aaiq1oLvi9TlWtArJyAuCVow&si=EK6XQY_Qc4hQ1JJC"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PL1DUmTEdeA6KLEvIO0NyrkT91BVle8BOU&si=Wa5desR7vAL5rsb1"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLPt2dINI2MIbMba7tpx3qvmgOsDlpITwG&si=MVIvQQnXwEbsUku5"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [03]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="classes"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="classes">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content: Encapsulation -->
+                        <div class="step-content" data-step-content="encapsulation" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 3 من 25</span>
+                                    <h2 class="content-block__title">Encapsulation</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        التغليف (Encapsulation) هو إخفاء البيانات الداخلية للكائن ومنع الوصول المباشر
+                                        إليها. يتم ذلك باستخدام
+                                        معدلات الوصول (Access Modifiers) مثل private و public، وتوفير دوال عامة
+                                        (Getters/Setters) للوصول إلى
+                                        البيانات بطريقة آمنة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        التغليف يحمي البيانات من التعديل غير المقصود، ويسمح بتغيير طريقة تنفيذ الكود دون
+                                        التأثير على الكود
+                                        الخارجي. كما أنه يسهل صيانة الكود ويقلل من الأخطاء.
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2Aaiq1oLvi9TlWtArJyAuCVow&si=EK6XQY_Qc4hQ1JJC"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PL1DUmTEdeA6KLEvIO0NyrkT91BVle8BOU&si=Wa5desR7vAL5rsb1"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLPt2dINI2MIbMba7tpx3qvmgOsDlpITwG&si=MVIvQQnXwEbsUku5"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [03]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="encapsulation"><i
+                                            class="fas fa-check"></i>
+                                        تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="encapsulation">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 Content: Abstraction -->
+                        <div class="step-content" data-step-content="abstraction" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 4 من 25</span>
+                                    <h2 class="content-block__title">Abstraction</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        التجريد (Abstraction) هو إخفاء التفاصيل الداخلية وإظهار الوظائف الأساسية فقط
+                                        للمستخدم. يتم ذلك باستخدام
+                                        الـ Abstract Classes والـ Interfaces.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        التجريد يبسط التعامل مع الأنظمة المعقدة. المستخدم يتعامل مع واجهة بسيطة دون
+                                        الحاجة لفهم التفاصيل الداخلية.
+                                        كما أنه يسمح بتغيير التنفيذ الداخلي دون التأثير على المستخدم.
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2Aaiq1oLvi9TlWtArJyAuCVow&si=EK6XQY_Qc4hQ1JJC"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PL1DUmTEdeA6KLEvIO0NyrkT91BVle8BOU&si=Wa5desR7vAL5rsb1"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLPt2dINI2MIbMba7tpx3qvmgOsDlpITwG&si=MVIvQQnXwEbsUku5"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [03]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="abstraction"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="abstraction">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 Content: Inheritance -->
+                        <div class="step-content" data-step-content="inheritance" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 5 من 25</span>
+                                    <h2 class="content-block__title">Inheritance</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الوراثة (Inheritance) هي آلية تسمح للكلاس الجديد (Child Class) بوراثة خصائص
+                                        ودوال كلاس موجود (Parent
+                                        Class). هذا يعزز إعادة استخدام الكود ويخلق علاقات هرمية بين الكلاسات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الوراثة تقلل من تكرار الكود وتسهل صيانته. كما أنها تعكس العلاقات الطبيعية في
+                                        العالم الحقيقي (مثل: سيارة
+                                        هي نوع من المركبات).
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2Aaiq1oLvi9TlWtArJyAuCVow&si=EK6XQY_Qc4hQ1JJC"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PL1DUmTEdeA6KLEvIO0NyrkT91BVle8BOU&si=Wa5desR7vAL5rsb1"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLPt2dINI2MIbMba7tpx3qvmgOsDlpITwG&si=MVIvQQnXwEbsUku5"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [03]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="inheritance"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="inheritance">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 Content: Polymorphism -->
+                        <div class="step-content" data-step-content="polymorphism" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 6 من 25</span>
+                                    <h2 class="content-block__title">Polymorphism</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        تعدد الأشكال (Polymorphism) هو قدرة الكائن على اتخاذ أشكال متعددة. هناك نوعان:
+                                        Overloading (دوال بنفس
+                                        الاسم ومعاملات مختلفة) و Overriding (إعادة تعريف دالة من الكلاس الأب في الكلاس
+                                        الابن).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        تعدد الأشكال يجعل الكود أكثر مرونة وقابلية للتوسع. يسمح بكتابة كود عام يتعامل مع
+                                        أنواع مختلفة من
+                                        الكائنات دون معرفة نوعها الدقيق.
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2Aaiq1oLvi9TlWtArJyAuCVow&si=EK6XQY_Qc4hQ1JJC"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PL1DUmTEdeA6KLEvIO0NyrkT91BVle8BOU&si=Wa5desR7vAL5rsb1"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLPt2dINI2MIbMba7tpx3qvmgOsDlpITwG&si=MVIvQQnXwEbsUku5"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [03]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="polymorphism"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="polymorphism">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 Content: Relationships Between Classes -->
+                        <div class="step-content" data-step-content="relationships" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 7 من 25</span>
+                                    <h2 class="content-block__title">Relationships Between Classes</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        العلاقات بين الكلاسات تصف كيفية تفاعل الكائنات مع بعضها البعض:
+                                        • Association: علاقة استخدام بسيطة
+                                        • Aggregation: علاقة "لديه" (has-a) ضعيفة
+                                        • Composition: علاقة "لديه" (has-a) قوية
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2Aaiq1oLvi9TlWtArJyAuCVow&si=EK6XQY_Qc4hQ1JJC"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PL1DUmTEdeA6KLEvIO0NyrkT91BVle8BOU&si=Wa5desR7vAL5rsb1"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLPt2dINI2MIbMba7tpx3qvmgOsDlpITwG&si=MVIvQQnXwEbsUku5"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [03]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="relationships"><i
+                                            class="fas fa-check"></i>
+                                        تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="relationships">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 8 Content: Mini Project (OOP Basics) -->
+                        <div class="step-content" data-step-content="mini-project-oop" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 8 من 25</span>
+                                    <h2 class="content-block__title">Mini Project (OOP Basics)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>نظام إدارة مكتبة بسيط</strong><br>
+                                        قم ببناء نظام باستخدام OOP يحتوي على كلاسات: Book، Member، Library. يجب أن
+                                        يشمل:<br>
+                                        • إضافة كتب وحذفها<br>
+                                        • إعارة كتاب وإرجاعه<br>
+                                        • عرض قائمة الكتب المتاحة
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="mini-project-oop"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="mini-project-oop">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 Content: Clean Code Basics -->
+                        <div class="step-content" data-step-content="clean-code" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 9 من 25</span>
+                                    <h2 class="content-block__title">Clean Code Basics</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Clean Code هو مجموعة من المبادئ والتقنيات لكتابة كود نظيف وسهل القراءة والصيانة.
+                                        يشمل:
+                                        • تسمية المتغيرات والدوال بشكل واضح ومعبر
+                                        • كتابة دوال صغيرة (لا تزيد عن 20 سطر)
+                                        • تجنب التكرار (DRY: Don't Repeat Yourself)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="clean-code"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="clean-code">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 10 Content: Code Structure -->
+                        <div class="step-content" data-step-content="code-structure" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 10 من 25</span>
+                                    <h2 class="content-block__title">Code Structure</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        هيكلة الكود تعني تنظيم الملفات والكلاسات والدوال بطريقة منطقية. تشمل:
+                                        • فصل المسؤوليات (Separation of Concerns)
+                                        • تنظيم الملفات حسب الوظيفة
+                                        • استخدام المجلدات (Folders) لتنظيم المشروع
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="code-structure"><i
+                                            class="fas fa-check"></i>
+                                        تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="code-structure">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 11 Content: Refactoring Basics -->
+                        <div class="step-content" data-step-content="refactoring" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 11 من 25</span>
+                                    <h2 class="content-block__title">Refactoring Basics</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        إعادة الهيكلة (Refactoring) هي عملية تحسين الكود دون تغيير سلوكه الخارجي. تشمل:
+                                        • إزالة التكرار (Remove Duplication)
+                                        • تبسيط الشروط المعقدة
+                                        • تقسيم الدوال الكبيرة إلى دوال أصغر
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="refactoring"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="refactoring">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 12 Content: Mini Refactor Project -->
+                        <div class="step-content" data-step-content="refactor-project" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 12 من 25</span>
+                                    <h2 class="content-block__title">Mini Refactor Project</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        قم بإعادة هيكلة مشروع OOP السابق (نظام المكتبة) باستخدام مبادئ Clean Code. تأكد
+                                        من:
+                                        • تسمية واضحة للمتغيرات والدوال
+                                        • دوال صغيرة ومركزة
+                                        • إزالة أي تكرار في الكود
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="refactor-project"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="refactor-project">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 13 Content: SRP -->
+                        <div class="step-content" data-step-content="srp" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 13 من 25</span>
+                                    <h2 class="content-block__title">Single Responsibility Principle (SRP)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        مبدأ المسؤولية الواحدة: "يجب أن يكون لكل كلاس سبب واحد فقط للتغيير". بمعنى أن كل
+                                        كلاس يجب أن يكون مسؤولاً
+                                        عن وظيفة واحدة فقط.
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6ThSyydEJTm7xJ3qEwE8Oyu&si=cN6EoaROXSaevl8n"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLwWuxCLlF_uevri_OpofVLXkRRFnZ7TSV&si=t4aNezph1_Fj3gYi"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="srp"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="srp">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 14 Content: OCP -->
+                        <div class="step-content" data-step-content="ocp" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 14 من 25</span>
+                                    <h2 class="content-block__title">Open/Closed Principle (OCP)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        مبدأ الـ Open/Closed: "الكلاسات يجب أن تكون مفتوحة للتوسعة، مغلقة للتعديل".
+                                        يمكننا إضافة وظائف جديدة دون
+                                        تعديل الكود الموجود.
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6ThSyydEJTm7xJ3qEwE8Oyu&si=cN6EoaROXSaevl8n"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLwWuxCLlF_uevri_OpofVLXkRRFnZ7TSV&si=t4aNezph1_Fj3gYi"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="ocp"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="ocp">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 15 Content: LSP -->
+                        <div class="step-content" data-step-content="lsp" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 15 من 25</span>
+                                    <h2 class="content-block__title">Liskov Substitution Principle (LSP)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        مبدأ الاستبدال: "إذا كان S كلاس فرعي من T، فيمكننا استبدال كائن من T بكائن من S
+                                        دون تغيير سلوك
+                                        البرنامج". بمعنى أن الكلاس الابن يجب أن يكون قابلاً للاستبدال بالكلاس الأب.
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6ThSyydEJTm7xJ3qEwE8Oyu&si=cN6EoaROXSaevl8n"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLwWuxCLlF_uevri_OpofVLXkRRFnZ7TSV&si=t4aNezph1_Fj3gYi"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="lsp"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="lsp">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 16 Content: ISP -->
+                        <div class="step-content" data-step-content="isp" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 16 من 25</span>
+                                    <h2 class="content-block__title">Interface Segregation Principle (ISP)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        مبدأ فصل الواجهات: "لا يجب إجبار الكلاس على تنفيذ واجهات لا يستخدمها". من الأفضل
+                                        تقسيم الواجهات الكبيرة
+                                        إلى واجهات أصغر وأكثر تخصصاً.
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6ThSyydEJTm7xJ3qEwE8Oyu&si=cN6EoaROXSaevl8n"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLwWuxCLlF_uevri_OpofVLXkRRFnZ7TSV&si=t4aNezph1_Fj3gYi"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="isp"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="isp">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 17 Content: DIP -->
+                        <div class="step-content" data-step-content="dip" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 17 من 25</span>
+                                    <h2 class="content-block__title">Dependency Inversion Principle (DIP)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        مبدأ عكس الاعتماد: "الاعتماد على التجريدات (Interfaces) وليس على التفاصيل
+                                        (Concrete Classes)". هذا
+                                        يقلل الاقتران بين المكونات ويسهل التغيير.
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6ThSyydEJTm7xJ3qEwE8Oyu&si=cN6EoaROXSaevl8n"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLwWuxCLlF_uevri_OpofVLXkRRFnZ7TSV&si=t4aNezph1_Fj3gYi"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="dip"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="dip">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 18 Content: Apply SOLID Project -->
+                        <div class="step-content" data-step-content="solid-project" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 18 من 25</span>
+                                    <h2 class="content-block__title">Apply SOLID Project</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        قم بإعادة تصميم مشروع المكتبة باستخدام مبادئ SOLID الخمسة. تأكد من تطبيق:
+                                        • SRP: كل كلاس مسؤول عن شيء واحد<br>
+                                        • OCP: قابل للتوسعة<br>
+                                        • LSP: استبدال آمن<br>
+                                        • ISP: واجهات صغيرة<br>
+                                        • DIP: اعتماد على التجريدات
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="solid-project"><i
+                                            class="fas fa-check"></i>
+                                        تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="solid-project">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 19 Content: مقدمة في Design Patterns -->
+                        <div class="step-content" data-step-content="dp-intro" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 19 من 25</span>
+                                    <h2 class="content-block__title">مقدمة في Design Patterns</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        أنماط التصميم (Design Patterns) هي حلول قابلة للتكرار لمشكلات شائعة في تصميم
+                                        البرمجيات. توفر طريقة
+                                        موحدة لحل المشكلات وتسهل التواصل بين المطورين.
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6STYkwXrOdYxj_dlGqzozZN&si=DFgvjeSlQaLwdN8T"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLYxGWFnJFttQcQLu3175cSa6RqtrzjTnw&si=9cbwBs_A-I1bRjQn"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="dp-intro"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="dp-intro">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 20 Content: Creational Patterns -->
+                        <div class="step-content" data-step-content="creational" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 20 من 25</span>
+                                    <h2 class="content-block__title">Creational Patterns</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الأنماط الإنشائية (Creational Patterns) تهتم بآليات إنشاء الكائنات:
+                                        • Singleton: ضمان وجود نسخة واحدة فقط من الكلاس<br>
+                                        • Factory: إنشاء كائنات دون تحديد النوع الدقيق<br>
+                                        • Builder: بناء كائنات معقدة خطوة بخطوة
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6STYkwXrOdYxj_dlGqzozZN&si=DFgvjeSlQaLwdN8T"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLYxGWFnJFttQcQLu3175cSa6RqtrzjTnw&si=9cbwBs_A-I1bRjQn"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="creational"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="creational">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 21 Content: Structural Patterns -->
+                        <div class="step-content" data-step-content="structural" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 21 من 25</span>
+                                    <h2 class="content-block__title">Structural Patterns</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الأنماط الهيكلية (Structural Patterns) تهتم بتركيب الكلاسات والكائنات:
+                                        • Adapter: تحويل واجهة كلاس إلى واجهة أخرى<br>
+                                        • Decorator: إضافة وظائف جديدة ديناميكياً<br>
+                                        • Facade: توفير واجهة مبسطة لنظام معقد
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6STYkwXrOdYxj_dlGqzozZN&si=DFgvjeSlQaLwdN8T"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLYxGWFnJFttQcQLu3175cSa6RqtrzjTnw&si=9cbwBs_A-I1bRjQn"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="structural"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="structural">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 22 Content: Behavioral Patterns -->
+                        <div class="step-content" data-step-content="behavioral" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 22 من 25</span>
+                                    <h2 class="content-block__title">Behavioral Patterns</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الأنماط السلوكية (Behavioral Patterns) تهتم بالتواصل بين الكائنات:
+                                        • Observer: إعلام الكائنات عند حدوث تغيير<br>
+                                        • Strategy: تغيير سلوك الخوارزمية في وقت التشغيل<br>
+                                        • Command: تغليف الطلب ككائن
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6STYkwXrOdYxj_dlGqzozZN&si=DFgvjeSlQaLwdN8T"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLYxGWFnJFttQcQLu3175cSa6RqtrzjTnw&si=9cbwBs_A-I1bRjQn"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="behavioral"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="behavioral">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 23 Content: Pattern Practice -->
+                        <div class="step-content" data-step-content="pattern-practice" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 23 من 25</span>
+                                    <h2 class="content-block__title">Pattern Practice</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        قم بتطبيق كل Pattern درسته في مثال عملي. مثلاً:
+                                        • Singleton: مدير اتصال قاعدة بيانات<br>
+                                        • Factory: إنشاء كائنات حسب النوع<br>
+                                        • Observer: نظام إشعارات<br>
+                                        • Strategy: خوارزميات دفع مختلفة
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6STYkwXrOdYxj_dlGqzozZN&si=DFgvjeSlQaLwdN8T"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLYxGWFnJFttQcQLu3175cSa6RqtrzjTnw&si=9cbwBs_A-I1bRjQn"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="pattern-practice"><i
+                                            class="fas fa-check"></i>
+                                        تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="pattern-practice">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step 24 Content: System Design Thinking (مقدمة) -->
+                        <div class="step-content" data-step-content="system-design" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 24 من 25</span>
+                                    <h2 class="content-block__title">System Design Thinking (مقدمة)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        تصميم الأنظمة (System Design) هو عملية تصميم بنية النظام البرمجي. تشمل:
+                                        • تقسيم النظام إلى مكونات أصغر (Modules)
+                                        • تحديد العلاقات بين المكونات
+                                        • التفكير في قابلية التوسع (Scalability)
+                                        • التعامل مع المتطلبات غير الوظيفية (الأداء، الأمان، التوفر)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        تصميم الأنظمة هو مهارة أساسية للمهندسين المتقدمين والـ Architects. يساعد في بناء
+                                        أنظمة قابلة للتوسع
+                                        وموثوقة. هذا الموضوع مهم جداً للمقابلات التقنية في كبرى الشركات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> المفاهيم
+                                        الأساسية
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Load Balancing: توزيع الحمل على عدة خوادم<br>
+                                        • Caching: تخزين البيانات المؤقتة لتحسين الأداء<br>
+                                        • Database Scaling: تقسيم قواعد البيانات (Sharding, Replication)<br>
+                                        • Microservices vs Monolithic: مقارنة بين العمارات المختلفة<br>
+                                        • CAP Theorem: التناسق، التوفر، تحمل التقسيم
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6STYkwXrOdYxj_dlGqzozZN&si=DFgvjeSlQaLwdN8T"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                        <li><a href="https://youtube.com/playlist?list=PLYxGWFnJFttQcQLu3175cSa6RqtrzjTnw&si=9cbwBs_A-I1bRjQn"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="system-design"><i
+                                            class="fas fa-check"></i>
+                                        تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="system-design">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 25 Content: Final Project 🔥 -->
+                        <div class="step-content" data-step-content="final-project" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 25 من 25</span>
+                                    <h2 class="content-block__title">Final Project 🔥</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>نظام إدارة المهام المتقدم (Advanced Task Management System)</strong><br>
+                                        قم ببناء نظام متكامل لإدارة المهام والمشاريع باستخدام جميع المفاهيم التي
+                                        تعلمتها:
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المتطلبات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>1. OOP:</strong><br>
+                                        • كلاسات: User, Task, Project, Comment, Notification<br>
+                                        • علاقات: Inheritance، Polymorphism، Encapsulation<br><br>
+
+                                        <strong>2. Clean Code:</strong><br>
+                                        • تسمية واضحة للمتغيرات والدوال<br>
+                                        • دوال صغيرة ومركزة (لا تزيد عن 20 سطر)<br>
+                                        • إزالة التكرار (DRY)<br><br>
+
+                                        <strong>3. SOLID Principles:</strong><br>
+                                        • SRP: كل كلاس مسؤول عن شيء واحد<br>
+                                        • OCP: قابل للتوسعة (إضافة أنواع جديدة من المهام)<br>
+                                        • LSP: استبدال آمن للكلاسات<br>
+                                        • ISP: واجهات صغيرة ومركزة<br>
+                                        • DIP: الاعتماد على التجريدات<br><br>
+
+                                        <strong>4. Design Patterns:</strong><br>
+                                        • Singleton: مدير الجلسة (Session Manager)<br>
+                                        • Factory: إنشاء مهام حسب النوع<br>
+                                        • Observer: نظام الإشعارات<br>
+                                        • Strategy: خوارزميات تصفية المهام المختلفة<br>
+                                        • Command: تنفيذ العمليات (إضافة، حذف، تعديل)<br><br>
+
+                                        <strong>5. System Design:</strong><br>
+                                        • هيكلة المشروع بطريقة قابلة للتوسع<br>
+                                        • فصل المسؤوليات (MVC أو Layered Architecture)<br>
+                                        • التفكير في الأداء وقابلية التوسع
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الوظائف
+                                        الأساسية
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • تسجيل الدخول وإنشاء حساب جديد<br>
+                                        • إنشاء مشاريع ومهام<br>
+                                        • تعيين مهام لمستخدمين آخرين<br>
+                                        • تحديد أولويات المهام (عالية، متوسطة، منخفضة)<br>
+                                        • إضافة تعليقات على المهام<br>
+                                        • إشعارات عند تغيير حالة المهمة<br>
+                                        • تقارير عن إنجاز المهام<br>
+                                        • بحث وتصفية المهام<br>
+                                        • حفظ البيانات في ملفات (JSON أو CSV)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> نصائح
+                                        للتطبيق
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><i class="fas fa-check-circle"></i> ابدأ بتصميم الـ Classes والعلاقات بينها
+                                        </li>
+                                        <li><i class="fas fa-check-circle"></i> استخدم Git للتحكم في الإصدارات</li>
+                                        <li><i class="fas fa-check-circle"></i> اكتب وثائق بسيطة للكود (Comments)</li>
+                                        <li><i class="fas fa-check-circle"></i> اختبر كل جزء قبل الانتقال للجزء التالي
+                                        </li>
+                                        <li><i class="fas fa-check-circle"></i> أضف معالجة للأخطاء (Error Handling)</li>
+                                        <li><i class="fas fa-check-circle"></i> راجع كودك بعد الانتهاء وابحث عن فرص
+                                            للتحسين</li>
+                                    </ul>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        إضافية
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="#" class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> نموذج
+                                                حل للمشروع</a></li>
+                                        <li><a href="#" class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> شرح خطوات
+                                                بناء المشروع</a></li>
+                                        <li><a href="#" class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> أفكار
+                                                لتوسيع المشروع</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="final-project"><i
+                                            class="fas fa-check"></i>
+                                        تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="final-project">إكمال
+                                        المسار 🎉 <i class="fas fa-trophy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <i class="fas fa-code"></i> NextStep <span class="footer__logo-arabic">| الخطوة القادمة</span>
+                    </a>
+                    <p class="footer__tagline">مسارات واضحة، بدون تشتت</p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html" class="footer__nav-link">الرئيسية</a></li>
+                        <li><a href="roadmaps.html" class="footer__nav-link">المسارات</a></li>
+                        <li><a href="assessment/assessment.html" class="footer__nav-link">تقييم سريع</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    <p>جميع الحقوق محفوظة © 2025 NextStep | الخطوة القادمة</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="visually-hidden" aria-live="polite" aria-atomic="true" id="aria-live-region"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

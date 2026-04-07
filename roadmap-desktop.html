@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="مسار تطوير تطبيقات سطح المكتب - تعلم C#، .NET، WPF، MVVM، Entity Framework، Async Programming، والمشاريع العملية. من الصفر إلى الاحتراف.">
+    <title>NextStep | تطوير تطبيقات سطح المكتب — من الصفر إلى الاحتراف</title>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="roadmap" data-roadmap-id="desktop">
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="site-header" aria-label="Main navigation">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html" class="logo-link" aria-label="NextStep home page">
+                    <i class="fas fa-code"></i> NextStep <span class="logo__arabic">| الخطوة القادمة</span>
+                </a>
+            </div>
+            <nav class="navbar__nav" aria-label="Primary navigation">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="index.html" class="nav-menu__link">الرئيسية</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="roadmaps.html" class="nav-menu__link nav-menu__link--active"
+                            aria-current="page">المسارات</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content" class="roadmap-page">
+
+        <!-- ==================== ROADMAP HEADER ==================== -->
+        <section class="roadmap-header">
+            <div class="container">
+                <div class="roadmap-header__content">
+                    <div class="roadmap-header__info">
+                        <span class="roadmap-badge"><i class="fas fa-desktop"></i> مسار تطوير تطبيقات سطح المكتب</span>
+                        <h1 class="roadmap-header__title">تطوير تطبيقات <span class="gradient-text">سطح المكتب</span>
+                        </h1>
+                        <p class="roadmap-header__description">
+                            تعلم كيفية بناء تطبيقات سطح مكتب احترافية باستخدام C# و .NET و WPF. هذا المسار يغطي
+                            الأساسيات، MVVM، Entity Framework، Async Programming، والمشاريع العملية.
+                        </p>
+                    </div>
+                    <div class="progress-section">
+                        <div class="progress-header">
+                            <span class="progress-label"><i class="fas fa-chart-line"></i> التقدم العام</span>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                        <div class="progress-bar__container">
+                            <div class="progress-bar__fill" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAIN LAYOUT: SIDEBAR + CONTENT ==================== -->
+        <div class="roadmap-layout">
+            <div class="container">
+                <div class="roadmap-layout__grid">
+
+                    <!-- ==================== LEFT SIDE: SIDEBAR ==================== -->
+                    <aside class="roadmap-sidebar">
+                        <div class="sidebar-header">
+                            <h2 class="sidebar-header__title">
+                                <span class="title-icon"><i class="fas fa-list-ul"></i></span> مسار التعلم
+                            </h2>
+                        </div>
+                        <div class="steps-list" role="tablist">
+
+                            <!-- Steps 1-15 -->
+                            <button class="step-item step-item--active" role="tab" aria-selected="true"
+                                data-step-id="csharp-fundamentals" data-step-number="1">
+                                <span class="step-item__status" aria-hidden="true"><i class="fas fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">C# Fundamentals</span>
+                                    <span class="step-item__subtitle">أساسيات لغة C#</span>
+                                </span>
+                                <span class="step-item__number">1</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false"
+                                data-step-id="dotnet-fundamentals" data-step-number="2">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">.NET Fundamentals</span>
+                                    <span class="step-item__subtitle">فهم بيئة .NET</span>
+                                </span>
+                                <span class="step-item__number">2</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="wpf"
+                                data-step-number="3">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">WPF (UI Framework) 🔥</span>
+                                    <span class="step-item__subtitle">XAML, Controls, Layout</span>
+                                </span>
+                                <span class="step-item__number">3</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="event-driven"
+                                data-step-number="4">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Event-Driven Programming</span>
+                                    <span class="step-item__subtitle">Events, Handlers, User Interaction</span>
+                                </span>
+                                <span class="step-item__number">4</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="data-binding"
+                                data-step-number="5">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Data Binding 🔥</span>
+                                    <span class="step-item__subtitle">Two-Way Binding, ObservableCollection</span>
+                                </span>
+                                <span class="step-item__number">5</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="mvvm"
+                                data-step-number="6">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">MVVM Architecture 🔥🔥</span>
+                                    <span class="step-item__subtitle">Model, View, ViewModel, Commands</span>
+                                </span>
+                                <span class="step-item__number">6</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="local-database"
+                                data-step-number="7">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Local Database</span>
+                                    <span class="step-item__subtitle">SQL Server / SQLite, Entity Framework</span>
+                                </span>
+                                <span class="step-item__number">7</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="file-system"
+                                data-step-number="8">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Working with Files</span>
+                                    <span class="step-item__subtitle">Read/Write, JSON, XML</span>
+                                </span>
+                                <span class="step-item__number">8</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="advanced-ui"
+                                data-step-number="9">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Advanced UI & UX</span>
+                                    <span class="step-item__subtitle">Styling, Custom Controls, Animations</span>
+                                </span>
+                                <span class="step-item__number">9</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="async-programming"
+                                data-step-number="10">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Async Programming ⚡</span>
+                                    <span class="step-item__subtitle">async/await, Task, Threading Basics</span>
+                                </span>
+                                <span class="step-item__number">10</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false"
+                                data-step-id="dependency-injection" data-step-number="11">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Dependency Injection</span>
+                                    <span class="step-item__subtitle">DI Concept, Services, Clean Code</span>
+                                </span>
+                                <span class="step-item__number">11</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="project1"
+                                data-step-number="12">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Project 1 🔥</span>
+                                    <span class="step-item__subtitle">Task Manager App (CRUD + DB + MVVM)</span>
+                                </span>
+                                <span class="step-item__number">12</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="advanced-concepts"
+                                data-step-number="13">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Advanced Concepts 🚀</span>
+                                    <span class="step-item__subtitle">Logging, Error Handling, Config Files</span>
+                                </span>
+                                <span class="step-item__number">13</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="deployment"
+                                data-step-number="14">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Deployment 📦</span>
+                                    <span class="step-item__subtitle">Build .exe, Installer, Publish</span>
+                                </span>
+                                <span class="step-item__number">14</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="final-project"
+                                data-step-number="15">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Final Project 🔥🔥</span>
+                                    <span class="step-item__subtitle">Full Desktop System (Store / Clinic)</span>
+                                </span>
+                                <span class="step-item__number">15</span>
+                            </button>
+
+                        </div>
+                    </aside>
+
+                    <!-- ==================== RIGHT SIDE: CONTENT PANEL ==================== -->
+                    <div class="roadmap-content">
+
+                        <!-- Step 1 Content: C# Fundamentals -->
+                        <div class="step-content step-content--active" data-step-content="csharp-fundamentals">
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 1 من 15</span>
+                                    <h2 class="content-block__title">C# Fundamentals</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        C# (C-Sharp) هي لغة برمجة حديثة متعددة الاستخدامات من Microsoft، تستخدم
+                                        لتطوير تطبيقات سطح المكتب، الويب، الألعاب (Unity)، وتطبيقات الهواتف.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Syntax Basics (الكود الأساسي، التعليقات، using)<br>
+                                        • Variables & Data Types (int, string, bool, double, var)<br>
+                                        • Control Flow (if/else, switch, for, while, foreach)<br>
+                                        • Functions (Methods, Parameters, Return Types, Overloading)<br>
+                                        • OOP (Classes, Objects, Inheritance, Encapsulation, Polymorphism)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 أساس قوي في اللغة
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6SWPbJNpiznp-Ok4A8J_23l&si=F2TBOV0tf5c5uywg"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="csharp-fundamentals">
+                                        <i class="fas fa-check"></i> تم الإكمال
+                                    </button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="csharp-fundamentals">
+                                        الخطوة التالية <i class="fas fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 Content: .NET Fundamentals -->
+                        <div class="step-content" data-step-content="dotnet-fundamentals" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 2 من 15</span>
+                                    <h2 class="content-block__title">.NET Fundamentals</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        .NET هو إطار عمل (Framework) من Microsoft يوفر بيئة لتشغيل وتطوير التطبيقات.
+                                        يتضمن مكتبات ضخمة وأدوات لتسهيل التطوير.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • ما هو .NET (Core vs Framework vs .NET 5/6/7/8)<br>
+                                        • CLR & Runtime Concept (Common Language Runtime)<br>
+                                        • Project Structure (ملفات المشروع، المجلدات)<br>
+                                        • NuGet Packages (إدارة المكتبات الخارجية)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 تفهم البيئة اللي شغال فيها
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLqPejUavRNTWqGYP-f1pHkbLYdbqi_Uhg&si=YsdXV375hgn41oM1"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done"
+                                        data-step-id="dotnet-fundamentals"><i class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="dotnet-fundamentals">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content: WPF -->
+                        <div class="step-content" data-step-content="wpf" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 3 من 15</span>
+                                    <h2 class="content-block__title">WPF (UI Framework) 🔥</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        WPF (Windows Presentation Foundation) هو إطار عمل لبناء واجهات مستخدم غنية
+                                        لتطبيقات سطح المكتب باستخدام XAML.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • ما هو WPF؟<br>
+                                        • XAML Basics (لغة تصميم الواجهات)<br>
+                                        • Controls (Button, TextBox, ListView, DataGrid, ComboBox)<br>
+                                        • Layout (Grid, StackPanel, WrapPanel, DockPanel)<br>
+                                        • Styling and Templates
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 Simple UI App (Form + Navigation)
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLqPejUavRNTVu6AWaG8HREYJDw6cL1oZA&si=9TT6sS4emVz9y2w8"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="wpf"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="wpf">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 Content: Event-Driven Programming -->
+                        <div class="step-content" data-step-content="event-driven" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 4 من 15</span>
+                                    <h2 class="content-block__title">Event-Driven Programming</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        البرمجة بالحدث (Event-Driven Programming) هي نموذج برمجي يعتمد على الأحداث
+                                        (مثل نقرات المستخدم) لتنفيذ الأكواد.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Events & Handlers (الأحداث ومعالجي الأحداث)<br>
+                                        • User Interaction (التفاعل مع المستخدم)<br>
+                                        • Input Handling (معالجة المدخلات: Keyboard, Mouse)<br>
+                                        • Custom Events (إنشاء أحداث مخصصة)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 تتعامل مع المستخدم
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="event-driven"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="event-driven">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 Content: Data Binding -->
+                        <div class="step-content" data-step-content="data-binding" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 5 من 15</span>
+                                    <h2 class="content-block__title">Data Binding 🔥</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        ربط البيانات (Data Binding) هو آلية تربط واجهة المستخدم بمصدر البيانات
+                                        تلقائياً، مما يقلل من الكود البرمجي ويحسن الصيانة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Binding Basics (OneWay, TwoWay, OneTime)<br>
+                                        • Two-Way Binding (ربط ثنائي الاتجاه)<br>
+                                        • ObservableCollection (لتحديث الـ UI تلقائياً)<br>
+                                        • INotifyPropertyChanged (إعلام الـ UI بالتغييرات)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 ربط UI مع البيانات مباشرة
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="data-binding"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="data-binding">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 Content: MVVM Architecture -->
+                        <div class="step-content" data-step-content="mvvm" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 6 من 15</span>
+                                    <h2 class="content-block__title">MVVM Architecture 🔥🔥</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        MVVM (Model-View-ViewModel) هو نمط معماري يفصل واجهة المستخدم عن منطق
+                                        الأعمال، مما يجعل الكود أكثر تنظيماً وقابلية للاختبار والصيانة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Model (البيانات ومنطق الأعمال)<br>
+                                        • View (واجهة المستخدم - XAML)<br>
+                                        • ViewModel (الوسيط بين Model و View)<br>
+                                        • Commands (ICommand لمعالجة الأحداث)<br>
+                                        • Separation of Concerns (فصل المسؤوليات)<br>
+                                        • Data Binding between View and ViewModel
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 تطبيق منظم باستخدام MVVM
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLhiFu-f80eo99itM8s6F9i7_Y1ty0dTL5&si=VQAedbn5ySg7TO8u"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="mvvm"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="mvvm">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 Content: Local Database -->
+                        <div class="step-content" data-step-content="local-database" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 7 من 15</span>
+                                    <h2 class="content-block__title">Local Database</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        دمج قاعدة بيانات محلية (SQL Server أو SQLite) مع تطبيق WPF لتخزين البيانات بشكل
+                                        دائم.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Database Integration (ربط قاعدة البيانات)<br>
+                                        • CRUD Operations (Create, Read, Update, Delete)<br>
+                                        • Entity Framework (ORM - Object Relational Mapping)<br>
+                                        • LINQ Queries (لغة الاستعلام)<br>
+                                        • Migrations (تحديث قاعدة البيانات)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 App مع قاعدة بيانات
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL4n1Qos4Tb6RP_OovpgjoHLkCVaYFy-aj&si=xkK-ebObyOy_jzEG"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="local-database"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="local-database">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 8 Content: Working with Files -->
+                        <div class="step-content" data-step-content="file-system" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 8 من 15</span>
+                                    <h2 class="content-block__title">Working with Files</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        التعامل مع نظام الملفات: قراءة وكتابة الملفات النصية، JSON، و XML.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • File System (قراءة وكتابة الملفات باستخدام File, FileInfo, Directory)<br>
+                                        • JSON (Serialize, Deserialize باستخدام Newtonsoft.Json أو System.Text.Json)<br>
+                                        • XML (قراءة وكتابة ملفات XML)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="file-system"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="file-system">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 Content: Advanced UI & UX -->
+                        <div class="step-content" data-step-content="advanced-ui" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 9 من 15</span>
+                                    <h2 class="content-block__title">Advanced UI & UX</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> المواضيع
+                                        المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Styling & Themes (تنسيق الواجهة، السمات)<br>
+                                        • Custom Controls (إنشاء عناصر تحكم مخصصة)<br>
+                                        • Animations Basics (الرسوم المتحركة)<br>
+                                        • Triggers و Visual States
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="advanced-ui"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="advanced-ui">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 10 Content: Async Programming -->
+                        <div class="step-content" data-step-content="async-programming" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 10 من 15</span>
+                                    <h2 class="content-block__title">Async Programming ⚡</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        البرمجة غير المتزامنة (Asynchronous Programming) تسمح بتنفيذ عمليات طويلة دون
+                                        تجميد واجهة المستخدم.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • async / await (الكلمات المفتاحية)<br>
+                                        • Task (تمثيل عملية غير متزامنة)<br>
+                                        • Threading Basics (أساسيات المعالجة المتعددة)<br>
+                                        • Avoid Deadlocks (تجنب التوقف)<br>
+                                        • ConfigureAwait
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 تطبيق سريع بدون تهنيج
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="async-programming"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="async-programming">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 11 Content: Dependency Injection -->
+                        <div class="step-content" data-step-content="dependency-injection" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 11 من 15</span>
+                                    <h2 class="content-block__title">Dependency Injection</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        حقن الاعتماديات (Dependency Injection) هو نمط تصميم يقلل الاقتران بين المكونات
+                                        ويسهل اختبار الكود وصيانته.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • DI Concept (مفهوم حقن الاعتماديات)<br>
+                                        • Services (تسجيل الخدمات واستخدامها)<br>
+                                        • Clean Code Structure (هيكلة الكود النظيف)<br>
+                                        • Constructor Injection<br>
+                                        • DI Containers (Microsoft.Extensions.DependencyInjection)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done"
+                                        data-step-id="dependency-injection"><i class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="dependency-injection">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 12 Content: Project 1 -->
+                        <div class="step-content" data-step-content="project1" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 12 من 15</span>
+                                    <h2 class="content-block__title">Project 1 🔥: Task Manager App</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>تطبيق إدارة المهام (Task Manager)</strong><br>
+                                        قم ببناء تطبيق كامل لإدارة المهام باستخدام WPF و MVVM و Entity Framework.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المتطلبات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • CRUD Operations على المهام<br>
+                                        • Database (SQL Server أو SQLite)<br>
+                                        • MVVM Architecture<br>
+                                        • Data Binding<br>
+                                        • Async Operations
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="project1"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="project1">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 13 Content: Advanced Concepts -->
+                        <div class="step-content" data-step-content="advanced-concepts" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 13 من 15</span>
+                                    <h2 class="content-block__title">Advanced Concepts 🚀</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> المواضيع
+                                        المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Logging (تسجيل الأحداث باستخدام Serilog أو NLog)<br>
+                                        • Error Handling (معالجة الأخطاء بشكل احترافي)<br>
+                                        • Configuration Files (appsettings.json، التكوينات)<br>
+                                        • Global Exception Handling
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="advanced-concepts"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="advanced-concepts">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 14 Content: Deployment -->
+                        <div class="step-content" data-step-content="deployment" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 14 من 15</span>
+                                    <h2 class="content-block__title">Deployment 📦</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> المواضيع
+                                        المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Build .exe (إنشاء ملف تنفيذي)<br>
+                                        • Installer Setup (إنشاء مثبت باستخدام ClickOnce أو WiX أو Inno Setup)<br>
+                                        • Publish App (نشر التطبيق)<br>
+                                        • Self-Contained vs Framework-Dependent Deployment
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="deployment"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="deployment">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 15 Content: Final Project -->
+                        <div class="step-content" data-step-content="final-project" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 15 من 15</span>
+                                    <h2 class="content-block__title">Final Project 🔥🔥: Full Desktop System</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>نظام إدارة متكامل (Store / Clinic / Library)</strong><br>
+                                        قم ببناء نظام كامل باستخدام جميع المفاهيم التي تعلمتها.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المتطلبات التقنية
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • WPF + MVVM Architecture<br>
+                                        • Database (SQL Server / SQLite)<br>
+                                        • Entity Framework Core<br>
+                                        • Async Programming<br>
+                                        • Dependency Injection<br>
+                                        • Clean Architecture (Separation of Concerns)<br>
+                                        • Logging & Error Handling<br>
+                                        • Deployment (Installer)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الميزات
+                                        المقترحة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • نظام مستخدمين (Login, Roles: Admin, User)<br>
+                                        • CRUD Operations (منتجات / عملاء / موظفين)<br>
+                                        • Search and Filter (بحث وتصفية)<br>
+                                        • Reports (تقارير PDF أو Excel)<br>
+                                        • Dashboard (لوحة تحكم بإحصائيات)<br>
+                                        • Dark/Light Theme
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="final-project"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="final-project">إكمال
+                                        المسار 🎉 <i class="fas fa-trophy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <i class="fas fa-code"></i> NextStep <span class="footer__logo-arabic">| الخطوة القادمة</span>
+                    </a>
+                    <p class="footer__tagline">مسارات واضحة، بدون تشتت</p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html" class="footer__nav-link">الرئيسية</a></li>
+                        <li><a href="roadmaps.html" class="footer__nav-link">المسارات</a></li>
+                        <li><a href="assessment/assessment.html" class="footer__nav-link">تقييم سريع</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    <p>جميع الحقوق محفوظة © 2025 NextStep | الخطوة القادمة</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="visually-hidden" aria-live="polite" aria-atomic="true" id="aria-live-region"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

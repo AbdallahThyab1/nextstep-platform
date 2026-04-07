@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="مسار حل المشكلات والخوارزميات (DSA) - تعلم التفكير المنطقي، هياكل البيانات، الخوارزميات، واستراتيجيات حل المشكلات. أساسي للمقابلات التقنية.">
+    <title>NextStep | حل المشكلات والخوارزميات — طريقك لإتقان التفكير البرمجي</title>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="roadmap" data-roadmap-id="dsa">
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="site-header" aria-label="Main navigation">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html" class="logo-link" aria-label="NextStep home page">
+                    <i class="fas fa-code"></i> NextStep <span class="logo__arabic">| الخطوة القادمة</span>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="mobile-menu-toggle__icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <nav class="navbar__nav" aria-label="Primary navigation">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="index.html" class="nav-menu__link">الرئيسية</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="roadmaps.html" class="nav-menu__link nav-menu__link--active"
+                            aria-current="page">المسارات</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="drawer-overlay"></div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content" class="roadmap-page">
+
+        <!-- ==================== ROADMAP HEADER ==================== -->
+        <section class="roadmap-header">
+            <div class="container">
+                <div class="roadmap-header__content">
+                    <div class="roadmap-header__info">
+                        <span class="roadmap-badge"><i class="fas fa-brain"></i> مسار أساسي للمقابلات</span>
+                        <h1 class="roadmap-header__title">حل المشكلات <span class="gradient-text">والخوارزميات</span>
+                        </h1>
+                        <p class="roadmap-header__description">
+                            تعلم كيفية التفكير مثل المبرمجين المحترفين. ستتقن حل المشكلات، هياكل البيانات، والخوارزميات
+                            خطوة بخطوة. هذا المسار أساسي للمقابلات التقنية في كبرى الشركات.
+                        </p>
+                    </div>
+                    <div class="progress-section">
+                        <div class="progress-header">
+                            <span class="progress-label"><i class="fas fa-chart-line"></i> التقدم العام</span>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                        <div class="progress-bar__container">
+                            <div class="progress-bar__fill" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAIN LAYOUT: SIDEBAR + CONTENT ==================== -->
+        <div class="roadmap-layout">
+            <div class="container">
+                <div class="roadmap-layout__grid">
+
+                    <!-- ==================== LEFT SIDE: SIDEBAR ==================== -->
+                    <aside class="roadmap-sidebar">
+                        <div class="sidebar-header">
+                            <h2 class="sidebar-header__title">
+                                <span class="title-icon"><i class="fas fa-list-ul"></i></span> مسار التعلم
+                            </h2>
+                            <button class="sidebar-close-btn" aria-label="Close steps menu"><i
+                                    class="fas fa-times"></i></button>
+                        </div>
+                        <div class="steps-list" role="tablist">
+
+                            <!-- Step 1 -->
+                            <button class="step-item step-item--active" role="tab" aria-selected="true"
+                                data-step-id="intro" data-step-number="1">
+                                <span class="step-item__status" aria-hidden="true"><i class="fas fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">مقدمة في Problem Solving & Complexity</span>
+                                    <span class="step-item__subtitle">Big-O Notation</span>
+                                </span>
+                                <span class="step-item__number">1</span>
+                            </button>
+
+                            <!-- Step 2 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="arrays"
+                                data-step-number="2">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Arrays</span>
+                                    <span class="step-item__subtitle">Linear Search, Prefix Sum, Two Pointers</span>
+                                </span>
+                                <span class="step-item__number">2</span>
+                            </button>
+
+                            <!-- Step 3 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="strings"
+                                data-step-number="3">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Strings</span>
+                                    <span class="step-item__subtitle">Sliding Window, Frequency Count</span>
+                                </span>
+                                <span class="step-item__number">3</span>
+                            </button>
+
+                            <!-- Step 4 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="recursion"
+                                data-step-number="4">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Recursion (التفكير التراجعي)</span>
+                                    <span class="step-item__subtitle">Backtracking Basics</span>
+                                </span>
+                                <span class="step-item__number">4</span>
+                            </button>
+
+                            <!-- Step 5 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="linked-list"
+                                data-step-number="5">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Linked List</span>
+                                    <span class="step-item__subtitle">Fast & Slow Pointers</span>
+                                </span>
+                                <span class="step-item__number">5</span>
+                            </button>
+
+                            <!-- Step 6 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="stack"
+                                data-step-number="6">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Stack</span>
+                                    <span class="step-item__subtitle">Balanced Parentheses, Monotonic Stack</span>
+                                </span>
+                                <span class="step-item__number">6</span>
+                            </button>
+
+                            <!-- Step 7 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="queue"
+                                data-step-number="7">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Queue</span>
+                                    <span class="step-item__subtitle">BFS Basics</span>
+                                </span>
+                                <span class="step-item__number">7</span>
+                            </button>
+
+                            <!-- Step 8 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="hash-table"
+                                data-step-number="8">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Hash Table (Map / Set)</span>
+                                    <span class="step-item__subtitle">Frequency Map, Lookup Optimization</span>
+                                </span>
+                                <span class="step-item__number">8</span>
+                            </button>
+
+                            <!-- Step 9 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="trees"
+                                data-step-number="9">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Trees (Binary Tree)</span>
+                                    <span class="step-item__subtitle">DFS, BFS, Tree Traversals</span>
+                                </span>
+                                <span class="step-item__number">9</span>
+                            </button>
+
+                            <!-- Step 10 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="binary-search"
+                                data-step-number="10">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Binary Search</span>
+                                    <span class="step-item__subtitle">Search Space Reduction</span>
+                                </span>
+                                <span class="step-item__number">10</span>
+                            </button>
+
+                            <!-- Step 11 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="heap"
+                                data-step-number="11">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Heap / Priority Queue</span>
+                                    <span class="step-item__subtitle">Top K Elements</span>
+                                </span>
+                                <span class="step-item__number">11</span>
+                            </button>
+
+                            <!-- Step 12 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="graphs"
+                                data-step-number="12">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Graphs</span>
+                                    <span class="step-item__subtitle">BFS, DFS, Shortest Path Basics</span>
+                                </span>
+                                <span class="step-item__number">12</span>
+                            </button>
+
+                            <!-- Step 13 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="dp"
+                                data-step-number="13">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Dynamic Programming (مقدمة)</span>
+                                    <span class="step-item__subtitle">Memoization, Tabulation</span>
+                                </span>
+                                <span class="step-item__number">13</span>
+                            </button>
+
+                            <!-- Step 14 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="advanced"
+                                data-step-number="14">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Advanced Problem Solving</span>
+                                    <span class="step-item__subtitle">Mix بين كل ما سبق</span>
+                                </span>
+                                <span class="step-item__number">14</span>
+                            </button>
+
+                            <!-- Step 15 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="contest"
+                                data-step-number="15">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Contest / Real Practice</span>
+                                    <span class="step-item__subtitle">حل مسائل من منصات حقيقية</span>
+                                </span>
+                                <span class="step-item__number">15</span>
+                            </button>
+
+                        </div>
+                    </aside>
+
+                    <!-- ==================== RIGHT SIDE: CONTENT PANEL ==================== -->
+                    <div class="roadmap-content">
+
+                        <!-- Step 1 Content -->
+                        <div class="step-content step-content--active" data-step-content="intro">
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 1 من 15</span>
+                                    <h2 class="content-block__title">مقدمة في Problem Solving & Complexity (Big-O)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        تحليل التعقيد (Complexity Analysis) هو طريقة لقياس كفاءة الخوارزميات من حيث
+                                        الوقت
+                                        (Time Complexity) والمساحة (Space Complexity). نستخدم تدوين Big-O لوصف كيفية
+                                        نمو وقت التنفيذ مع زيادة حجم المدخلات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        فهم Big-O يساعدك على اختيار الخوارزمية المناسبة للمشكلة. في المقابلات التقنية،
+                                        هذا هو أول ما يُسأل عنه. شركات مثل Google و Facebook تبحث عن مهندسين يفهمون
+                                        كفاءة الخوارزميات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        عند مقارنة خوارزميتين لحل نفس المشكلة، أو عندما تحتاج إلى تحسين أداء تطبيقك، أو
+                                        في أي مقابلة تقنية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&si=ma6bRbxFHNQVqz5P"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLs4xH3XPr55guaS_NY0SQ6dQabpXK0xQ6&si=uaBttb8I_B4gDvYO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @مدرس برمجة [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&si=rpaZgTNX8japQ7xf"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @NesoAcademy [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="intro">
+                                        <i class="fas fa-check"></i> تم الإكمال
+                                    </button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="intro">
+                                        الخطوة التالية <i class="fas fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 Content: Arrays -->
+                        <div class="step-content" data-step-content="arrays" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 2 من 15</span>
+                                    <h2 class="content-block__title">Arrays</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المصفوفات (Arrays) هي هياكل بيانات تخزن مجموعة من العناصر من نفس النوع في موقع
+                                        متصل بالذاكرة. سنتعلم كيفية حل المشكلات على المصفوفات باستخدام خوارزميات مثل
+                                        Linear Search، Prefix Sum، و Two Pointers.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المصفوفات هي أكثر هياكل البيانات استخداماً. معظم أسئلة المقابلات تبدأ
+                                        بالمصفوفات.
+                                        إتقان خوارزميات المصفوفات هو أساس لحل المشكلات الأكثر تعقيداً.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الخوارزميات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Linear Search: البحث الخطي O(n)<br>
+                                        • Prefix Sum: الجمع المسبق O(1) للاستعلامات<br>
+                                        • Two Pointers: مؤشران لحل مشكلات الزوج والفرز
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&si=ma6bRbxFHNQVqz5P"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLs4xH3XPr55guaS_NY0SQ6dQabpXK0xQ6&si=uaBttb8I_B4gDvYO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @مدرس برمجة [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&si=rpaZgTNX8japQ7xf"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @NesoAcademy [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="arrays"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="arrays">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content: Strings -->
+                        <div class="step-content" data-step-content="strings" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 3 من 15</span>
+                                    <h2 class="content-block__title">Strings</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        النصوص (Strings) هي سلاسل من الحروف. سنتعلم كيفية حل المشكلات على النصوص
+                                        باستخدام
+                                        خوارزميات مثل Sliding Window و Frequency Count.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        معالجة النصوص تستخدم في كل تطبيق تقريباً: البحث، التحقق من صحة المدخلات، معالجة
+                                        البيانات النصية. أسئلة النصوص شائعة جداً في المقابلات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الخوارزميات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Sliding Window: نافذة متحركة لحل مشكلات السلاسل الفرعية<br>
+                                        • Frequency Count: حساب تكرار الأحرف باستخدام Hash Map
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&si=ma6bRbxFHNQVqz5P"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLs4xH3XPr55guaS_NY0SQ6dQabpXK0xQ6&si=uaBttb8I_B4gDvYO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @مدرس برمجة [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&si=rpaZgTNX8japQ7xf"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @NesoAcademy [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="strings"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="strings">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 Content: Recursion -->
+                        <div class="step-content" data-step-content="recursion" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 4 من 15</span>
+                                    <h2 class="content-block__title">Recursion (التفكير التراجعي)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        العودية (Recursion) هي تقنية تقوم فيها الدالة باستدعاء نفسها لحل مشكلة مقسمة إلى
+                                        مشكلات فرعية أصغر. Backtracking هي تقنية لحل المشكلات التي تتطلب تجربة جميع
+                                        الاحتمالات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        العودية هي أساس العديد من الخوارزميات المتقدمة (Trees, Graphs, DP). فهمها يفتح
+                                        لك أبواباً جديدة في البرمجة وحل المشكلات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> متى تستخدمه؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        في حل مشكلات مثل متتالية فيبوناتشي، اجتياز الأشجار، Backtracking (N-Queens,
+                                        Sudoku، Subsets).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&si=ma6bRbxFHNQVqz5P"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLs4xH3XPr55guaS_NY0SQ6dQabpXK0xQ6&si=uaBttb8I_B4gDvYO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @مدرس برمجة [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&si=rpaZgTNX8japQ7xf"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @NesoAcademy [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="recursion"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="recursion">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step 5 Content: Linked List -->
+                        <div class="step-content" data-step-content="linked-list" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 5 من 15</span>
+                                    <h2 class="content-block__title">Linked List</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        القوائم المرتبطة (Linked List) هي هياكل بيانات خطية حيث كل عنصر (Node) يحتوي على
+                                        قيمة ومؤشر للعنصر التالي.
+                                        على عكس المصفوفات، العناصر غير متصلة في الذاكرة، مما يسمح بإضافة وحذف العناصر
+                                        بكفاءة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        القوائم المرتبطة هي أساس هياكل بيانات أخرى مثل Stacks و Queues. كما أنها سؤال
+                                        شائع جداً في المقابلات
+                                        التقنية (عكس قائمة، اكتشاف الحلقة، العقدة الوسطى).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الخوارزميات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Fast & Slow Pointers: مؤشر سريع ومؤشر بطيء لاكتشاف الحلقات وإيجاد العقدة
+                                        الوسطى<br>
+                                        • Reverse Linked List: عكس القائمة المرتبطة<br>
+                                        • Detect Cycle: اكتشاف الحلقات في القائمة
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&si=ma6bRbxFHNQVqz5P"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLs4xH3XPr55guaS_NY0SQ6dQabpXK0xQ6&si=uaBttb8I_B4gDvYO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @مدرس برمجة [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&si=rpaZgTNX8japQ7xf"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @NesoAcademy [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="linked-list"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="linked-list">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 Content: Stack -->
+                        <div class="step-content" data-step-content="stack" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 6 من 15</span>
+                                    <h2 class="content-block__title">Stack</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الـ Stack (المكدس) هو هيكل بيانات يتبع مبدأ LIFO (Last In, First Out) - آخر عنصر
+                                        يدخل هو أول عنصر يخرج.
+                                        العمليات الأساسية: push (إضافة)، pop (إزالة)، و top/peek (اطلاع على آخر عنصر).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الـ Stack يستخدم في العديد من التطبيقات: استدعاء الدوال (Call Stack)، التحقق من
+                                        الأقواس المتوازنة،
+                                        الـ Undo/Redo، وتقييم التعبيرات الحسابية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الخوارزميات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Balanced Parentheses: التحقق من صحة ترتيب الأقواس<br>
+                                        • Monotonic Stack: مكدس متزايد أو متناقص لحل مشكلات Next Greater Element<br>
+                                        • Evaluate Expression: تقييم التعبيرات الحسابية
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&si=ma6bRbxFHNQVqz5P"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLs4xH3XPr55guaS_NY0SQ6dQabpXK0xQ6&si=uaBttb8I_B4gDvYO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @مدرس برمجة [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&si=rpaZgTNX8japQ7xf"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @NesoAcademy [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="stack"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="stack">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 Content: Queue -->
+                        <div class="step-content" data-step-content="queue" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 7 من 15</span>
+                                    <h2 class="content-block__title">Queue</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الـ Queue (الطابور) هو هيكل بيانات يتبع مبدأ FIFO (First In, First Out) - أول
+                                        عنصر يدخل هو أول عنصر
+                                        يخرج. العمليات الأساسية: enqueue (إضافة)، dequeue (إزالة)، و front (اطلاع على
+                                        أول عنصر).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الـ Queue يستخدم في جدولة المهام، معالجة الطلبات، وخوارزميات BFS (Breadth-First
+                                        Search) في الأشجار
+                                        والرسوم البيانية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الخوارزميات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • BFS Basics: خوارزمية البحث بالعرض باستخدام Queue<br>
+                                        • Sliding Window Maximum: إيجاد أكبر عنصر في نافذة متحركة<br>
+                                        • Task Scheduling: جدولة المهام
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&si=ma6bRbxFHNQVqz5P"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLs4xH3XPr55guaS_NY0SQ6dQabpXK0xQ6&si=uaBttb8I_B4gDvYO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @مدرس برمجة [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&si=rpaZgTNX8japQ7xf"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @NesoAcademy [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="queue"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="queue">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 8 Content: Hash Table -->
+                        <div class="step-content" data-step-content="hash-table" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 8 من 15</span>
+                                    <h2 class="content-block__title">Hash Table (Map / Set)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        جدول التجزئة (Hash Table) هو هيكل بيانات يخزن أزواج (مفتاح، قيمة) ويوفر وصولاً
+                                        سريعاً جداً (O(1)
+                                        للبحث والإضافة والحذف. في C++، نستخدم `unordered_map` و `unordered_set`.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        جداول التجزئة هي من أكثر هياكل البيانات استخداماً لحل المشكلات بسرعة. أي مشكلة
+                                        تحتاج إلى بحث سريع أو
+                                        عدّ التكرارات، الحل الأمثل هو Hash Table.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الخوارزميات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Frequency Map: حساب تكرار العناصر<br>
+                                        • Lookup Optimization: تحسين البحث باستخدام Hash Set<br>
+                                        • Two Sum Problem: مشكلة مجموع رقمين
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&si=ma6bRbxFHNQVqz5P"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLs4xH3XPr55guaS_NY0SQ6dQabpXK0xQ6&si=uaBttb8I_B4gDvYO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @مدرس برمجة [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&si=rpaZgTNX8japQ7xf"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @NesoAcademy [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="hash-table"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="hash-table">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 Content: Trees -->
+                        <div class="step-content" data-step-content="trees" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 9 من 15</span>
+                                    <h2 class="content-block__title">Trees (Binary Tree)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الأشجار (Trees) هي هياكل بيانات غير خطية تتكون من عقد (Nodes) مرتبة بشكل هرمي.
+                                        العقدة الجذر (Root) هي
+                                        البداية، وكل عقدة يمكن أن تحتوي على أبناء (Children). الشجرة الثنائية (Binary
+                                        Tree) هي شجرة كل عقدة
+                                        فيها لها ابنين كحد أقصى.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الأشجار تستخدم في قواعد البيانات (B-Trees)، أنظمة الملفات، محركات البحث، والعديد
+                                        من التطبيقات. كما أنها
+                                        من أكثر المواضيع طلباً في المقابلات التقنية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الخوارزميات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • DFS (Depth-First Search): Inorder, Preorder, Postorder<br>
+                                        • BFS (Breadth-First Search): Level Order Traversal<br>
+                                        • Tree Traversals: اجتياز الشجرة بطرق مختلفة
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&si=ma6bRbxFHNQVqz5P"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLs4xH3XPr55guaS_NY0SQ6dQabpXK0xQ6&si=uaBttb8I_B4gDvYO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @مدرس برمجة [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&si=rpaZgTNX8japQ7xf"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @NesoAcademy [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="trees"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="trees">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 10 Content: Binary Search -->
+                        <div class="step-content" data-step-content="binary-search" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 10 من 15</span>
+                                    <h2 class="content-block__title">Binary Search</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        البحث الثنائي (Binary Search) هو خوارزمية بحث فعالة تستخدم في المصفوفات المرتبة.
+                                        تعمل على تقسيم
+                                        المصفوفة إلى نصفين باستمرار حتى تجد العنصر المطلوب، بتعقيد زمني O(log n).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        البحث الثنائي هو من أسرع خوارزميات البحث وأكثرها كفاءة. يعتبر سؤالاً أساسياً في
+                                        أي مقابلة تقنية، كما أنه
+                                        أساس للعديد من الخوارزميات المتقدمة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الخوارزميات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Binary Search: البحث الثنائي الكلاسيكي<br>
+                                        • Search Space Reduction: تقليل مساحة البحث<br>
+                                        • Lower Bound / Upper Bound: إيجاد الحدود
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&si=ma6bRbxFHNQVqz5P"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLs4xH3XPr55guaS_NY0SQ6dQabpXK0xQ6&si=uaBttb8I_B4gDvYO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @مدرس برمجة [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&si=rpaZgTNX8japQ7xf"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @NesoAcademy [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="binary-search"><i
+                                            class="fas fa-check"></i>
+                                        تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="binary-search">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 11 Content: Heap / Priority Queue -->
+                        <div class="step-content" data-step-content="heap" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 11 من 15</span>
+                                    <h2 class="content-block__title">Heap / Priority Queue</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الـ Heap (الكومة) هو هيكل بيانات شجري يحافظ على ترتيب العناصر بحيث يكون العنصر
+                                        الأصغر (Min-Heap) أو
+                                        الأكبر (Max-Heap) في الجذر. Priority Queue هي تجريد للـ Heap تسمح بالوصول إلى
+                                        العنصر ذو الأولوية
+                                        القصوى.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الـ Heap يستخدم في خوارزميات الجدولة، Dijkstra's Shortest Path، وإيجاد أكبر أو
+                                        أصغر العناصر بكفاءة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الخوارزميات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Top K Elements: إيجاد أكبر أو أصغر K عنصر<br>
+                                        • Heap Sort: ترتيب البيانات باستخدام Heap<br>
+                                        • Merge K Sorted Lists: دمج قوائم مرتبة
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&si=ma6bRbxFHNQVqz5P"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLs4xH3XPr55guaS_NY0SQ6dQabpXK0xQ6&si=uaBttb8I_B4gDvYO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @مدرس برمجة [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&si=rpaZgTNX8japQ7xf"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @NesoAcademy [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="heap"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="heap">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 12 Content: Graphs -->
+                        <div class="step-content" data-step-content="graphs" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 12 من 15</span>
+                                    <h2 class="content-block__title">Graphs</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الرسوم البيانية (Graphs) هي هياكل بيانات تمثل العلاقات بين الكائنات. تتكون من
+                                        عقد (Vertices) وحواف
+                                        (Edges) تربط بينها. يمكن أن تكون موجهة (Directed) أو غير موجهة (Undirected).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الرسوم البيانية تستخدم في شبكات التواصل الاجتماعي، خرائط Google، أنظمة التوصيات،
+                                        والذكاء الاصطناعي.
+                                        فهمها يفتح لك أبواباً واسعة في البرمجة المتقدمة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الخوارزميات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • BFS (Breadth-First Search): البحث بالعرض<br>
+                                        • DFS (Depth-First Search): البحث بالعمق<br>
+                                        • Shortest Path Basics: أقصر مسار (Dijkstra)
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&si=ma6bRbxFHNQVqz5P"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AdelNasim [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLs4xH3XPr55guaS_NY0SQ6dQabpXK0xQ6&si=uaBttb8I_B4gDvYO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @مدرس برمجة [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&si=rpaZgTNX8japQ7xf"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @NesoAcademy [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="graphs"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="graphs">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 13 Content: Dynamic Programming -->
+                        <div class="step-content" data-step-content="dp" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 13 من 15</span>
+                                    <h2 class="content-block__title">Dynamic Programming (مقدمة)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        البرمجة الديناميكية (Dynamic Programming) هي تقنية لحل المشكلات التي يمكن
+                                        تقسيمها إلى مشكلات فرعية
+                                        متداخلة. تعتمد على مبدأ التخزين المؤقت (Memoization) لحل المشكلات الفرعية مرة
+                                        واحدة فقط وإعادة استخدام
+                                        النتائج.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        البرمجة الديناميكية تظهر في أصعب أسئلة المقابلات التقنية (Google, Facebook,
+                                        Amazon). إتقانها يضعك في
+                                        مستوى متقدم جداً ويحسن قدرتك على حل المشكلات المعقدة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> الخوارزميات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Memoization (Top-Down): حل تعاودي مع تخزين مؤقت<br>
+                                        • Tabulation (Bottom-Up): حل تكرارى بناءً على جدول<br>
+                                        • Fibonacci, Climbing Stairs, Knapsack
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/@mabdulkariim?si=PVqU-8mqUW1K6jbD"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>@mabdulkariim (DSA ,Dynamic
+                                                Programming )</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="dp"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="dp">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 14 Content: Advanced Problem Solving -->
+                        <div class="step-content" data-step-content="advanced" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 14 من 15</span>
+                                    <h2 class="content-block__title">Advanced Problem Solving</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        في هذه المرحلة، ستقوم بحل مشكلات متقدمة تدمج بين جميع هياكل البيانات
+                                        والخوارزميات التي تعلمتها. هذه
+                                        المشكلات تحاكي أسئلة المقابلات التقنية الحقيقية في كبرى الشركات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        حل المشكلات المتقدمة يطور مهاراتك في التفكير النقدي والتحليل. كما يجهزك
+                                        للمقابلات التقنية في شركات مثل
+                                        Google، Amazon، Microsoft، و Meta.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> المجالات
+                                        المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • مصفوفات + Two Pointers + Binary Search<br>
+                                        • أشجار + BFS/DFS + برمجة ديناميكية<br>
+                                        • رسوم بيانية + أقصر مسار + Union-Find<br>
+                                        • مشكلات تصميم الخوارزميات
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/@mabdulkariim?si=PVqU-8mqUW1K6jbD"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>@mabdulkariim</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/@arabiccompetitiveprogramming?si=I8ibxdChnxndUqXn"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>@arabiccompetitiveprogramming</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="advanced"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="advanced">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 15 Content: Contest / Real Practice -->
+                        <div class="step-content" data-step-content="contest" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 15 من 15</span>
+                                    <h2 class="content-block__title">Contest / Real Practice</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الآن حان وقت التطبيق العملي! ستشارك في مسابقات برمجية (Coding Contests) على
+                                        منصات مثل LeetCode و
+                                        Codeforces و HackerRank، وتحل مسائل حقيقية تحت ضغط الوقت.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المشاركة في المسابقات تحسن سرعتك ودقتك في حل المشكلات. كما تعطيك خبرة عملية في
+                                        التعامل مع أسئلة المقابلات
+                                        التقنية وتجهزك لسوق العمل.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> المنصات
+                                        الموصى بها
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • LeetCode (أفضل منصة للمقابلات)<br>
+                                        • Codeforces (مسابقات تنافسية)<br>
+                                        • HackerRank (تحديات متنوعة)<br>
+                                        • CodeChef (مسابقات شهرية)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="contest"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="contest">إكمال المسار
+                                        🎉 <i class="fas fa-trophy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <i class="fas fa-code"></i> NextStep <span class="footer__logo-arabic">| الخطوة القادمة</span>
+                    </a>
+                    <p class="footer__tagline">مسارات واضحة، بدون تشتت</p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html" class="footer__nav-link">الرئيسية</a></li>
+                        <li><a href="roadmaps.html" class="footer__nav-link">المسارات</a></li>
+                        <li><a href="assessment/assessment.html" class="footer__nav-link">تقييم سريع</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    <p>جميع الحقوق محفوظة © 2025 NextStep | الخطوة القادمة</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="visually-hidden" aria-live="polite" aria-atomic="true" id="aria-live-region"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

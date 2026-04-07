@@ -1,0 +1,44 @@
+{
+  "name": "nextstep-platform",
+  "version": "10.0.0",
+  "description": "🚀 NextStep AI Assessment Platform - Professional Learning Path Generator with Google Gemini AI",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "health": "curl http://localhost:3000/health",
+    "clean": "rm -rf node_modules package-lock.json && npm install"
+  },
+  "keywords": [
+    "nextstep",
+    "assessment",
+    "ai",
+    "gemini",
+    "learning",
+    "education",
+    "programming",
+    "roadmap",
+    "api",
+    "google-gemini"
+  ],
+  "author": {
+    "name": "NextStep Team",
+    "email": "1abdallahthyab@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

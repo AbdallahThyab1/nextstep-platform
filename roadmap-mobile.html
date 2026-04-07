@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="مسار تطوير تطبيقات الموبايل - تعلم Flutter من الصفر إلى الاحتراف: Dart، Flutter، Firebase، State Management، GetX، Sqflite، API Integration، ومشاريع عملية.">
+    <title>NextStep | تطوير تطبيقات الموبايل — من الصفر إلى الاحتراف</title>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="roadmap" data-roadmap-id="mobile">
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="site-header" aria-label="Main navigation">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html" class="logo-link" aria-label="NextStep home page">
+                    <i class="fas fa-code"></i> NextStep <span class="logo__arabic">| الخطوة القادمة</span>
+                </a>
+            </div>
+            <nav class="navbar__nav" aria-label="Primary navigation">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="index.html" class="nav-menu__link">الرئيسية</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="roadmaps.html" class="nav-menu__link nav-menu__link--active"
+                            aria-current="page">المسارات</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content" class="roadmap-page">
+
+        <!-- ==================== ROADMAP HEADER ==================== -->
+        <section class="roadmap-header">
+            <div class="container">
+                <div class="roadmap-header__content">
+                    <div class="roadmap-header__info">
+                        <span class="roadmap-badge"><i class="fas fa-mobile-alt"></i> مسار تطوير تطبيقات الموبايل</span>
+                        <h1 class="roadmap-header__title">تطوير تطبيقات <span class="gradient-text">الموبايل</span>
+                        </h1>
+                        <p class="roadmap-header__description">
+                            تعلم كيفية بناء تطبيقات موبايل احترافية باستخدام Flutter و Dart. هذا المسار يغطي الأساسيات،
+                            Firebase، State Management، GetX، قواعد البيانات المحلية، ربط APIs، ومشاريع عملية.
+                        </p>
+                    </div>
+                    <div class="progress-section">
+                        <div class="progress-header">
+                            <span class="progress-label"><i class="fas fa-chart-line"></i> التقدم العام</span>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                        <div class="progress-bar__container">
+                            <div class="progress-bar__fill" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAIN LAYOUT: SIDEBAR + CONTENT ==================== -->
+        <div class="roadmap-layout">
+            <div class="container">
+                <div class="roadmap-layout__grid">
+
+                    <!-- ==================== LEFT SIDE: SIDEBAR ==================== -->
+                    <aside class="roadmap-sidebar">
+                        <div class="sidebar-header">
+                            <h2 class="sidebar-header__title">
+                                <span class="title-icon"><i class="fas fa-list-ul"></i></span> مسار التعلم
+                            </h2>
+                        </div>
+                        <div class="steps-list" role="tablist">
+
+                            <!-- Step 1: Dart -->
+                            <button class="step-item step-item--active" role="tab" aria-selected="true"
+                                data-step-id="dart" data-step-number="1">
+                                <span class="step-item__status" aria-hidden="true"><i class="fas fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Dart</span>
+                                    <span class="step-item__subtitle">أساسيات لغة Dart</span>
+                                </span>
+                                <span class="step-item__number">1</span>
+                            </button>
+
+                            <!-- Step 2: Flutter -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="flutter"
+                                data-step-number="2">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Flutter</span>
+                                    <span class="step-item__subtitle">Widgets, Layout, Navigation</span>
+                                </span>
+                                <span class="step-item__number">2</span>
+                            </button>
+
+                            <!-- Step 3: Firebase -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="firebase"
+                                data-step-number="3">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Firebase 🔥</span>
+                                    <span class="step-item__subtitle">Auth, Firestore Database</span>
+                                </span>
+                                <span class="step-item__number">3</span>
+                            </button>
+
+                            <!-- Step 4: State Management -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="state-management"
+                                data-step-number="4">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">State Management</span>
+                                    <span class="step-item__subtitle">setState, Provider, Bloc</span>
+                                </span>
+                                <span class="step-item__number">4</span>
+                            </button>
+
+                            <!-- Step 5: GetX -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="getx"
+                                data-step-number="5">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">GetX (Practical 🔥)</span>
+                                    <span class="step-item__subtitle">State Management, Navigation, DI</span>
+                                </span>
+                                <span class="step-item__number">5</span>
+                            </button>
+
+                            <!-- Step 6: Sqflite -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="sqflite"
+                                data-step-number="6">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Local Database (Sqflite)</span>
+                                    <span class="step-item__subtitle">SQLite, CRUD Operations</span>
+                                </span>
+                                <span class="step-item__number">6</span>
+                            </button>
+
+                            <!-- Step 7: SQL & MySQL -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="sql"
+                                data-step-number="7">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">SQL & MySQL</span>
+                                    <span class="step-item__subtitle">Tables, Relationships, CRUD, Joins</span>
+                                </span>
+                                <span class="step-item__number">7</span>
+                            </button>
+
+                            <!-- Step 8: PHP REST API -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="php-api"
+                                data-step-number="8">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">PHP REST API 🌐</span>
+                                    <span class="step-item__subtitle">API Creation, JSON, Flutter Integration</span>
+                                </span>
+                                <span class="step-item__number">8</span>
+                            </button>
+
+                            <!-- Step 9: Full Stack Integration -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="fullstack"
+                                data-step-number="9">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Full Stack Integration 🔥</span>
+                                    <span class="step-item__subtitle">Flutter + API + Database</span>
+                                </span>
+                                <span class="step-item__number">9</span>
+                            </button>
+
+                            <!-- Step 10: Final Project -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="final-project"
+                                data-step-number="10">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Final Project 🔥🔥</span>
+                                    <span class="step-item__subtitle">E-commerce App (MVC)</span>
+                                </span>
+                                <span class="step-item__number">10</span>
+                            </button>
+
+                        </div>
+                    </aside>
+
+                    <!-- ==================== RIGHT SIDE: CONTENT PANEL ==================== -->
+                    <div class="roadmap-content">
+
+                        <!-- Step 1 Content: Dart -->
+                        <div class="step-content step-content--active" data-step-content="dart">
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 1 من 10</span>
+                                    <h2 class="content-block__title">Dart</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Dart هي لغة برمجة طورتها Google، وهي اللغة الأساسية لإطار Flutter. تتميز
+                                        بسرعتها العالية ودعمها للبرمجة الكينونية والبرمجة غير المتزامنة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Basics (Variables, Data Types, Operators, Control Flow)<br>
+                                        • Functions (Declaration, Parameters, Return Types, Arrow Functions)<br>
+                                        • OOP (Classes, Objects, Constructors, Inheritance, Polymorphism)<br>
+                                        • Collections (List, Set, Map)<br>
+                                        • Async Programming (Future, async/await, Streams)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 تفهم لغة Dart بسرعة وتستخدمها
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL93xoMrxRJIutlMCImcV3CYMmjS0MmlWL&si=91IxNGOBG-iGSqg8"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="dart">
+                                        <i class="fas fa-check"></i> تم الإكمال
+                                    </button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="dart">
+                                        الخطوة التالية <i class="fas fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 Content: Flutter -->
+                        <div class="step-content" data-step-content="flutter" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 2 من 10</span>
+                                    <h2 class="content-block__title">Flutter</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Flutter هو إطار عمل (Framework) من Google لبناء تطبيقات متعددة المنصات (Android,
+                                        iOS، Web، Desktop) باستخدام لغة Dart.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Widgets (StatelessWidget vs StatefulWidget)<br>
+                                        • Layout (Row, Column, Container, Stack, Expanded)<br>
+                                        • UI Components (Text, Image, Button, TextField, Card)<br>
+                                        • Navigation (Navigator, Routes, push, pop)<br>
+                                        • Styling (Theme, TextStyle, BoxDecoration)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 UI App (Login + Home Screen)
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL93xoMrxRJIvtIXjAiX15wcyNv-LOWZa9&si=lnql04HsvOeWpwkx"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="flutter"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="flutter">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content: Firebase -->
+                        <div class="step-content" data-step-content="firebase" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 3 من 10</span>
+                                    <h2 class="content-block__title">Firebase 🔥</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Firebase هي منصة من Google توفر خدمات خلفية (Backend-as-a-Service) مثل
+                                        المصادقة، قواعد البيانات في الوقت الفعلي، التخزين، والإشعارات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Firebase Authentication (Login, Register, Email/Password, Google Sign-In)<br>
+                                        • Firestore Database (NoSQL, Collections, Documents, Queries)<br>
+                                        • Basic Integration (إضافة Firebase إلى Flutter)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 Auth App (User System with Firebase)
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL93xoMrxRJIvHhxhB21YzzeimEEzzAz6g&si=5tuBvTzAcmSIOMpj"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="firebase"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="firebase">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 Content: State Management -->
+                        <div class="step-content" data-step-content="state-management" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 4 من 10</span>
+                                    <h2 class="content-block__title">State Management</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        إدارة الحالة (State Management) هي طريقة للتعامل مع البيانات التي تتغير داخل
+                                        التطبيق وتأثيرها على واجهة المستخدم.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • setState (Basic State Management)<br>
+                                        • Provider (Concept - مكتبة شهيرة لإدارة الحالة)<br>
+                                        • Bloc (Concept - Business Logic Component)<br>
+                                        • إدارة البيانات داخل التطبيق
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL93xoMrxRJIviJiC76oO5aV8bDp2s3OrA&si=wwYUTlQbBit77Q3R"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="state-management"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="state-management">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 Content: GetX -->
+                        <div class="step-content" data-step-content="getx" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 5 من 10</span>
+                                    <h2 class="content-block__title">GetX (Practical 🔥)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        GetX هو حل عملي وقوي في Flutter يجمع بين إدارة الحالة، التنقل، وحقن
+                                        الاعتماديات (Dependency Injection) في حزمة واحدة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • State Management باستخدام GetX (GetBuilder، Obx، GetxController)<br>
+                                        • Navigation باستخدام GetX (Get.to، Get.back، Named Routes)<br>
+                                        • Dependency Injection (Get.put، Get.lazyPut، Get.find)<br>
+                                        • Snackbars، Dialogs، BottomSheets
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 App باستخدام GetX بالكامل
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL93xoMrxRJIvZHL420f63bWIOrcoM6NU-&si=7wwACWc-MBecPcKp"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="getx"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="getx">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 Content: Sqflite -->
+                        <div class="step-content" data-step-content="sqflite" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 6 من 10</span>
+                                    <h2 class="content-block__title">Local Database (Sqflite)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Sqflite هو插件 لتخزين البيانات محلياً في تطبيقات Flutter باستخدام SQLite،
+                                        قاعدة بيانات خفيفة ومدمجة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • SQLite Basics (إنشاء قاعدة بيانات، جداول)<br>
+                                        • CRUD Operations (Create, Read, Update, Delete)<br>
+                                        • Local Storage داخل التطبيق<br>
+                                        • Database Helper Class
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 Notes / Tasks App
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL93xoMrxRJIvPg3nW8WG0HDDgpMQtUkag&si=Seu-bbZqDmLlf2Wn"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="sqflite"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="sqflite">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 Content: SQL & MySQL -->
+                        <div class="step-content" data-step-content="sql" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 7 من 10</span>
+                                    <h2 class="content-block__title">SQL & MySQL</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        MySQL هو نظام إدارة قواعد بيانات علائقية (RDBMS) شائع يستخدم لتخزين البيانات على
+                                        الخادم. فهم SQL يساعدك في بناء واجهات خلفية قوية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Database Basics (إنشاء قاعدة بيانات)<br>
+                                        • Tables (إنشاء جداول، أنواع البيانات، القيود)<br>
+                                        • Relationships (Primary Key, Foreign Key)<br>
+                                        • CRUD Queries (SELECT, INSERT, UPDATE, DELETE)<br>
+                                        • Joins (INNER, LEFT, RIGHT)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 تفهم Backend Database
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL93xoMrxRJIuicqcd1UpFUYMfWKGp7JmI&si=plg5g1RVdFi-BFyd"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="sql"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="sql">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 8 Content: PHP REST API -->
+                        <div class="step-content" data-step-content="php-api" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 8 من 10</span>
+                                    <h2 class="content-block__title">PHP REST API 🌐</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        PHP هي لغة برمجة خادم (Server-side) تستخدم لبناء APIs. سنتعلم كيفية إنشاء REST
+                                        API للتواصل مع قاعدة البيانات وربطها مع Flutter.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • PHP Basics (Variables, Functions, Arrays, Superglobals)<br>
+                                        • إنشاء API (CRUD Operations)<br>
+                                        • JSON Response (json_encode, json_decode)<br>
+                                        • ربط Flutter مع PHP API (http package)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 Flutter App + PHP API
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL93xoMrxRJItcqJJgyCpA7Wv_YL-ii6Dl&si=pMVRj_IcTUDYL5tY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="php-api"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="php-api">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 Content: Full Stack Integration -->
+                        <div class="step-content" data-step-content="fullstack" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 9 من 10</span>
+                                    <h2 class="content-block__title">Full Stack Integration 🔥</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        دمج كل ما تعلمته: Flutter مع API وقاعدة بيانات لبناء تطبيق كامل متكامل.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Flutter + API + Database Integration<br>
+                                        • Authentication (تسجيل دخول وتسجيل مستخدمين)<br>
+                                        • CRUD Operations عبر API<br>
+                                        • State Management مع البيانات القادمة من API<br>
+                                        • Error Handling و Loading States
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL93xoMrxRJIuvTINf31EZ4S06lPklY-r0&si=WiY4wZaKMmJKvVCm"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="fullstack"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="fullstack">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 10 Content: Final Project -->
+                        <div class="step-content" data-step-content="final-project" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 10 من 10</span>
+                                    <h2 class="content-block__title">Final Project: Store App (MVC) 🔥🔥</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>تطبيق E-commerce متكامل</strong><br>
+                                        قم ببناء تطبيق متجر إلكتروني كامل باستخدام جميع المفاهيم التي تعلمتها.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> الميزات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Products (عرض المنتجات، تفاصيل المنتج)<br>
+                                        • Cart (إضافة إلى السلة، تعديل الكميات، حذف)<br>
+                                        • Orders (إنشاء طلب، عرض الطلبات السابقة)<br>
+                                        • Authentication (تسجيل دخول، تسجيل مستخدم جديد)<br>
+                                        • User Profile (ملف شخصي، تعديل بيانات)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> الـ Architecture
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • MVC Concept (Model-View-Controller)<br>
+                                        • Folder Structure منظمة<br>
+                                        • Reusable Components<br>
+                                        • API Integration مع PHP Backend<br>
+                                        • State Management باستخدام GetX
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 تطبيق متكامل حقيقي جاهز للنشر
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="final-project"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="final-project">إكمال
+                                        المسار 🎉 <i class="fas fa-trophy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <i class="fas fa-code"></i> NextStep <span class="footer__logo-arabic">| الخطوة القادمة</span>
+                    </a>
+                    <p class="footer__tagline">مسارات واضحة، بدون تشتت</p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html" class="footer__nav-link">الرئيسية</a></li>
+                        <li><a href="roadmaps.html" class="footer__nav-link">المسارات</a></li>
+                        <li><a href="assessment/assessment.html" class="footer__nav-link">تقييم سريع</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    <p>جميع الحقوق محفوظة © 2025 NextStep | الخطوة القادمة</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="visually-hidden" aria-live="polite" aria-atomic="true" id="aria-live-region"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

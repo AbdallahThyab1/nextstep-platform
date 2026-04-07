@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="مسار علوم الحاسوب والأنظمة - تعلم أساسيات علوم الحاسوب، أنظمة التشغيل، الشبكات، الأتمتة، الذكاء الاصطناعي، وتكامل الأنظمة.">
+    <title>NextStep | علوم الحاسوب والأنظمة — من الأساسيات إلى التكامل</title>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="roadmap" data-roadmap-id="cs">
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="site-header" aria-label="Main navigation">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html" class="logo-link" aria-label="NextStep home page">
+                    <i class="fas fa-code"></i> NextStep <span class="logo__arabic">| الخطوة القادمة</span>
+                </a>
+            </div>
+            <nav class="navbar__nav" aria-label="Primary navigation">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="index.html" class="nav-menu__link">الرئيسية</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="roadmaps.html" class="nav-menu__link nav-menu__link--active"
+                            aria-current="page">المسارات</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content" class="roadmap-page">
+
+        <!-- ==================== ROADMAP HEADER ==================== -->
+        <section class="roadmap-header">
+            <div class="container">
+                <div class="roadmap-header__content">
+                    <div class="roadmap-header__info">
+                        <span class="roadmap-badge"><i class="fas fa-microchip"></i> مسار علوم الحاسوب والأنظمة</span>
+                        <h1 class="roadmap-header__title">علوم الحاسوب <span class="gradient-text">والأنظمة</span>
+                        </h1>
+                        <p class="roadmap-header__description">
+                            تعلم أساسيات علوم الحاسوب، أنظمة التشغيل، الشبكات، الأتمتة، الذكاء الاصطناعي، وكيفية دمجها
+                            لبناء أنظمة متكاملة. هذا المسار يجهزك لفهم عميق للتقنيات التي تعمل خلف الكواليس.
+                        </p>
+                    </div>
+                    <div class="progress-section">
+                        <div class="progress-header">
+                            <span class="progress-label"><i class="fas fa-chart-line"></i> التقدم العام</span>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                        <div class="progress-bar__container">
+                            <div class="progress-bar__fill" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAIN LAYOUT: SIDEBAR + CONTENT ==================== -->
+        <div class="roadmap-layout">
+            <div class="container">
+                <div class="roadmap-layout__grid">
+
+                    <!-- ==================== LEFT SIDE: SIDEBAR ==================== -->
+                    <aside class="roadmap-sidebar">
+                        <div class="sidebar-header">
+                            <h2 class="sidebar-header__title">
+                                <span class="title-icon"><i class="fas fa-list-ul"></i></span> مسار التعلم
+                            </h2>
+                        </div>
+                        <div class="steps-list" role="tablist">
+
+                            <!-- Steps 1-7 -->
+                            <button class="step-item step-item--active" role="tab" aria-selected="true"
+                                data-step-id="computer-architecture" data-step-number="1">
+                                <span class="step-item__status" aria-hidden="true"><i class="fas fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Computer Architecture</span>
+                                    <span class="step-item__subtitle">CPU, Memory, Execution</span>
+                                </span>
+                                <span class="step-item__number">1</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="operating-systems"
+                                data-step-number="2">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Operating Systems</span>
+                                    <span class="step-item__subtitle">Processes, Threads, Memory, File Systems</span>
+                                </span>
+                                <span class="step-item__number">2</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="networking"
+                                data-step-number="3">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Networking</span>
+                                    <span class="step-item__subtitle">TCP/IP, HTTP, Client/Server, APIs</span>
+                                </span>
+                                <span class="step-item__number">3</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="automations"
+                                data-step-number="4">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Automations (n8n)</span>
+                                    <span class="step-item__subtitle">Workflows, Webhooks, API Integration</span>
+                                </span>
+                                <span class="step-item__number">4</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="ai"
+                                data-step-number="5">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Artificial Intelligence (AI)</span>
+                                    <span class="step-item__subtitle">Basics, Models Concept</span>
+                                </span>
+                                <span class="step-item__number">5</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="system-integration"
+                                data-step-number="6">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">System Integration</span>
+                                    <span class="step-item__subtitle">Backend + DB + Automation</span>
+                                </span>
+                                <span class="step-item__number">6</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="final-project"
+                                data-step-number="7">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Final Project 🔥</span>
+                                    <span class="step-item__subtitle">Full System (API + Automation + DB)</span>
+                                </span>
+                                <span class="step-item__number">7</span>
+                            </button>
+
+                        </div>
+                    </aside>
+
+                    <!-- ==================== RIGHT SIDE: CONTENT PANEL ==================== -->
+                    <div class="roadmap-content">
+
+                        <!-- Step 1 Content: Computer Architecture -->
+                        <div class="step-content step-content--active" data-step-content="computer-architecture">
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 1 من 7</span>
+                                    <h2 class="content-block__title">Computer Architecture</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        هندسة الحاسوب (Computer Architecture) هي دراسة تصميم وتنظيم مكونات الحاسوب
+                                        وكيفية عملها معاً. تشمل المعالج (CPU)، الذاكرة، وطرق تنفيذ التعليمات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • CPU (وحدة المعالجة المركزية - كيف تعمل؟)<br>
+                                        • Memory (الذاكرة: RAM، Cache، Registers)<br>
+                                        • Execution (كيف يتم تنفيذ التعليمات)<br>
+                                        • Von Neumann Architecture<br>
+                                        • Instruction Cycle (Fetch-Decode-Execute)
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL-cKUB-e2KiswAkwZLJYlTzI69FpSJa50&si=FJW66Li2Ytl3Ww71"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done"
+                                        data-step-id="computer-architecture">
+                                        <i class="fas fa-check"></i> تم الإكمال
+                                    </button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="computer-architecture">
+                                        الخطوة التالية <i class="fas fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 Content: Operating Systems -->
+                        <div class="step-content" data-step-content="operating-systems" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 2 من 7</span>
+                                    <h2 class="content-block__title">Operating Systems</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        نظام التشغيل (Operating System) هو برنامج يدير موارد الحاسوب ويوفر بيئة لتشغيل
+                                        التطبيقات. يفهم عمله يساعدك في كتابة كود أكثر كفاءة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Processes vs Threads (العمليات مقابل الخيوط)<br>
+                                        • Memory Management (إدارة الذاكرة)<br>
+                                        • File Systems (أنظمة الملفات)<br>
+                                        • Scheduling (جدولة المهام)<br>
+                                        • Synchronization (التزامن)
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLTr1xN4uMK5seRz6IO7Am9Zp2UKdnzO_n&si=ij4GO809EE3AJE9Z"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="operating-systems"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="operating-systems">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content: Networking -->
+                        <div class="step-content" data-step-content="networking" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 3 من 7</span>
+                                    <h2 class="content-block__title">Networking</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الشبكات (Networking) هي دراسة كيفية تواصل الحواسيب مع بعضها البعض. فهم الشبكات
+                                        أساسي لبناء تطبيقات الويب والـ APIs.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • TCP/IP Model (نموذج TCP/IP)<br>
+                                        • HTTP Protocol (بروتوكول HTTP، Methods، Status Codes، Headers)<br>
+                                        • Client / Server Architecture (معمارية العميل/الخادم)<br>
+                                        • APIs (واجهات برمجة التطبيقات)<br>
+                                        • DNS, Ports, Sockets
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLAqaqJU4wzYU_6EIzVoxHghQILgyY--yf&si=eoWuIazXsONi09tF"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="networking"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="networking">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 Content: Automations (n8n) -->
+                        <div class="step-content" data-step-content="automations" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 4 من 7</span>
+                                    <h2 class="content-block__title">Automations (n8n)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        n8n هي أداة أتمتة (Automation) مفتوحة المصدر تسمح بربط التطبيقات والخدمات
+                                        المختلفة وإنشاء سير عمل (Workflows) بدون كود أو بقليل من الكود.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Workflows (سير العمل - ربط الأحداث والخدمات)<br>
+                                        • Webhooks (تلقي البيانات من تطبيقات أخرى)<br>
+                                        • API Integration (دمج واجهات برمجة التطبيقات)<br>
+                                        • Triggers and Actions (المشغلات والإجراءات)<br>
+                                        • Automation Scenarios (أمثلة عملية للأتمتة)
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLLHIYYlcgk6KN58UnPm8q1btNHLDJlYto&si=fJI290rM7z2U-nvP"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> Playlist [01]</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="automations"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="automations">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 Content: Artificial Intelligence (AI) -->
+                        <div class="step-content" data-step-content="ai" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 5 من 7</span>
+                                    <h2 class="content-block__title">Artificial Intelligence (AI)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الذكاء الاصطناعي (AI) هو مجال يهدف إلى جعل الحواسيب تفكر وتتصرف بذكاء. يشمل
+                                        تعلم الآلة، الشبكات العصبية، ومعالجة اللغة الطبيعية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Basics (ما هو الذكاء الاصطناعي؟)<br>
+                                        • Models Concept (مفهوم النماذج - كيف تتعلم الآلة؟)<br>
+                                        • Types of AI (Narrow AI, General AI)<br>
+                                        • ML vs DL (Machine Learning vs Deep Learning)<br>
+                                        • AI APIs (OpenAI, Google Gemini, Claude)
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://satr.tuwaiq.edu.sa/path/zaNuCyeqGx/view"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Full Free Course</a></li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="ai"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="ai">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 Content: System Integration -->
+                        <div class="step-content" data-step-content="system-integration" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 6 من 7</span>
+                                    <h2 class="content-block__title">System Integration</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        تكامل الأنظمة (System Integration) هو عملية ربط مكونات مختلفة (API، قاعدة
+                                        بيانات، أتمتة) لتعمل كنظام واحد متكامل.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Backend + Database Integration (ربط الخادم بقاعدة البيانات)<br>
+                                        • Automation Integration (إضافة الأتمتة إلى النظام)<br>
+                                        • API Gateway (بوابة موحدة للـ APIs)<br>
+                                        • Message Queues (قوائم الرسائل للتواصل بين المكونات)<br>
+                                        • Monitoring & Logging (مراقبة النظام)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="system-integration"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="system-integration">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 Content: Final Project -->
+                        <div class="step-content" data-step-content="final-project" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 7 من 7</span>
+                                    <h2 class="content-block__title">Final Project 🔥: Full System</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>نظام متكامل (API + Automation + Database)</strong><br>
+                                        قم ببناء نظام كامل يدمج جميع المفاهيم التي تعلمتها.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المتطلبات التقنية
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • REST API (Node.js / Express أو PHP / Laravel)<br>
+                                        • Database (PostgreSQL / MySQL / MongoDB)<br>
+                                        • Automation (n8n workflow لأتمتة جزء من النظام)<br>
+                                        • Authentication (JWT أو Sessions)<br>
+                                        • Error Handling & Logging<br>
+                                        • Documentation
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> أفكار للمشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • نظام إدارة الطلبات مع أتمتة إرسال الإيميلات<br>
+                                        • نظام تتبع المهام مع إشعارات تلقائية<br>
+                                        • نظام تحليل البيانات مع أتمتة التقارير<br>
+                                        • متجر إلكتروني مع أتمتة المخزون<br>
+                                        • نظام حجوزات مع تذكيرات آلية
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-code-branch"></i></span> بنية
+                                        المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Frontend (اختياري: React / Flutter / HTML+CSS)<br>
+                                        • Backend API (Express / Laravel / FastAPI)<br>
+                                        • Database (PostgreSQL / MongoDB)<br>
+                                        • Automation (n8n workflow)<br>
+                                        • Deployment (Render / Railway / Vercel)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="final-project"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="final-project">إكمال
+                                        المسار 🎉 <i class="fas fa-trophy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <i class="fas fa-code"></i> NextStep <span class="footer__logo-arabic">| الخطوة القادمة</span>
+                    </a>
+                    <p class="footer__tagline">مسارات واضحة، بدون تشتت</p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html" class="footer__nav-link">الرئيسية</a></li>
+                        <li><a href="roadmaps.html" class="footer__nav-link">المسارات</a></li>
+                        <li><a href="assessment/assessment.html" class="footer__nav-link">تقييم سريع</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    <p>جميع الحقوق محفوظة © 2025 NextStep | الخطوة القادمة</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="visually-hidden" aria-live="polite" aria-atomic="true" id="aria-live-region"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="مسار تطوير الواجهات الخلفية - تعلم JavaScript، Node.js، Express، Databases، Authentication، NestJS، والمشاريع العملية. من الصفر إلى الاحتراف.">
+    <title>NextStep | تطوير الواجهات الخلفية — من الصفر إلى الاحتراف</title>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="roadmap" data-roadmap-id="backend">
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="site-header" aria-label="Main navigation">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html" class="logo-link" aria-label="NextStep home page">
+                    <i class="fas fa-code"></i> NextStep <span class="logo__arabic">| الخطوة القادمة</span>
+                </a>
+            </div>
+            <nav class="navbar__nav" aria-label="Primary navigation">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="index.html" class="nav-menu__link">الرئيسية</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="roadmaps.html" class="nav-menu__link nav-menu__link--active"
+                            aria-current="page">المسارات</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content" class="roadmap-page">
+
+        <!-- ==================== ROADMAP HEADER ==================== -->
+        <section class="roadmap-header">
+            <div class="container">
+                <div class="roadmap-header__content">
+                    <div class="roadmap-header__info">
+                        <span class="roadmap-badge"><i class="fas fa-server"></i> مسار تطوير الواجهات الخلفية</span>
+                        <h1 class="roadmap-header__title">تطوير <span class="gradient-text">الواجهات الخلفية</span>
+                        </h1>
+                        <p class="roadmap-header__description">
+                            تعلم كيفية بناء خوادم قوية وقابلة للتوسع باستخدام JavaScript و Node.js. هذا المسار يغطي
+                            الأساسيات، قواعد البيانات، المصادقة، NestJS، والمشاريع العملية.
+                        </p>
+                    </div>
+                    <div class="progress-section">
+                        <div class="progress-header">
+                            <span class="progress-label"><i class="fas fa-chart-line"></i> التقدم العام</span>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                        <div class="progress-bar__container">
+                            <div class="progress-bar__fill" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAIN LAYOUT: SIDEBAR + CONTENT ==================== -->
+        <div class="roadmap-layout">
+            <div class="container">
+                <div class="roadmap-layout__grid">
+
+                    <!-- ==================== LEFT SIDE: SIDEBAR ==================== -->
+                    <aside class="roadmap-sidebar">
+                        <div class="sidebar-header">
+                            <h2 class="sidebar-header__title">
+                                <span class="title-icon"><i class="fas fa-list-ul"></i></span> مسار التعلم
+                            </h2>
+                        </div>
+                        <div class="steps-list" role="tablist">
+
+                            <!-- Steps 1-17 -->
+                            <button class="step-item step-item--active" role="tab" aria-selected="true"
+                                data-step-id="js-foundation" data-step-number="1">
+                                <span class="step-item__status" aria-hidden="true"><i class="fas fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">JavaScript Foundation</span>
+                                    <span class="step-item__subtitle">Variables, Functions, Scope, Async</span>
+                                </span>
+                                <span class="step-item__number">1</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="nodejs-core"
+                                data-step-number="2">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Node.js Core</span>
+                                    <span class="step-item__subtitle">Event Loop, Modules, File System, Streams</span>
+                                </span>
+                                <span class="step-item__number">2</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="project1"
+                                data-step-number="3">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">مشروع 1</span>
+                                    <span class="step-item__subtitle">CLI Tool / File System App</span>
+                                </span>
+                                <span class="step-item__number">3</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="networking"
+                                data-step-number="4">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Networking & Backend Basics</span>
+                                    <span class="step-item__subtitle">HTTP, REST, Cookies, CORS</span>
+                                </span>
+                                <span class="step-item__number">4</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="express"
+                                data-step-number="5">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Express.js</span>
+                                    <span class="step-item__subtitle">Routing, Middleware, REST API Structure</span>
+                                </span>
+                                <span class="step-item__number">5</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="project2"
+                                data-step-number="6">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">مشروع 2</span>
+                                    <span class="step-item__subtitle">CRUD API</span>
+                                </span>
+                                <span class="step-item__number">6</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="databases"
+                                data-step-number="7">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Databases</span>
+                                    <span class="step-item__subtitle">SQL, NoSQL, ORM (Prisma/Mongoose)</span>
+                                </span>
+                                <span class="step-item__number">7</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="project3"
+                                data-step-number="8">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">مشروع 3</span>
+                                    <span class="step-item__subtitle">API + Database Integration</span>
+                                </span>
+                                <span class="step-item__number">8</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="auth"
+                                data-step-number="9">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Authentication & Security</span>
+                                    <span class="step-item__subtitle">Password Hashing, JWT, Authorization</span>
+                                </span>
+                                <span class="step-item__number">9</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="project4"
+                                data-step-number="10">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">مشروع 4</span>
+                                    <span class="step-item__subtitle">Auth System (Login / Signup)</span>
+                                </span>
+                                <span class="step-item__number">10</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="advanced-backend"
+                                data-step-number="11">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Advanced Backend</span>
+                                    <span class="step-item__subtitle">Validation, Error Handling, Logging</span>
+                                </span>
+                                <span class="step-item__number">11</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="advanced-nodejs"
+                                data-step-number="12">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Advanced Node.js</span>
+                                    <span class="step-item__subtitle">Event Loop Deep Dive, Performance</span>
+                                </span>
+                                <span class="step-item__number">12</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="testing"
+                                data-step-number="13">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Testing</span>
+                                    <span class="step-item__subtitle">Unit Testing, API Testing</span>
+                                </span>
+                                <span class="step-item__number">13</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="deployment"
+                                data-step-number="14">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Deployment & DevOps</span>
+                                    <span class="step-item__subtitle">Env Variables, Docker, Deployment</span>
+                                </span>
+                                <span class="step-item__number">14</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="system-design"
+                                data-step-number="15">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">System Design Basics</span>
+                                    <span class="step-item__subtitle">Scalability, Caching, Load Balancing</span>
+                                </span>
+                                <span class="step-item__number">15</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="nestjs"
+                                data-step-number="16">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">NestJS (Professional Layer)</span>
+                                    <span class="step-item__subtitle">Modules, Controllers, Services, DI</span>
+                                </span>
+                                <span class="step-item__number">16</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="final-project"
+                                data-step-number="17">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Final Project 🔥</span>
+                                    <span class="step-item__subtitle">Production Backend</span>
+                                </span>
+                                <span class="step-item__number">17</span>
+                            </button>
+
+                        </div>
+                    </aside>
+
+                    <!-- ==================== RIGHT SIDE: CONTENT PANEL ==================== -->
+                    <div class="roadmap-content">
+
+                        <!-- Step 1 Content: JavaScript Foundation -->
+                        <div class="step-content step-content--active" data-step-content="js-foundation">
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 1 من 17</span>
+                                    <h2 class="content-block__title">JavaScript Foundation</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        JavaScript هي لغة البرمجة الأساسية لتطوير الواجهات الخلفية باستخدام Node.js.
+                                        يجب إتقان أساسيات JavaScript قبل البدء في تعلم Node.js.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Variables (var, let, const)<br>
+                                        • Data Types (String, Number, Boolean, Object, Array)<br>
+                                        • Functions (declaration, expression, arrow)<br>
+                                        • Scope (global, function, block)<br>
+                                        • Closures<br>
+                                        • Async Programming (Callbacks, Promises, Async/Await)
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&si=27YgwtqNhgcfXEDQ"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @Elzero [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLknwEmKsW8OuTqUDaFRBiAViDZ5uI3VcE&si=nokXQXw4ZqfFZ23m"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @AbdelrahmanGamal
+                                                [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLNFDrRZdysFx-eu67uE0T0Erj2qx6lYjQ&si=jlpoi3_KPzRzpwiX"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist @ITI [03]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="js-foundation">
+                                        <i class="fas fa-check"></i> تم الإكمال
+                                    </button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="js-foundation">
+                                        الخطوة التالية <i class="fas fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 Content: Node.js Core -->
+                        <div class="step-content" data-step-content="nodejs-core" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 2 من 17</span>
+                                    <h2 class="content-block__title">Node.js Core</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Node.js هي بيئة تشغيل JavaScript تعتمد على محرك V8 من Google. تسمح بتشغيل
+                                        JavaScript على الخادم (Server-side).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Runtime Concept و Node Architecture<br>
+                                        • Event Loop (كيف يعمل Node.js)<br>
+                                        • Modules (CommonJS vs ES Modules)<br>
+                                        • Built-in Modules (fs, path, http, os)<br>
+                                        • File System (قراءة وكتابة الملفات)<br>
+                                        • Streams and Buffers<br>
+                                        • Error Handling and Debugging
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLqPejUavRNTUZUdVd91NRrD-dz6jrbPFL&si=9JG8yEv-2hRvp3M1"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLGhZWewM_75LQf3KvHo6HHSclmDyDazl7&si=tAlG41P53Sf9JPSY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a>
+                                        </li>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="nodejs-core"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="nodejs-core">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content: مشروع 1 - CLI Tool -->
+                        <div class="step-content" data-step-content="project1" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 3 من 17</span>
+                                    <h2 class="content-block__title">مشروع 1: CLI Tool / File System App</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>أداة سطر أوامر (CLI) لإدارة الملفات</strong><br>
+                                        قم ببناء تطبيق سطر أوامر يتعامل مع نظام الملفات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المتطلبات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • قراءة وكتابة الملفات باستخدام fs module<br>
+                                        • إنشاء وحذف المجلدات<br>
+                                        • معالجة مسارات الملفات باستخدام path module<br>
+                                        • استقبال المدخلات من سطر الأوامر (process.argv)<br>
+                                        • عرض المساعدة (--help)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="project1"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="project1">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step 4 Content: Networking & Backend Basics -->
+                        <div class="step-content" data-step-content="networking" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 4 من 17</span>
+                                    <h2 class="content-block__title">Networking & Backend Basics</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        فهم أساسيات الشبكات والخوادم هو أساس بناء واجهات خلفية قوية. يجب فهم كيفية عمل
+                                        HTTP، تصميم APIs، وآليات
+                                        الأمان الأساسية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • HTTP Protocol (Methods, Status Codes, Headers)<br>
+                                        • REST API Design Principles<br>
+                                        • Cookies vs Tokens<br>
+                                        • Sessions Management<br>
+                                        • CORS (Cross-Origin Resource Sharing)<br>
+                                        • HTTPS and Security Basics
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLqPejUavRNTUZUdVd91NRrD-dz6jrbPFL&si=9JG8yEv-2hRvp3M1"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLGhZWewM_75LQf3KvHo6HHSclmDyDazl7&si=tAlG41P53Sf9JPSY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a>
+                                        </li>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="networking"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="networking">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 Content: Express.js -->
+                        <div class="step-content" data-step-content="express" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 5 من 17</span>
+                                    <h2 class="content-block__title">Express.js</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Express.js هو إطار عمل (Framework) خفيف وسريع لبناء تطبيقات الويب و APIs
+                                        باستخدام Node.js. يعتبر
+                                        المعيار الصناعي لتطوير الواجهات الخلفية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Setting up Express server<br>
+                                        • Routing (GET, POST, PUT, DELETE)<br>
+                                        • Middleware (built-in, custom, third-party)<br>
+                                        • Request and Response objects<br>
+                                        • Error Handling Middleware<br>
+                                        • Static Files Serving<br>
+                                        • REST API Structure
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLQtNtS-WfRa8OF9juY3k6WUWayMfDKHK2&si=Z-FsgwyDqiI0MgXg"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PL5gCk5NdNx586mk_JOhe30dd59IgrFG_U&si=c5CwRTD_m85BTYc4"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLNFDrRZdysFx0Mc0z6tHHh-0FfZDoGaS7&si=okPFXd5vOEIlP5qO"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [03]</a>
+                                        </li>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="express"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="express">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 Content: مشروع 2 - CRUD API -->
+                        <div class="step-content" data-step-content="project2" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 6 من 17</span>
+                                    <h2 class="content-block__title">مشروع 2: CRUD API</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>API كاملة لعمليات CRUD (بدون قاعدة بيانات)</strong><br>
+                                        قم ببناء API باستخدام Express.js يدير بيانات في الذاكرة (In-memory storage).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المتطلبات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Create (POST) - إضافة عنصر جديد<br>
+                                        • Read (GET) - قراءة عنصر أو جميع العناصر<br>
+                                        • Update (PUT/PATCH) - تحديث عنصر<br>
+                                        • Delete (DELETE) - حذف عنصر<br>
+                                        • Validation (التحقق من صحة البيانات)<br>
+                                        • Proper Status Codes
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="project2"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="project2">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 Content: Databases -->
+                        <div class="step-content" data-step-content="databases" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 7 من 17</span>
+                                    <h2 class="content-block__title">Databases</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        قواعد البيانات (Databases) هي مكان تخزين البيانات بشكل دائم. هناك نوعان رئيسيان:
+                                        SQL (علائقية) و NoSQL
+                                        (غير علائقية).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Data Modeling (تصميم البيانات)<br>
+                                        • SQL Basics (PostgreSQL / MySQL)<br>
+                                        • NoSQL Basics (MongoDB)<br>
+                                        • ORM (Prisma with PostgreSQL)<br>
+                                        • ODM (Mongoose with MongoDB)<br>
+                                        • Database Relationships (One-to-One, One-to-Many, Many-to-Many)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="databases"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="databases">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 8 Content: مشروع 3 - API + Database Integration -->
+                        <div class="step-content" data-step-content="project3" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 8 من 17</span>
+                                    <h2 class="content-block__title">مشروع 3: API + Database Integration</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>دمج API مع قاعدة بيانات حقيقية</strong><br>
+                                        قم بتطوير API متكامل يتعامل مع قاعدة بيانات (PostgreSQL أو MongoDB).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المتطلبات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • تصميم قاعدة بيانات (Schema)<br>
+                                        • إنشاء Models باستخدام Prisma أو Mongoose<br>
+                                        • تنفيذ عمليات CRUD على قاعدة البيانات<br>
+                                        • استخدام Environmental Variables للمتغيرات الحساسة<br>
+                                        • معالجة أخطاء قاعدة البيانات
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="project3"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="project3">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 Content: Authentication & Security -->
+                        <div class="step-content" data-step-content="auth" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 9 من 17</span>
+                                    <h2 class="content-block__title">Authentication & Security</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المصادقة (Authentication) هي عملية التحقق من هوية المستخدم. الأمان (Security) هو
+                                        حماية البيانات من
+                                        الوصول غير المصرح به.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Password Hashing (bcrypt)<br>
+                                        • JWT (JSON Web Tokens)<br>
+                                        • Authentication Middleware<br>
+                                        • Authorization (Roles: admin, user, moderator)<br>
+                                        • Rate Limiting<br>
+                                        • Helmet.js (Security Headers)<br>
+                                        • Input Sanitization
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLDQ11FgmbqQO6KEhqLzT_USha4ZysXY2C&si=fJ047VCGUfseh0T0"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="auth"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="auth">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 10 Content: مشروع 4 - Auth System -->
+                        <div class="step-content" data-step-content="project4" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 10 من 17</span>
+                                    <h2 class="content-block__title">مشروع 4: Auth System (Login / Signup)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>نظام مصادقة كامل</strong><br>
+                                        قم ببناء نظام تسجيل دخول وتسجيل مستخدمين كامل مع حماية المسارات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المتطلبات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Signup (تسجيل مستخدم جديد مع تشفير كلمة المرور)<br>
+                                        • Login (تسجيل دخول وإصدار JWT)<br>
+                                        • Protected Routes (مسارات محمية)<br>
+                                        • Role-Based Access Control<br>
+                                        • Logout (تسجيل خروج)<br>
+                                        • Refresh Tokens (اختياري)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="project4"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="project4">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 11 Content: Advanced Backend -->
+                        <div class="step-content" data-step-content="advanced-backend" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 11 من 17</span>
+                                    <h2 class="content-block__title">Advanced Backend</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> المواضيع
+                                        المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Validation (Joi / Zod / class-validator)<br>
+                                        • Error Handling (Global error handler)<br>
+                                        • Logging (Winston / Morgan)<br>
+                                        • API Architecture (MVC pattern)<br>
+                                        • Environment Configuration<br>
+                                        • Rate Limiting & Security
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="advanced-backend"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="advanced-backend">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 12 Content: Advanced Node.js -->
+                        <div class="step-content" data-step-content="advanced-nodejs" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 12 من 17</span>
+                                    <h2 class="content-block__title">Advanced Node.js</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> المواضيع
+                                        المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Event Loop Deep Dive (مراحل الحلقة)<br>
+                                        • Microtasks vs Macrotasks<br>
+                                        • Cluster Module (استخدام عدة أنوية)<br>
+                                        • Worker Threads (معالجة متوازية)<br>
+                                        • Performance Optimization<br>
+                                        • Memory Management and Leaks<br>
+                                        • Profiling and Debugging
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="advanced-nodejs"><i
+                                            class="fas fa-check"></i>
+                                        تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="advanced-nodejs">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 13 Content: Testing -->
+                        <div class="step-content" data-step-content="testing" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 13 من 17</span>
+                                    <h2 class="content-block__title">Testing</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> المواضيع
+                                        المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Unit Testing باستخدام Jest<br>
+                                        • API Testing باستخدام Supertest<br>
+                                        • Mocking Dependencies<br>
+                                        • Test Coverage<br>
+                                        • Integration Testing<br>
+                                        • End-to-End Testing
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="testing"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="testing">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 14 Content: Deployment & DevOps -->
+                        <div class="step-content" data-step-content="deployment" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 14 من 17</span>
+                                    <h2 class="content-block__title">Deployment & DevOps</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> المواضيع
+                                        المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Environment Variables (.env)<br>
+                                        • PM2 for Process Management<br>
+                                        • Docker Basics (Containerization)<br>
+                                        • Docker Compose (Multi-container apps)<br>
+                                        • CI/CD Basics (GitHub Actions)<br>
+                                        • Deployment Platforms (Render, Railway, AWS, DigitalOcean)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="deployment"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="deployment">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 15 Content: System Design Basics -->
+                        <div class="step-content" data-step-content="system-design" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 15 من 17</span>
+                                    <h2 class="content-block__title">System Design Basics</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> المواضيع
+                                        المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Scalability (Horizontal vs Vertical)<br>
+                                        • Caching Strategies (Redis, CDN)<br>
+                                        • Load Balancing<br>
+                                        • Database Scaling (Sharding, Replication)<br>
+                                        • Message Queues (RabbitMQ, Kafka)<br>
+                                        • CAP Theorem<br>
+                                        • Microservices vs Monolithic
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLXrXlCzvqkUwpf8GvxD466HnEmuRWbMps&si=8J0LcguqL7cNsylY"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="system-design"><i
+                                            class="fas fa-check"></i>
+                                        تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="system-design">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 16 Content: NestJS -->
+                        <div class="step-content" data-step-content="nestjs" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 16 من 17</span>
+                                    <h2 class="content-block__title">NestJS (Professional Layer)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        NestJS هو إطار عمل (Framework) متقدم لتطوير تطبيقات Node.js يعتمد على TypeScript
+                                        ويستخدم بنية مشابهة
+                                        لـ Angular (Modules, Controllers, Services).
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Modules (تجميع الميزات)<br>
+                                        • Controllers (معالجة الطلبات)<br>
+                                        • Services (منطق الأعمال)<br>
+                                        • Dependency Injection (حقن الاعتماديات)<br>
+                                        • Guards (حماية المسارات)<br>
+                                        • Pipes (تحقق وتحويل البيانات)<br>
+                                        • Interceptors<br>
+                                        • Authentication & Authorization in NestJS
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLOldSEMXUdZsFAEJwxYkE83dhm1ZkWEOL&si=kZCJM_WP_gSSefgm"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PL5gCk5NdNx5-W_GivoyivrwGOlNnffTX4&si=pv3TngEwJIIvsheL"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a>
+                                        </li>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="nestjs"><i
+                                            class="fas fa-check"></i> تم
+                                        الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="nestjs">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 17 Content: Final Project 🔥 -->
+                        <div class="step-content" data-step-content="final-project" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 17 من 17</span>
+                                    <h2 class="content-block__title">Final Project 🔥: Production Backend</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>نظام خلفي متكامل جاهز للإنتاج (Production-Ready Backend)</strong><br>
+                                        قم ببناء API كامل باستخدام جميع المفاهيم التي تعلمتها.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المتطلبات التقنية
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • REST API (Express أو NestJS)<br>
+                                        • Authentication & Authorization (JWT)<br>
+                                        • Database Integration (PostgreSQL + Prisma / MongoDB + Mongoose)<br>
+                                        • Validation & Error Handling<br>
+                                        • Logging<br>
+                                        • Testing (Unit + Integration)<br>
+                                        • Docker Containerization<br>
+                                        • Environment Configuration<br>
+                                        • Documentation (Swagger / Postman)<br>
+                                        • Deployment (Render / Railway / AWS)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-lightbulb"></i></span> أفكار للمشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • E-commerce API (منتج إلكتروني كامل)<br>
+                                        • Social Media API (منصة تواصل اجتماعي)<br>
+                                        • Task Management API (نظام إدارة مهام)<br>
+                                        • Blog Platform API (منصة تدوين)<br>
+                                        • Booking System API (نظام حجوزات)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="final-project"><i
+                                            class="fas fa-check"></i>
+                                        تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="final-project">إكمال
+                                        المسار 🎉 <i class="fas fa-trophy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <i class="fas fa-code"></i> NextStep <span class="footer__logo-arabic">| الخطوة القادمة</span>
+                    </a>
+                    <p class="footer__tagline">مسارات واضحة، بدون تشتت</p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html" class="footer__nav-link">الرئيسية</a></li>
+                        <li><a href="roadmaps.html" class="footer__nav-link">المسارات</a></li>
+                        <li><a href="assessment/assessment.html" class="footer__nav-link">تقييم سريع</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    <p>جميع الحقوق محفوظة © 2025 NextStep | الخطوة القادمة</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="visually-hidden" aria-live="polite" aria-atomic="true" id="aria-live-region"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

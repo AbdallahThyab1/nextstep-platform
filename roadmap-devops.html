@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="مسار DevOps والبنية التحتية - تعلم Linux، Git، CI/CD، Docker، Kubernetes، Cloud، IaC، Monitoring، Security، والأتمتة.">
+    <title>NextStep | DevOps والبنية التحتية — من الأساسيات إلى الاحتراف</title>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="roadmap" data-roadmap-id="devops">
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="site-header" aria-label="Main navigation">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html" class="logo-link" aria-label="NextStep home page">
+                    <i class="fas fa-code"></i> NextStep <span class="logo__arabic">| الخطوة القادمة</span>
+                </a>
+            </div>
+            <nav class="navbar__nav" aria-label="Primary navigation">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="index.html" class="nav-menu__link">الرئيسية</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="roadmaps.html" class="nav-menu__link nav-menu__link--active"
+                            aria-current="page">المسارات</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content" class="roadmap-page">
+
+        <!-- ==================== ROADMAP HEADER ==================== -->
+        <section class="roadmap-header">
+            <div class="container">
+                <div class="roadmap-header__content">
+                    <div class="roadmap-header__info">
+                        <span class="roadmap-badge"><i class="fas fa-cloud-upload-alt"></i> مسار DevOps والبنية
+                            التحتية</span>
+                        <h1 class="roadmap-header__title">DevOps <span class="gradient-text">والبنية التحتية</span>
+                        </h1>
+                        <p class="roadmap-header__description">
+                            تعلم كيفية إدارة البنية التحتية، أتمتة العمليات، ونشر التطبيقات بكفاءة. هذا المسار يغطي
+                            Linux، Git، CI/CD، Docker، Kubernetes، Cloud، IaC، Monitoring، Security، والأتمتة.
+                        </p>
+                    </div>
+                    <div class="progress-section">
+                        <div class="progress-header">
+                            <span class="progress-label"><i class="fas fa-chart-line"></i> التقدم العام</span>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                        <div class="progress-bar__container">
+                            <div class="progress-bar__fill" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAIN LAYOUT: SIDEBAR + CONTENT ==================== -->
+        <div class="roadmap-layout">
+            <div class="container">
+                <div class="roadmap-layout__grid">
+
+                    <!-- ==================== LEFT SIDE: SIDEBAR ==================== -->
+                    <aside class="roadmap-sidebar">
+                        <div class="sidebar-header">
+                            <h2 class="sidebar-header__title">
+                                <span class="title-icon"><i class="fas fa-list-ul"></i></span> مسار التعلم
+                            </h2>
+                        </div>
+                        <div class="steps-list" role="tablist">
+
+                            <!-- Steps 1-10 -->
+                            <button class="step-item step-item--active" role="tab" aria-selected="true"
+                                data-step-id="linux" data-step-number="1">
+                                <span class="step-item__status" aria-hidden="true"><i class="fas fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Linux</span>
+                                    <span class="step-item__subtitle">Command Line, File System, Permissions</span>
+                                </span>
+                                <span class="step-item__number">1</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="git"
+                                data-step-number="2">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Git & GitHub</span>
+                                    <span class="step-item__subtitle">Version Control, Branching, Collaboration</span>
+                                </span>
+                                <span class="step-item__number">2</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="cicd"
+                                data-step-number="3">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">CI/CD</span>
+                                    <span class="step-item__subtitle">Pipelines, Automation (Build/Test/Deploy)</span>
+                                </span>
+                                <span class="step-item__number">3</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="docker"
+                                data-step-number="4">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Docker</span>
+                                    <span class="step-item__subtitle">Containers, Images, Docker Compose</span>
+                                </span>
+                                <span class="step-item__number">4</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="kubernetes"
+                                data-step-number="5">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Kubernetes</span>
+                                    <span class="step-item__subtitle">Pods, Services, Deployment</span>
+                                </span>
+                                <span class="step-item__number">5</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="cloud"
+                                data-step-number="6">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Cloud</span>
+                                    <span class="step-item__subtitle">AWS / GCP / Azure Basics, Deployment</span>
+                                </span>
+                                <span class="step-item__number">6</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="iac"
+                                data-step-number="7">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Infrastructure as Code (IaC)</span>
+                                    <span class="step-item__subtitle">Terraform Basics</span>
+                                </span>
+                                <span class="step-item__number">7</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="monitoring"
+                                data-step-number="8">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Monitoring & Logging</span>
+                                    <span class="step-item__subtitle">Logs, Metrics</span>
+                                </span>
+                                <span class="step-item__number">8</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="security"
+                                data-step-number="9">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Security</span>
+                                    <span class="step-item__subtitle">Secrets, Best Practices</span>
+                                </span>
+                                <span class="step-item__number">9</span>
+                            </button>
+
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="automation"
+                                data-step-number="10">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Automation</span>
+                                    <span class="step-item__subtitle">Workflows, n8n Integration</span>
+                                </span>
+                                <span class="step-item__number">10</span>
+                            </button>
+
+                        </div>
+                    </aside>
+
+                    <!-- ==================== RIGHT SIDE: CONTENT PANEL ==================== -->
+                    <div class="roadmap-content">
+
+                        <!-- Step 1 Content: Linux -->
+                        <div class="step-content step-content--active" data-step-content="linux">
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 1 من 10</span>
+                                    <h2 class="content-block__title">Linux</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Linux هو نظام تشغيل مفتوح المصدر يستخدم على نطاق واسع في الخوادم والأنظمة
+                                        المضمنة. فهم أوامر Linux أساسي لأي مهندس DevOps.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Command Line (الأوامر الأساسية: ls, cd, cp, mv, rm, grep, find, ps, top)<br>
+                                        • File System (نظام الملفات: /home, /etc, /var, /usr, الأذونات chmod/chown)<br>
+                                        • Permissions (صلاحيات الملفات والمجلدات)<br>
+                                        • Package Managers (apt, yum, dnf)<br>
+                                        • Shell Scripting Basics
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtu.be/gojeTqXdBH0?si=jEpMJ4Ls2hHqdkaB"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="linux">
+                                        <i class="fas fa-check"></i> تم الإكمال
+                                    </button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="linux">
+                                        الخطوة التالية <i class="fas fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 Content: Git & GitHub -->
+                        <div class="step-content" data-step-content="git" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 2 من 10</span>
+                                    <h2 class="content-block__title">Git & GitHub</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Git هو نظام تحكم في الإصدارات (Version Control) يسمح بتتبع التغييرات في الكود
+                                        والعمل الجماعي. GitHub هو منصة استضافة للمشاريع باستخدام Git.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Version Control (مفهوم التحكم في الإصدارات)<br>
+                                        • Branching (إنشاء فروع، دمج، حل النزاعات)<br>
+                                        • Collaboration (Pull Requests، Code Review، Issues)<br>
+                                        • Git Commands (clone, add, commit, push, pull, merge, rebase)<br>
+                                        • GitHub Actions Basics
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtu.be/Q6G-J54vgKc?si=eCmE8WuDCGFoRbdc"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="git"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="git">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content: CI/CD -->
+                        <div class="step-content" data-step-content="cicd" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 3 من 10</span>
+                                    <h2 class="content-block__title">CI/CD</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        CI/CD (Continuous Integration / Continuous Deployment) هي ممارسة أتمتة بناء
+                                        واختبار ونشر التطبيقات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Pipelines (أنابيب CI/CD: GitHub Actions، GitLab CI، Jenkins)<br>
+                                        • Automation (أتمتة عملية البناء والاختبار والنشر)<br>
+                                        • Build (بناء التطبيق)<br>
+                                        • Test (تشغيل الاختبارات تلقائياً)<br>
+                                        • Deploy (نشر التطبيق إلى الخادم)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="cicd"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="cicd">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 Content: Docker -->
+                        <div class="step-content" data-step-content="docker" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 4 من 10</span>
+                                    <h2 class="content-block__title">Docker</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Docker هو منصة حاويات (Containers) تسمح بتغليف التطبيقات مع جميع اعتمادياتها
+                                        لتشغيلها بشكل متسق في أي بيئة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Containers (الحاويات مقابل الأجهزة الافتراضية)<br>
+                                        • Images (بناء الصور باستخدام Dockerfile)<br>
+                                        • Docker Compose (تشغيل تطبيقات متعددة الحاويات)<br>
+                                        • Docker Commands (run, build, push, pull, ps, logs)<br>
+                                        • Volumes & Networks
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtu.be/PrusdhS2lmo?si=FQFYhhHo5s09nCIS"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="docker"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="docker">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 Content: Kubernetes -->
+                        <div class="step-content" data-step-content="kubernetes" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 5 من 10</span>
+                                    <h2 class="content-block__title">Kubernetes</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        Kubernetes هو نظام مفتوح المصدر لإدارة وتنسيق الحاويات (Container
+                                        Orchestration) على نطاق واسع.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Pods (أصغر وحدة في Kubernetes، تحتوي على حاوية أو أكثر)<br>
+                                        • Services (ربط الـ Pods بالشبكة الخارجية)<br>
+                                        • Deployment (إدارة إصدارات التطبيق والتحديثات)<br>
+                                        • ConfigMaps & Secrets (إدارة التكوينات والبيانات الحساسة)<br>
+                                        • Ingress (توجيه حركة المرور)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="kubernetes"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="kubernetes">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 Content: Cloud -->
+                        <div class="step-content" data-step-content="cloud" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 6 من 10</span>
+                                    <h2 class="content-block__title">Cloud</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الحوسبة السحابية (Cloud Computing) هي تقديم خدمات الحوسبة (خوادم، تخزين، قواعد
+                                        بيانات) عبر الإنترنت.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • AWS / GCP / Azure Basics (أساسيات كبرى مزودي الخدمات السحابية)<br>
+                                        • Deployment (نشر التطبيقات على السحابة)<br>
+                                        • Compute Services (EC2، Compute Engine، VMs)<br>
+                                        • Storage Services (S3، Cloud Storage، Blob)<br>
+                                        • Database Services (RDS، Cloud SQL، Cosmos DB)
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLZmPGUyBFvUqo76bXGnXq9EofsaV2d8K5&si=3cGOK5A9q2yQGssM"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="cloud"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="cloud">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 Content: Infrastructure as Code (IaC) -->
+                        <div class="step-content" data-step-content="iac" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 7 من 10</span>
+                                    <h2 class="content-block__title">Infrastructure as Code (IaC)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        البنية التحتية ككود (IaC) هي إدارة وتجهيز البنية التحتية من خلال ملفات تكوين
+                                        بدلاً من العمليات اليدوية.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Terraform Basics (أساسيات Terraform)<br>
+                                        • HCL (HashiCorp Configuration Language)<br>
+                                        • Providers (AWS, GCP, Azure, Kubernetes)<br>
+                                        • Resources (إنشاء وإدارة الموارد)<br>
+                                        • State Management (إدارة حالة البنية التحتية)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="iac"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="iac">الخطوة التالية
+                                        <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 8 Content: Monitoring & Logging -->
+                        <div class="step-content" data-step-content="monitoring" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 8 من 10</span>
+                                    <h2 class="content-block__title">Monitoring & Logging</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المراقبة (Monitoring) وجمع السجلات (Logging) هما أدوات أساسية لفهم صحة وأداء
+                                        الأنظمة والتطبيقات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Logs (جمع وتحليل السجلات باستخدام ELK Stack أو Loki)<br>
+                                        • Metrics (جمع المقاييس باستخدام Prometheus)<br>
+                                        • Visualization (لوحات معلومات باستخدام Grafana)<br>
+                                        • Alerting (إعداد التنبيهات عند حدوث مشاكل)<br>
+                                        • Tracing (تتبع الطلبات عبر الخدمات)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="monitoring"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="monitoring">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 Content: Security -->
+                        <div class="step-content" data-step-content="security" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 9 من 10</span>
+                                    <h2 class="content-block__title">Security</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        أمن DevOps (DevSecOps) هو دمج ممارسات الأمان في دورة حياة تطوير البرمجيات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Secrets Management (إدارة البيانات الحساسة باستخدام Vault أو GitHub
+                                        Secrets)<br>
+                                        • Best Practices (أفضل الممارسات الأمنية)<br>
+                                        • SAST / DAST (اختبار أمان الكود والتطبيقات)<br>
+                                        • Container Security (أمان الحاويات)<br>
+                                        • Compliance (الامتثال للمعايير)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="security"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="security">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 10 Content: Automation -->
+                        <div class="step-content" data-step-content="automation" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 10 من 10</span>
+                                    <h2 class="content-block__title">Automation</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الأتمتة (Automation) هي استخدام التكنولوجيا لأداء المهام بأقل تدخل بشري. تشمل
+                                        أتمتة العمليات المتكررة وربط الأنظمة المختلفة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Workflows (إنشاء سير عمل لأتمتة المهام)<br>
+                                        • n8n Integration (دمج n8n مع خدمات مختلفة)<br>
+                                        • Scripting (كتابة سكريبتات لأتمتة المهام)<br>
+                                        • Cron Jobs (جدولة المهام الدورية)<br>
+                                        • Automation Scenarios (أمثلة عملية: إرسال إيميلات، معالجة بيانات)
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="automation"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="automation">إكمال
+                                        المسار 🎉 <i class="fas fa-trophy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <i class="fas fa-code"></i> NextStep <span class="footer__logo-arabic">| الخطوة القادمة</span>
+                    </a>
+                    <p class="footer__tagline">مسارات واضحة، بدون تشتت</p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html" class="footer__nav-link">الرئيسية</a></li>
+                        <li><a href="roadmaps.html" class="footer__nav-link">المسارات</a></li>
+                        <li><a href="assessment/assessment.html" class="footer__nav-link">تقييم سريع</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    <p>جميع الحقوق محفوظة © 2025 NextStep | الخطوة القادمة</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="visually-hidden" aria-live="polite" aria-atomic="true" id="aria-live-region"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

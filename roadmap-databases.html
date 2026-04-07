@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="مسار قواعد البيانات - تعلم SQL، تصميم قواعد البيانات، Normalization، الفهارس، المعاملات، وتحسين الأداء. من الأساسيات إلى الاحتراف.">
+    <title>NextStep | قواعد البيانات — من الأساسيات إلى الاحتراف</title>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="roadmap" data-roadmap-id="databases">
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="site-header" aria-label="Main navigation">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html" class="logo-link" aria-label="NextStep home page">
+                    <i class="fas fa-code"></i> NextStep <span class="logo__arabic">| الخطوة القادمة</span>
+                </a>
+            </div>
+            <nav class="navbar__nav" aria-label="Primary navigation">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="index.html" class="nav-menu__link">الرئيسية</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="roadmaps.html" class="nav-menu__link nav-menu__link--active"
+                            aria-current="page">المسارات</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content" class="roadmap-page">
+
+        <!-- ==================== ROADMAP HEADER ==================== -->
+        <section class="roadmap-header">
+            <div class="container">
+                <div class="roadmap-header__content">
+                    <div class="roadmap-header__info">
+                        <span class="roadmap-badge"><i class="fas fa-database"></i> مسار قواعد البيانات</span>
+                        <h1 class="roadmap-header__title">قواعد <span class="gradient-text">البيانات</span>
+                        </h1>
+                        <p class="roadmap-header__description">
+                            تعلم كيفية تصميم وإدارة قواعد البيانات بكفاءة. هذا المسار يغطي SQL، تصميم قواعد البيانات،
+                            Normalization، الفهارس، المعاملات، وتحسين الأداء. من الأساسيات إلى الاحتراف.
+                        </p>
+                    </div>
+                    <div class="progress-section">
+                        <div class="progress-header">
+                            <span class="progress-label"><i class="fas fa-chart-line"></i> التقدم العام</span>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                        <div class="progress-bar__container">
+                            <div class="progress-bar__fill" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAIN LAYOUT: SIDEBAR + CONTENT ==================== -->
+        <div class="roadmap-layout">
+            <div class="container">
+                <div class="roadmap-layout__grid">
+
+                    <!-- ==================== LEFT SIDE: SIDEBAR ==================== -->
+                    <aside class="roadmap-sidebar">
+                        <div class="sidebar-header">
+                            <h2 class="sidebar-header__title">
+                                <span class="title-icon"><i class="fas fa-list-ul"></i></span> مسار التعلم
+                            </h2>
+                        </div>
+                        <div class="steps-list" role="tablist">
+
+                            <!-- Step 1: Database Foundations -->
+                            <button class="step-item step-item--active" role="tab" aria-selected="true"
+                                data-step-id="database-foundations" data-step-number="1">
+                                <span class="step-item__status" aria-hidden="true"><i class="fas fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Database Foundations</span>
+                                    <span class="step-item__subtitle">مقدمة في قواعد البيانات</span>
+                                </span>
+                                <span class="step-item__number">1</span>
+                            </button>
+
+                            <!-- Step 2: DBMS Fundamentals -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="dbms-fundamentals"
+                                data-step-number="2">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">DBMS Fundamentals</span>
+                                    <span class="step-item__subtitle">أساسيات أنظمة إدارة قواعد البيانات</span>
+                                </span>
+                                <span class="step-item__number">2</span>
+                            </button>
+
+                            <!-- Step 3: SQL Basics -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="sql-basics"
+                                data-step-number="3">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">SQL Basics</span>
+                                    <span class="step-item__subtitle">SELECT, INSERT, UPDATE, DELETE, JOIN</span>
+                                </span>
+                                <span class="step-item__number">3</span>
+                            </button>
+
+                            <!-- Step 4: SQL Advanced -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="sql-advanced"
+                                data-step-number="4">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">SQL Advanced</span>
+                                    <span class="step-item__subtitle">GROUP BY, HAVING, Subqueries, CTE</span>
+                                </span>
+                                <span class="step-item__number">4</span>
+                            </button>
+
+                            <!-- Step 5: Database Design -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="database-design"
+                                data-step-number="5">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Database Design</span>
+                                    <span class="step-item__subtitle">ERD, Relationships, Keys</span>
+                                </span>
+                                <span class="step-item__number">5</span>
+                            </button>
+
+                            <!-- Step 6: Normalization 🔥 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="normalization"
+                                data-step-number="6">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Normalization 🔥</span>
+                                    <span class="step-item__subtitle">1NF, 2NF, 3NF, BCNF</span>
+                                </span>
+                                <span class="step-item__number">6</span>
+                            </button>
+
+                            <!-- Step 7: Project 1 -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="project1"
+                                data-step-number="7">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Project 1 🔥</span>
+                                    <span class="step-item__subtitle">Full Database (Store / Clinic / Student)</span>
+                                </span>
+                                <span class="step-item__number">7</span>
+                            </button>
+
+                            <!-- Step 8: Indexing -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="indexing"
+                                data-step-number="8">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Indexing</span>
+                                    <span class="step-item__subtitle">B-Tree, Clustered vs Non-Clustered</span>
+                                </span>
+                                <span class="step-item__number">8</span>
+                            </button>
+
+                            <!-- Step 9: Query Processing -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="query-processing"
+                                data-step-number="9">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Query Processing</span>
+                                    <span class="step-item__subtitle">Execution Plan, Optimization</span>
+                                </span>
+                                <span class="step-item__number">9</span>
+                            </button>
+
+                            <!-- Step 10: Transactions -->
+                            <button class="step-item" role="tab" aria-selected="false" data-step-id="transactions"
+                                data-step-number="10">
+                                <span class="step-item__status" aria-hidden="true"><i class="far fa-circle"></i></span>
+                                <span class="step-item__content">
+                                    <span class="step-item__title">Transactions & Concurrency</span>
+                                    <span class="step-item__subtitle">ACID, Isolation Levels</span>
+                                </span>
+                                <span class="step-item__number">10</span>
+                            </button>
+
+                        </div>
+                    </aside>
+
+                    <!-- ==================== RIGHT SIDE: CONTENT PANEL ==================== -->
+                    <div class="roadmap-content">
+
+                        <!-- Step 1 Content: Database Foundations -->
+                        <div class="step-content step-content--active" data-step-content="database-foundations">
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 1 من 10</span>
+                                    <h2 class="content-block__title">Database Foundations</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        قاعدة البيانات (Database) هي مجموعة منظمة من البيانات المخزنة إلكترونياً. نظام
+                                        إدارة قواعد البيانات (DBMS) هو البرنامج الذي يتفاعل مع المستخدمين والتطبيقات
+                                        لاسترداد وتحليل البيانات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • ما هي قاعدة البيانات؟<br>
+                                        • DBMS vs File System (الفرق بين نظام الملفات وقواعد البيانات)<br>
+                                        • لماذا نحتاج قواعد البيانات؟<br>
+                                        • Data Models (Relational Basics)<br>
+                                        • High-Level Architecture (المعمارية العامة)
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLuvT-i95N7yXeYtYgkfPaHbMgUzk_aYN9&si=fidn415S0IPTKq11"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PL37D52B7714788190&si=F78t9Rxv3fvf0i4F"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRiyryTrbKHX1Sh9luYI0dhX&si=ENF35_Q0zXR708Qc"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [03]</a>
+                                        </li>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="database-foundations">
+                                        <i class="fas fa-check"></i> تم الإكمال
+                                    </button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="database-foundations">
+                                        الخطوة التالية <i class="fas fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 Content: DBMS Fundamentals -->
+                        <div class="step-content" data-step-content="dbms-fundamentals" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 2 من 10</span>
+                                    <h2 class="content-block__title">DBMS Fundamentals</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        DBMS (نظام إدارة قواعد البيانات) هو برنامج يسمح بإنشاء وإدارة قواعد البيانات.
+                                        يتكون من عدة مكونات تعمل معاً لتخزين واسترجاع البيانات بكفاءة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • DBMS Components (مكونات نظام إدارة قواعد البيانات)<br>
+                                        &nbsp;&nbsp;&nbsp;→ Storage Engine (محرك التخزين)<br>
+                                        &nbsp;&nbsp;&nbsp;→ Query Processor (معالج الاستعلامات)<br>
+                                        • Data Storage Concept (مفهوم تخزين البيانات)<br>
+                                        • Abstraction Levels (مستويات التجريد)<br>
+                                        &nbsp;&nbsp;&nbsp;→ Physical / Logical / View
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLuvT-i95N7yXeYtYgkfPaHbMgUzk_aYN9&si=fidn415S0IPTKq11"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PL37D52B7714788190&si=F78t9Rxv3fvf0i4F"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRiyryTrbKHX1Sh9luYI0dhX&si=ENF35_Q0zXR708Qc"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [03]</a>
+                                        </li>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="dbms-fundamentals"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="dbms-fundamentals">الخطوة التالية <i
+                                            class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content: SQL Basics -->
+                        <div class="step-content" data-step-content="sql-basics" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 3 من 10</span>
+                                    <h2 class="content-block__title">SQL Basics</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        SQL (Structured Query Language) هي لغة تستخدم للتواصل مع قواعد البيانات.
+                                        تسمح بإدراج واسترجاع وتحديث وحذف البيانات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • SELECT (استرجاع البيانات)<br>
+                                        • INSERT (إدراج بيانات جديدة)<br>
+                                        • UPDATE (تحديث البيانات)<br>
+                                        • DELETE (حذف البيانات)<br>
+                                        • WHERE (تصفية النتائج)<br>
+                                        • ORDER BY (ترتيب النتائج)<br>
+                                        • LIMIT (تحديد عدد النتائج)<br>
+                                        • Basic Joins (INNER JOIN)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 التعامل مع البيانات بثقة
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLMTdZ61eBnyoQoEmLOcgTBdrAOVT-GFju&si=pjfyawI09IC1LtEX"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLZPZq0r_RZOMskz6MdsMOgxzheIyjo-BZ&si=rAcIJoe9NB8JLwQ3"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a>
+                                        </li>
+                                        <li><a href="https://youtu.be/kb-_GbpH3sQ?si=xSrsHQdBaS4M3vAZ"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [03]</a>
+                                        </li>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="sql-basics"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="sql-basics">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 Content: SQL Advanced -->
+                        <div class="step-content" data-step-content="sql-advanced" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 4 من 10</span>
+                                    <h2 class="content-block__title">SQL Advanced</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        SQL المتقدم يسمح بكتابة استعلامات أكثر تعقيداً لتحليل البيانات وتجميعها.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Joins (LEFT / RIGHT / FULL OUTER JOIN)<br>
+                                        • GROUP BY + Aggregation (COUNT, SUM, AVG, MAX, MIN)<br>
+                                        • HAVING (تصفية بعد التجميع)<br>
+                                        • Subqueries (استعلامات متداخلة)<br>
+                                        • CTE (Common Table Expressions - WITH)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 تفكير منطقي بالـ Queries
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PLNcg_FV9n7qZY_2eAtUzEUulNjTJREhQe&si=tSMkK0x4fJa-ozPm"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="sql-advanced"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="sql-advanced">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 Content: Database Design -->
+                        <div class="step-content" data-step-content="database-design" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 5 من 10</span>
+                                    <h2 class="content-block__title">Database Design (تصميم قواعد البيانات) 🔥🔥</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        تصميم قاعدة البيانات هو عملية تحديد هيكل البيانات وكيفية تنظيمها وربطها.
+                                        التصميم الجيد يضمن أداءً عالياً وسهولة في الصيانة.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • ERD (Entity Relationship Diagram - مخطط الكيانات والعلاقات)<br>
+                                        • Relationships (العلاقات: 1-1، 1-M، M-M)<br>
+                                        • Keys (المفاتيح: Primary Key, Foreign Key)<br>
+                                        • ERD to Tables Mapping (تحويل المخطط إلى جداول)
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/@techvault_?si=qSc-te3S-L7o_frP"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>@techvault</a>
+                                        </li>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 تصميم Database صح
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="database-design"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="database-design">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 Content: Normalization 🔥 -->
+                        <div class="step-content" data-step-content="normalization" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 6 من 10</span>
+                                    <h2 class="content-block__title">Normalization (تطبيع قواعد البيانات)</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        التطبيع (Normalization) هو عملية تنظيم البيانات في قواعد البيانات لتقليل
+                                        التكرار (Redundancy) وتجنب الشذوذ (Anomalies) عند إدخال أو تحديث أو حذف
+                                        البيانات. تم تطويره بواسطة Edgar F. Codd في السبعينيات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> لماذا هو مهم؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        بدون تطبيع، قد تواجه مشاكل:
+                                        <br>• Insertion Anomaly: عدم القدرة على إدخال بيانات دون وجود بيانات أخرى
+                                        <br>• Update Anomaly: تحديث نفس البيانات في عدة أماكن
+                                        <br>• Deletion Anomaly: فقدان بيانات عند حذف سجلات أخرى
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="normalization"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="normalization">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 Content: Project 1 -->
+                        <div class="step-content" data-step-content="project1" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 7 من 10</span>
+                                    <h2 class="content-block__title">Project 1: Full Database 🔥</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> فكرة المشروع
+                                    </h3>
+                                    <p class="content-section__text">
+                                        <strong>بناء قاعدة بيانات كاملة</strong><br>
+                                        اختر أحد الأنظمة التالية:
+                                        <br>• نظام متجر (Store)
+                                        <br>• نظام عيادة (Clinic)
+                                        <br>• نظام طلاب (Student System)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المتطلبات
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • تطبيق Design (ERD + Normalization)<br>
+                                        • تطبيق SQL (إنشاء الجداول، العلاقات، القيود)<br>
+                                        • إدراج بيانات تجريبية (Sample Data)<br>
+                                        • كتابة استعلامات متنوعة<br>
+                                        • إنشاء Views و Indexes
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="project1"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="project1">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 8 Content: Indexing -->
+                        <div class="step-content" data-step-content="indexing" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 8 من 10</span>
+                                    <h2 class="content-block__title">Indexing (الفهارس) 🚀</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        الفهرس (Index) هو هيكل بيانات يحسن سرعة استرجاع البيانات. يعمل مثل فهرس الكتاب،
+                                        يسمح بالوصول السريع إلى الصفوف دون مسح الجدول بالكامل.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • ما هو Index؟<br>
+                                        • B-Tree Concept (مفهوم شجرة B-Tree)<br>
+                                        • Clustered vs Non-Clustered Index<br>
+                                        • متى نستخدم Index؟<br>
+                                        • مشاكل الفهارس (Overhead - تكلفة إضافية على الكتابة)
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 تسريع الاستعلامات بوعي
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtu.be/0ylnRtBQ7k8?si=vQl3qnViaKtKNvM0"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Video [01]</a>
+                                        </li>
+                                        <li><a href="https://youtube.com/playlist?list=PLE8kQVoC67PzNdFSsYm-af0j8qeV8l2fW&si=sZBR3JQmvWpSBiag"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [02]</a>
+                                        </li>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="indexing"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="indexing">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 Content: Query Processing -->
+                        <div class="step-content" data-step-content="query-processing" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 9 من 10</span>
+                                    <h2 class="content-block__title">Query Processing (Behind the Scenes) 🧠</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        فهم كيفية تنفيذ DBMS للاستعلامات يساعدك في تحسين أداء قاعدة البيانات ومعرفة
+                                        سبب بطء بعض الاستعلامات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • كيف DBMS ينفذ Query<br>
+                                        • Parsing → Optimization → Execution<br>
+                                        • Execution Plan (Concept - خطة التنفيذ)<br>
+                                        • Full Table Scan vs Index Scan
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 تفهم "ليش الاستعلام بطيء"
+                                    </p>
+                                </div>
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-graduation-cap"></i></span> مصادر
+                                        التعلم
+                                    </h3>
+                                    <ul class="resources-list">
+                                        <li><a href="https://youtube.com/playlist?list=PL1DUmTEdeA6Lg6CXlnxEDhwpmWB0QaDh5&si=9L59LXXo3-w4s3Rm"
+                                                class="resource-link" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i>Playlist [01]</a>
+                                        </li>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="query-processing"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step"
+                                        data-step-id="query-processing">الخطوة
+                                        التالية <i class="fas fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 10 Content: Transactions & Concurrency -->
+                        <div class="step-content" data-step-content="transactions" hidden>
+                            <div class="content-block">
+                                <div class="content-header">
+                                    <span class="step-badge"><i class="fas fa-layer-group"></i> الخطوة 10 من 10</span>
+                                    <h2 class="content-block__title">Transactions & Concurrency ⚙️</h2>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-book-open"></i></span> ما هذا؟
+                                    </h3>
+                                    <p class="content-section__text">
+                                        المعاملة (Transaction) هي مجموعة من العمليات التي تنفذ كوحدة واحدة. إما أن تنجح
+                                        كلها أو تفشل كلها. هذا يضمن سلامة البيانات.
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-star"></i></span> المواضيع المغطاة
+                                    </h3>
+                                    <p class="content-section__text">
+                                        • Transaction Concept (مفهوم المعاملة)<br>
+                                        • ACID Properties (Atomicity, Consistency, Isolation, Durability)<br>
+                                        • BEGIN / COMMIT / ROLLBACK<br>
+                                        • مشاكل التزامن (Concurrency Problems):<br>
+                                        &nbsp;&nbsp;&nbsp;→ Dirty Read (قراءة بيانات غير ملتزمة)<br>
+                                        &nbsp;&nbsp;&nbsp;→ Lost Update (فقدان التحديث)<br>
+                                        • Isolation Levels (مستويات العزل) - Concept
+                                    </p>
+                                </div>
+
+                                <div class="content-section">
+                                    <h3 class="content-section__heading">
+                                        <span class="heading-icon"><i class="fas fa-bullseye"></i></span> الهدف
+                                    </h3>
+                                    <p class="content-section__text">
+                                        🎯 ضمان صحة البيانات
+                                    </p>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn--success btn--mark-done" data-step-id="transactions"><i
+                                            class="fas fa-check"></i> تم الإكمال</button>
+                                    <button class="btn btn--primary btn--next-step" data-step-id="transactions">إكمال
+                                        المسار 🎉 <i class="fas fa-trophy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <i class="fas fa-code"></i> NextStep <span class="footer__logo-arabic">| الخطوة القادمة</span>
+                    </a>
+                    <p class="footer__tagline">مسارات واضحة، بدون تشتت</p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html" class="footer__nav-link">الرئيسية</a></li>
+                        <li><a href="roadmaps.html" class="footer__nav-link">المسارات</a></li>
+                        <li><a href="assessment/assessment.html" class="footer__nav-link">تقييم سريع</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    <p>جميع الحقوق محفوظة © 2025 NextStep | الخطوة القادمة</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="visually-hidden" aria-live="polite" aria-atomic="true" id="aria-live-region"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
